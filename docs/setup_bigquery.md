@@ -123,7 +123,7 @@ Crear esta vista te ahorra los joins en cada visual del dashboard.
 1. Abre [lookerstudio.google.com](https://lookerstudio.google.com) con la misma cuenta.
 2. Click **Crear → Fuente de datos**.
 3. Selecciona el conector **BigQuery**.
-4. Autoriza el acceso. Selecciona tu proyecto `tiendalatam-portfolio` → dataset `tiendalatam` → tabla o vista que quieras conectar.
+4. Autoriza el acceso. Selecciona tu proyecto `tiendalatam-casestudy` → dataset `tiendalatam` → tabla o vista que quieras conectar.
 5. Click **Conectar** (arriba a la derecha).
 6. Revisa los tipos detectados (asegúrate que las fechas estén como tipo Fecha, no como texto).
 7. Click **Crear informe**.
