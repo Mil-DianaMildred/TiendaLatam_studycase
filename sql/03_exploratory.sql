@@ -11,7 +11,7 @@ SELECT
   MAX(registration_date)                AS last_order,
   ROUND(SUM(total_amount), 2)           AS total_revenue,
   ROUND(AVG(total_amount), 2)           AS avg_order_value
-FROM `tiendalatam_casestudy.tiendalatam.orders`;
+FROM `tiendalatam-casestudy.tiendalatam.orders`;
 
 
 -- 2. Distribución de estados de pedido
@@ -19,8 +19,8 @@ SELECT
   os.name AS status,
   COUNT(*) AS orders,
   ROUND(100 * COUNT(*) / SUM(COUNT(*)) OVER (), 1) AS pct_share
-FROM `tiendalatam_casestudy.tiendalatam.orders` o
-JOIN `tiendalatam_casestudy.tiendalatam.order_statuses` os
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.order_statuses` os
   ON o.order_status_id = os.order_status_id
 GROUP BY os.name
 ORDER BY orders DESC;
@@ -32,9 +32,9 @@ SELECT
   COUNT(o.order_id) AS orders,
   ROUND(SUM(o.total_amount), 2) AS revenue,
   ROUND(AVG(o.total_amount), 2) AS aov
-FROM `tiendalatam_casestudy.tiendalatam.orders` o
-JOIN `tiendalatam_casestudy.tiendalatam.clients` c   ON o.client_id = c.client_id
-JOIN `tiendalatam_casestudy.tiendalatam.countries` co ON c.country_id = co.country_id
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c   ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.countries` co ON c.country_id = co.country_id
 WHERE o.order_status_id = 4
 GROUP BY co.name
 ORDER BY revenue DESC
@@ -47,10 +47,10 @@ SELECT
   ca.name AS category,
   SUM(od.quantity) AS units_sold,
   ROUND(SUM(od.quantity * od.unit_price), 2) AS revenue
-FROM `tiendalatam_casestudy.tiendalatam.order_details` od
-JOIN `tiendalatam_casestudy.tiendalatam.products` p    ON od.product_id = p.product_id
-JOIN `tiendalatam_casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
-JOIN `tiendalatam_casestudy.tiendalatam.orders` o      ON od.order_id = o.order_id
+FROM `tiendalatam-casestudy.tiendalatam.order_details` od
+JOIN `tiendalatam-casestudy.tiendalatam.products` p    ON od.product_id = p.product_id
+JOIN `tiendalatam-casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
+JOIN `tiendalatam-casestudy.tiendalatam.orders` o      ON od.order_id = o.order_id
 WHERE o.order_status_id = 4
 GROUP BY p.product_name, ca.name
 ORDER BY units_sold DESC
@@ -62,9 +62,9 @@ SELECT
   co.name AS country,
   ct.name AS client_type,
   COUNT(*) AS clients
-FROM `tiendalatam_casestudy.tiendalatam.clients` c
-JOIN `tiendalatam_casestudy.tiendalatam.countries` co    ON c.country_id = co.country_id
-JOIN `tiendalatam_casestudy.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
+FROM `tiendalatam-casestudy.tiendalatam.clients` c
+JOIN `tiendalatam-casestudy.tiendalatam.countries` co    ON c.country_id = co.country_id
+JOIN `tiendalatam-casestudy.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
 GROUP BY co.name, ct.name
 ORDER BY co.name, clients DESC;
 
@@ -76,8 +76,8 @@ SELECT
   ca.name AS category,
   p.price,
   p.stock
-FROM `tiendalatam_casestudy.tiendalatam.products` p
-JOIN `tiendalatam_casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
-LEFT JOIN `tiendalatam_casestudy.tiendalatam.order_details` od ON p.product_id = od.product_id
+FROM `tiendalatam-casestudy.tiendalatam.products` p
+JOIN `tiendalatam-casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
+LEFT JOIN `tiendalatam-casestudy.tiendalatam.order_details` od ON p.product_id = od.product_id
 WHERE od.detail_id IS NULL
 ORDER BY p.stock DESC;
