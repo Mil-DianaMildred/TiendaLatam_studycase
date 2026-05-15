@@ -1,6 +1,5 @@
 -- =====================================================================
 -- Exploración inicial (EDA) - BigQuery dialect
--- Reemplaza `tiendalatam-casestudy.tiendalatam` con tu propio project.dataset
 -- =====================================================================
 
 -- 1. Volumen y rango temporal
