@@ -2,14 +2,14 @@
 -- Growth Metrics - BigQuery dialect
 -- =====================================================================
 
--- Q1. Revenue mensual con crecimiento Month-over-Month
+-- Q1. Revenue mensual con crecimiento Month-over-Month (global)
 WITH monthly AS (
   SELECT
     DATE_TRUNC(registration_date, MONTH) AS month,
     SUM(total_amount) AS revenue,
     COUNT(*) AS orders,
     COUNT(DISTINCT client_id) AS active_clients
-  FROM `tiendalatam-portfolio.tiendalatam.orders`
+  FROM `tiendalatam-casestudy.tiendalatam.orders`
   WHERE order_status_id IN (3, 4)
   GROUP BY 1
 )
@@ -35,9 +35,9 @@ SELECT
   COUNT(*) AS orders,
   ROUND(AVG(o.total_amount), 2) AS aov,
   ROUND(SUM(o.total_amount), 2) AS revenue
-FROM `tiendalatam-portfolio.tiendalatam.orders` o
-JOIN `tiendalatam-portfolio.tiendalatam.clients` c       ON o.client_id = c.client_id
-JOIN `tiendalatam-portfolio.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c       ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
 WHERE o.order_status_id IN (3, 4)
 GROUP BY 1, 2
 ORDER BY 1, 2;
@@ -48,7 +48,7 @@ WITH first_orders AS (
   SELECT
     client_id,
     MIN(registration_date) AS first_order_date
-  FROM `tiendalatam-portfolio.tiendalatam.orders`
+  FROM `tiendalatam-casestudy.tiendalatam.orders`
   GROUP BY client_id
 ),
 orders_classified AS (
@@ -61,7 +61,7 @@ orders_classified AS (
       ELSE 'Recurrente'
     END AS client_segment,
     o.total_amount
-  FROM `tiendalatam-portfolio.tiendalatam.orders` o
+  FROM `tiendalatam-casestudy.tiendalatam.orders` o
   JOIN first_orders fo ON o.client_id = fo.client_id
   WHERE o.order_status_id IN (3, 4)
 )
@@ -85,9 +85,9 @@ SELECT
   ROUND(100 * COUNTIF(o.order_status_id = 5) / COUNT(*), 2) AS pct_cancelled,
   ROUND(100 * COUNTIF(o.order_status_id = 6) / COUNT(*), 2) AS pct_returned,
   ROUND(100 * COUNTIF(o.order_status_id = 4) / COUNT(*), 2) AS pct_delivered
-FROM `tiendalatam-portfolio.tiendalatam.orders` o
-JOIN `tiendalatam-portfolio.tiendalatam.clients` c    ON o.client_id = c.client_id
-JOIN `tiendalatam-portfolio.tiendalatam.countries` co ON c.country_id = co.country_id
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c    ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.countries` co ON c.country_id = co.country_id
 GROUP BY co.name
 ORDER BY revenue DESC;
 
@@ -100,10 +100,42 @@ SELECT
   ROUND(SUM(od.quantity * od.unit_price), 2) AS revenue,
   ROUND(AVG(od.unit_price), 2) AS avg_unit_price,
   ROUND(100 * SUM(od.quantity * od.unit_price) / SUM(SUM(od.quantity * od.unit_price)) OVER (), 2) AS pct_of_total_revenue
-FROM `tiendalatam-portfolio.tiendalatam.order_details` od
-JOIN `tiendalatam-portfolio.tiendalatam.products` p    ON od.product_id = p.product_id
-JOIN `tiendalatam-portfolio.tiendalatam.categories` ca ON p.category_id = ca.category_id
-JOIN `tiendalatam-portfolio.tiendalatam.orders` o      ON od.order_id = o.order_id
+FROM `tiendalatam-casestudy.tiendalatam.order_details` od
+JOIN `tiendalatam-casestudy.tiendalatam.products` p    ON od.product_id = p.product_id
+JOIN `tiendalatam-casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
+JOIN `tiendalatam-casestudy.tiendalatam.orders` o      ON od.order_id = o.order_id
 WHERE o.order_status_id IN (3, 4)
 GROUP BY ca.name
 ORDER BY revenue DESC;
+
+-- Q6. Revenue mensual con crecimiento Month-over-Month (by country eg. "Colombia")
+WITH monthly AS (
+  SELECT
+    DATE_TRUNC(o.registration_date, MONTH) AS month,
+    SUM(o.total_amount)                    AS revenue,
+    COUNT(*)                               AS orders,
+    COUNT(DISTINCT o.client_id)            AS active_clients
+  FROM `tiendalatam-casestudy.tiendalatam.orders` o
+  JOIN `tiendalatam-casestudy.tiendalatam.clients` c
+    ON o.client_id = c.client_id
+  JOIN `tiendalatam-casestudy.tiendalatam.countries` co
+    ON c.country_id = co.country_id
+  WHERE o.order_status_id IN (3, 4)
+    AND co.name = 'Colombia'
+  GROUP BY month
+)
+SELECT
+  month,
+  ROUND(revenue, 2) AS revenue,
+  orders,
+  active_clients,
+  ROUND(revenue - LAG(revenue) OVER (ORDER BY month), 2) AS revenue_delta,
+  ROUND(
+    SAFE_DIVIDE(
+      revenue - LAG(revenue) OVER (ORDER BY month),
+      LAG(revenue) OVER (ORDER BY month)
+    ) * 100,
+    2
+  ) AS mom_growth_pct
+FROM monthly
+ORDER BY month;
