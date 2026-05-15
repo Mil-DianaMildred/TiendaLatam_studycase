@@ -79,3 +79,24 @@ SELECT
   END AS segment
 FROM scored
 ORDER BY monetary DESC;
+
+-- =====================================================================
+-- Cómo leer el resultado
+-- Cada fila es un cliente. Las columnas que importan para tu storytelling:
+-- 
+-- recency_days: cuántos días desde su última compra. Menos es mejor.
+-- frequency: cuántas órdenes hizo en total. Más es mejor.
+-- monetary: cuánto ha gastado acumulado. Más es mejor.
+-- r/f/m_score: cuartil 1 (peor) a 4 (mejor).
+-- segment: el nombre accionable. Estos son los que vas a usar en el dashboard.
+-- 
+-- Qué hacer con cada segmento (el insight PM)
+-- 
+-- Champions: tus mejores clientes. Pídeles referidos, prográmales beneficios VIP.
+-- Loyal: compran seguido pero no son los más grandes. Estrategia de upselling.
+-- New / Promising: recientes, pocas compras. Foco de onboarding/segunda compra.
+-- Needs Attention: estuvieron activos pero empiezan a alejarse. Email/llamada.
+-- At Risk: clientes valiosos que ya no compran. La oportunidad de retención más rentable.
+-- Hibernating / About to Sleep: en zona gris. Campañas masivas baratas.
+-- Lost: posiblemente perdidos. Bajo prioridad excepto si te sobra ancho de banda.
+-- =====================================================================
