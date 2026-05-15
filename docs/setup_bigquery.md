@@ -17,7 +17,7 @@ Solo una cuenta de Google (la misma que usas para Gmail funciona). No necesitas 
 1. Abre [console.cloud.google.com](https://console.cloud.google.com).
 2. Acepta los términos.
 3. Arriba a la izquierda, hay un selector de proyecto. Click → **Nuevo proyecto**.
-4. Nombre: `tiendalatam-portfolio`. Deja la organización en blanco. Click **Crear**.
+4. Nombre: `tiendalatam-casestudy`. Deja la organización en blanco. Click **Crear**.
 5. Espera 30 segundos y selecciona el proyecto recién creado en el selector.
 
 ## Paso 2 — Activar BigQuery Sandbox (2 min)
