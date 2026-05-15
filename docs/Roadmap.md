@@ -11,7 +11,7 @@ Pensamiento de fondo: este proyecto no es un ejercicio de SQL, es un caso de est
 **Objetivo:** montar BigQuery, cargar los datos y hacer la primera exploración.
 
 Tareas:
-- Crear cuenta de Google Cloud (gratis, sin tarjeta) y proyecto `tiendalatam-portfolio`. Seguir `docs/setup_bigquery.md` paso a paso.
+- Crear cuenta de Google Cloud (gratis, sin tarjeta) y proyecto `tiendalatam-casestudy`. Seguir `docs/setup_bigquery.md` paso a paso.
 - Activar BigQuery sandbox y crear el dataset `tiendalatam`.
 - Cargar los 11 CSVs con autodetección de esquema (~15 min).
 - Ejecutar `sql/01_setup_views.sql` para crear las 5 vistas analíticas.
