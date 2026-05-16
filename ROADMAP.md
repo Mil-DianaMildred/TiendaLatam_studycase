@@ -13,7 +13,7 @@ Pensamiento de fondo: este proyecto no es un ejercicio de SQL, es un caso de est
 Tareas:
 - Crear cuenta de Google Cloud (gratis, sin tarjeta) y proyecto `tiendalatam-casestudy`. Seguir `docs/setup_bigquery.md` paso a paso.
 - Activar BigQuery sandbox y crear el dataset `tiendalatam`.
-- Cargar los 11 CSVs con autodetección de esquema (~15 min).
+- Cargar los 11 CSVs de `data_expanded/` con autodetección de esquema (~15 min).
 - Ejecutar `sql/01_setup_views.sql` para crear las 5 vistas analíticas.
 - Ejecutar `sql/03_exploratory.sql` — 6 queries que te dan el panorama: volumen, fechas, distribución de status, productos top.
 - Documentar 3-5 observaciones iniciales en una nota.
@@ -47,7 +47,7 @@ Tip PM: no te quedes en "Argentina vendió X". Avanza a "Argentina creció X% pe
 
 Tareas:
 - Ejecutar `sql/05_retention_rfm.sql`: análisis de cohortes mensuales (porcentaje de clientes que vuelven a comprar en mes 1, 3, 6, 12), segmentación RFM (Recency, Frequency, Monetary) y churn rate por segmento.
-- Construir el perfil de tus 4 segmentos de clientes: Champions, Loyal, At-Risk, Lost. Calcular cuántos hay, cuánto facturan y qué porcentaje del revenue total representan.
+- Construir el perfil de los 8 segmentos RFM: Champions, Loyal, At Risk, New/Promising, About to Sleep, Needs Attention, Hibernating, Lost. Calcular cuántos hay, cuánto facturan y qué porcentaje del revenue total representan. (Referencia: Champions son 132 clientes que concentran el 56.4% del revenue.)
 - Calcular LTV promedio por tipo de cliente (Minorista, Mayorista, Corporativo, VIP).
 
 Entregable: tabla de cohortes lista para visualizar, segmentación RFM con cada cliente etiquetado, y 3 recomendaciones de producto basadas en los hallazgos.
@@ -78,7 +78,7 @@ Entregable: dashboard publicado con link público + 4 capturas para el sitio web
 
 Tiempo estimado: 4-5 horas.
 
-Tip PM: pon títulos con conclusión, no descriptivos. En vez de "Revenue por mes", escribe "Diciembre 2025 fue el mejor mes con +94% MoM".
+Tip PM: pon títulos con conclusión, no descriptivos. En vez de "Revenue por mes", escribe "Abril 2026 fue el mejor mes con $220K — crecimiento sostenido desde 2021".
 
 ---
 
@@ -90,7 +90,7 @@ Tareas:
 - Escribir el caso de estudio para tu sitio web siguiendo esta estructura:
   - **Contexto** — ¿qué es TiendaLatam y por qué importa el problema?
   - **Tu rol** — Te posicionas como PM hipotético del negocio.
-  - **Preguntas que respondiste** — Las 12 preguntas con un teaser de cada respuesta.
+  - **Preguntas que respondiste** — Las 15 preguntas con un teaser de cada respuesta.
   - **Hallazgos clave** — 3-5 insights con visual de soporte.
   - **Recomendaciones de producto** — 3 features o experimentos propuestos con priorización (RICE o ICE).
   - **Qué haría diferente con más tiempo** — Mostrar criterio.
