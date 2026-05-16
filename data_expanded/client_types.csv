@@ -1,0 +1,5 @@
+client_type_id,name,description
+1,Minorista,Compra ocasional o de bajo volumen para consumo personal
+2,Mayorista,Cliente que compra por volumen para reventa o abastecimiento
+3,Corporativo,Empresa o institución con compras planificadas y recurrentes
+4,VIP,Cliente frecuente con atención preferencial y beneficios comerciales

@@ -1,0 +1,11 @@
+location_id,name,city,country_id,address,status
+1,TiendaLatam Bogotá Centro,Bogotá,5,"Carrera 7 # 32-45, Centro Internacional",TRUE
+2,TiendaLatam Ciudad de México Reforma,Ciudad de México,8,"Av. Paseo de la Reforma 222, Juárez",TRUE
+3,TiendaLatam Lima Miraflores,Lima,9,"Av. Larco 845, Miraflores",TRUE
+4,TiendaLatam Santiago Providencia,Santiago,4,"Av. Providencia 1208, Providencia",TRUE
+5,TiendaLatam Buenos Aires Palermo,Buenos Aires,1,"Av. Santa Fe 3250, Palermo",TRUE
+6,TiendaLatam São Paulo Paulista,São Paulo,3,"Av. Paulista 1578, Bela Vista",TRUE
+7,TiendaLatam Quito La Carolina,Quito,7,Av. Naciones Unidas N34-120,TRUE
+8,TiendaLatam San José Escazú,San José,6,"Ruta 27, Centro Comercial Plaza Escazú",TRUE
+9,TiendaLatam Montevideo Pocitos,Montevideo,10,"Bulevar España 2468, Pocitos",TRUE
+10,TiendaLatam Santa Cruz Equipetrol,Santa Cruz,2,"Av. San Martín 455, Equipetrol",TRUE

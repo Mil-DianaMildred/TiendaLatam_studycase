@@ -1,0 +1,301 @@
+order_id,client_id,location_id,employee_id,registration_date,order_status_id,total_amount,notes
+1,81,3,5,2025-11-11,3,354.40,Cliente solicitó comprobante electrónico
+2,138,1,1,2024-11-07,4,474.60,Venta con seguimiento comercial
+3,49,5,9,2026-01-02,6,282.15,Entrega coordinada desde tienda
+4,22,4,7,2025-06-28,4,186.90,Entrega coordinada desde tienda
+5,112,8,15,2025-02-13,2,104.00,Cliente solicitó comprobante electrónico
+6,7,2,4,2024-02-22,3,77.20,Pedido generado por campaña regional
+7,14,8,16,2024-11-16,4,346.45,Retiro en tienda acordado con el cliente
+8,104,6,11,2024-11-15,4,7.50,Promoción aplicada según temporada
+9,118,10,20,2026-03-12,4,37.80,Pedido generado por campaña regional
+10,106,7,14,2026-03-12,4,295.50,Retiro en tienda acordado con el cliente
+11,114,9,17,2026-01-31,4,644.60,Preparación prioritaria por disponibilidad de stock
+12,64,8,15,2024-11-03,3,183.20,Promoción aplicada según temporada
+13,119,4,8,2026-04-18,4,159.70,Compra en tienda física
+14,102,2,3,2024-10-18,4,35.90,Cliente pidió confirmación telefónica
+15,150,4,7,2025-12-21,6,181.20,Promoción aplicada según temporada
+16,139,1,2,2025-07-14,4,46.40,Retiro en tienda acordado con el cliente
+17,125,9,18,2026-04-11,4,1231.00,Retiro en tienda acordado con el cliente
+18,102,5,9,2026-02-18,4,332.50,Promoción aplicada según temporada
+19,7,2,3,2025-03-10,4,91.60,Cliente pidió confirmación telefónica
+20,61,6,12,2024-12-12,3,757.00,Entrega coordinada desde tienda
+21,143,10,19,2026-04-10,1,119.10,Pedido generado por campaña regional
+22,28,6,11,2025-12-24,4,732.30,Promoción aplicada según temporada
+23,80,7,14,2024-05-05,2,160.00,Pedido generado por campaña regional
+24,108,4,8,2024-01-15,4,109.40,Cliente solicitó comprobante electrónico
+25,125,5,10,2026-04-21,2,425.30,Cliente solicitó comprobante electrónico
+26,22,4,8,2025-04-17,4,262.30,Compra en tienda física
+27,57,4,7,2026-02-25,4,36.15,Pedido generado por campaña regional
+28,141,10,19,2025-06-02,4,104.45,Compra en tienda física
+29,28,6,12,2026-02-06,4,111.80,Pedido regular sin observaciones
+30,6,9,18,2025-04-24,4,226.40,Cliente pidió confirmación telefónica
+31,137,7,14,2024-03-25,2,434.50,Preparación prioritaria por disponibilidad de stock
+32,142,10,20,2026-04-15,1,204.90,Pedido regular sin observaciones
+33,150,4,7,2025-09-23,4,971.80,Compra en tienda física
+34,84,8,15,2024-02-26,4,1844.10,Compra en tienda física
+35,89,8,16,2024-05-25,4,1617.80,Preparación prioritaria por disponibilidad de stock
+36,43,3,6,2025-09-27,4,185.40,Promoción aplicada según temporada
+37,41,5,10,2025-07-30,4,467.00,Preparación prioritaria por disponibilidad de stock
+38,144,3,5,2025-05-08,4,459.50,Preparación prioritaria por disponibilidad de stock
+39,81,3,6,2024-07-09,4,638.10,Venta con seguimiento comercial
+40,43,8,15,2024-07-13,4,372.40,Compra en tienda física
+41,42,6,11,2024-10-26,3,184.00,Preparación prioritaria por disponibilidad de stock
+42,136,9,18,2023-10-03,4,86.05,Promoción aplicada según temporada
+43,112,9,18,2023-05-22,1,292.70,Venta con seguimiento comercial
+44,82,9,17,2026-04-09,1,240.00,Pedido regular sin observaciones
+45,48,4,8,2023-09-18,3,1288.50,Cliente pidió confirmación telefónica
+46,103,10,20,2024-12-28,4,122.55,Pedido regular sin observaciones
+47,23,7,14,2024-10-20,4,1017.40,Entrega coordinada desde tienda
+48,73,2,4,2025-11-04,4,87.45,Entrega coordinada desde tienda
+49,13,4,8,2025-06-01,5,302.70,Promoción aplicada según temporada
+50,20,8,16,2025-03-31,1,185.70,Compra en tienda física
+51,40,1,1,2026-03-11,4,184.80,Cliente solicitó comprobante electrónico
+52,25,2,4,2025-08-26,4,127.30,Retiro en tienda acordado con el cliente
+53,17,6,12,2026-04-04,2,239.30,Venta con seguimiento comercial
+54,112,8,16,2025-09-17,4,153.70,Compra en tienda física
+55,72,6,11,2025-03-20,3,116.70,Cliente pidió confirmación telefónica
+56,47,1,1,2025-12-27,4,2697.70,Cliente pidió confirmación telefónica
+57,106,7,14,2026-01-27,4,99.25,Compra en tienda física
+58,28,6,11,2026-04-08,2,104.30,Promoción aplicada según temporada
+59,64,6,11,2026-01-22,4,56.65,Entrega coordinada desde tienda
+60,11,3,6,2023-04-09,4,427.30,Venta con seguimiento comercial
+61,20,7,13,2026-02-15,4,498.50,Compra en tienda física
+62,75,7,14,2024-11-15,5,101.20,Preparación prioritaria por disponibilidad de stock
+63,148,7,14,2026-02-09,4,125.60,Cliente solicitó comprobante electrónico
+64,59,3,5,2025-11-15,4,4248.20,Preparación prioritaria por disponibilidad de stock
+65,59,7,14,2025-09-07,4,1460.50,Compra en tienda física
+66,90,5,9,2025-07-26,1,824.90,Retiro en tienda acordado con el cliente
+67,76,9,17,2025-04-14,2,146.50,Compra en tienda física
+68,120,6,11,2024-01-06,4,1069.60,Promoción aplicada según temporada
+69,26,1,2,2025-12-30,4,45.00,Preparación prioritaria por disponibilidad de stock
+70,49,5,9,2026-02-09,4,182.75,Venta con seguimiento comercial
+71,89,7,13,2024-06-23,4,261.00,Cliente solicitó comprobante electrónico
+72,18,3,6,2025-08-03,4,246.05,Compra en tienda física
+73,128,6,12,2023-09-22,6,184.80,Pedido regular sin observaciones
+74,114,5,9,2024-01-08,4,674.90,Pedido generado por campaña regional
+75,131,3,5,2024-02-22,3,141.60,Cliente pidió confirmación telefónica
+76,54,9,18,2026-01-02,2,111.00,Cliente pidió confirmación telefónica
+77,44,3,5,2023-08-04,4,94.80,Retiro en tienda acordado con el cliente
+78,44,3,5,2023-11-13,3,95.50,Cliente solicitó comprobante electrónico
+79,114,9,18,2024-12-14,4,418.00,Promoción aplicada según temporada
+80,127,1,2,2026-03-09,2,46.40,Venta con seguimiento comercial
+81,56,1,2,2024-06-06,4,22.55,Compra en tienda física
+82,124,10,20,2024-10-02,3,128.30,Venta con seguimiento comercial
+83,34,7,14,2025-09-08,4,213.50,Cliente pidió confirmación telefónica
+84,3,9,17,2025-07-09,4,34.70,Preparación prioritaria por disponibilidad de stock
+85,93,6,11,2023-10-09,4,918.70,Pedido generado por campaña regional
+86,77,4,7,2026-04-24,4,101.30,Cliente pidió confirmación telefónica
+87,147,1,1,2023-06-23,4,91.90,Cliente pidió confirmación telefónica
+88,52,10,19,2025-10-04,4,106.50,Cliente solicitó comprobante electrónico
+89,60,8,15,2023-11-06,4,300.95,Cliente pidió confirmación telefónica
+90,33,7,14,2023-01-05,4,26.50,Cliente solicitó comprobante electrónico
+91,3,9,18,2024-09-19,1,313.00,Venta con seguimiento comercial
+92,112,4,8,2025-03-26,4,712.90,Pedido regular sin observaciones
+93,146,4,7,2022-10-08,6,158.15,Preparación prioritaria por disponibilidad de stock
+94,32,6,12,2026-04-08,3,85.80,Compra en tienda física
+95,57,4,8,2025-07-07,3,55.75,Cliente pidió confirmación telefónica
+96,46,3,6,2024-04-07,3,206.80,Cliente solicitó comprobante electrónico
+97,39,5,9,2025-03-04,4,84.90,Preparación prioritaria por disponibilidad de stock
+98,78,1,2,2026-03-23,4,766.00,Cliente solicitó comprobante electrónico
+99,114,4,8,2023-04-19,2,525.70,Pedido regular sin observaciones
+100,80,6,12,2024-12-01,4,272.50,Pedido generado por campaña regional
+101,21,7,14,2025-11-29,4,177.60,Venta con seguimiento comercial
+102,148,7,14,2026-04-08,4,216.00,Cliente solicitó comprobante electrónico
+103,64,8,16,2025-10-21,4,1479.30,Preparación prioritaria por disponibilidad de stock
+104,8,10,19,2025-10-11,4,863.60,Venta con seguimiento comercial
+105,84,8,16,2023-01-17,3,86.55,Retiro en tienda acordado con el cliente
+106,148,6,12,2025-12-15,4,86.00,Preparación prioritaria por disponibilidad de stock
+107,126,1,2,2025-04-13,4,348.50,Pedido generado por campaña regional
+108,124,8,15,2022-12-21,4,98.00,Promoción aplicada según temporada
+109,42,6,12,2026-01-20,1,172.30,Promoción aplicada según temporada
+110,122,8,16,2025-11-27,5,68.50,Pedido generado por campaña regional
+111,98,2,4,2024-01-12,4,75.60,Pedido generado por campaña regional
+112,134,7,14,2025-11-17,4,23.30,Cliente pidió confirmación telefónica
+113,97,5,9,2025-04-15,4,33.80,Pedido regular sin observaciones
+114,56,1,2,2025-04-04,4,545.50,Promoción aplicada según temporada
+115,54,9,18,2026-03-25,4,2416.50,Venta con seguimiento comercial
+116,135,9,18,2025-12-17,3,918.70,Promoción aplicada según temporada
+117,110,9,17,2025-09-28,5,473.50,Pedido regular sin observaciones
+118,10,10,20,2025-03-08,4,103.00,Venta con seguimiento comercial
+119,61,6,11,2025-07-12,4,941.90,Retiro en tienda acordado con el cliente
+120,103,2,3,2026-02-24,4,134.10,Compra en tienda física
+121,108,4,7,2022-05-18,6,59.20,Cliente pidió confirmación telefónica
+122,106,7,14,2026-04-01,3,15.60,Entrega coordinada desde tienda
+123,42,6,11,2026-03-31,4,15.80,Pedido generado por campaña regional
+124,143,10,19,2026-04-01,3,235.00,Entrega coordinada desde tienda
+125,66,2,3,2025-12-31,4,1486.60,Pedido generado por campaña regional
+126,97,5,9,2025-10-29,4,574.80,Entrega coordinada desde tienda
+127,91,9,18,2025-09-01,4,533.40,Entrega coordinada desde tienda
+128,11,3,6,2023-07-19,4,105.60,Preparación prioritaria por disponibilidad de stock
+129,61,6,12,2025-01-29,4,4747.90,Cliente solicitó comprobante electrónico
+130,16,5,9,2025-10-19,4,232.70,Pedido generado por campaña regional
+131,45,10,20,2026-03-03,6,115.60,Compra en tienda física
+132,1,7,13,2026-02-01,4,33.40,Compra en tienda física
+133,24,3,5,2025-03-31,4,1025.20,Preparación prioritaria por disponibilidad de stock
+134,134,7,13,2026-01-05,4,104.30,Pedido regular sin observaciones
+135,128,4,7,2023-06-28,3,348.30,Venta con seguimiento comercial
+136,11,3,5,2025-12-25,4,289.80,Venta con seguimiento comercial
+137,33,3,5,2024-01-17,3,96.25,Retiro en tienda acordado con el cliente
+138,89,7,13,2024-01-12,4,347.30,Venta con seguimiento comercial
+139,6,1,2,2025-01-13,3,302.10,Venta con seguimiento comercial
+140,115,7,14,2025-07-29,4,1027.00,Venta con seguimiento comercial
+141,87,1,2,2023-10-15,4,432.60,Pedido regular sin observaciones
+142,49,5,10,2026-04-09,5,32.40,Venta con seguimiento comercial
+143,144,8,16,2025-12-12,5,480.30,Compra en tienda física
+144,102,2,4,2026-04-14,4,167.70,Pedido generado por campaña regional
+145,103,10,20,2024-07-18,4,392.25,Retiro en tienda acordado con el cliente
+146,34,7,14,2025-10-18,3,659.00,Entrega coordinada desde tienda
+147,91,9,18,2024-08-24,2,66.60,Compra en tienda física
+148,39,7,13,2023-10-05,2,210.30,Cliente pidió confirmación telefónica
+149,112,6,11,2023-05-02,3,166.10,Preparación prioritaria por disponibilidad de stock
+150,124,9,18,2024-12-26,4,125.50,Promoción aplicada según temporada
+151,24,3,6,2026-02-25,2,179.25,Cliente pidió confirmación telefónica
+152,42,6,11,2025-07-07,4,437.80,Retiro en tienda acordado con el cliente
+153,25,2,3,2025-04-12,3,129.60,Pedido regular sin observaciones
+154,114,9,17,2023-11-11,4,1372.80,Pedido regular sin observaciones
+155,25,2,3,2024-06-01,4,462.90,Compra en tienda física
+156,94,2,4,2025-11-13,4,127.80,Pedido generado por campaña regional
+157,23,9,18,2025-07-29,4,718.20,Cliente pidió confirmación telefónica
+158,91,9,17,2025-07-14,5,138.80,Pedido regular sin observaciones
+159,101,5,10,2024-07-12,1,81.00,Retiro en tienda acordado con el cliente
+160,86,7,14,2025-12-31,3,4009.20,Cliente pidió confirmación telefónica
+161,90,5,10,2025-02-05,3,72.60,Pedido generado por campaña regional
+162,107,1,2,2024-02-17,4,54.70,Pedido generado por campaña regional
+163,146,6,12,2026-02-05,2,60.80,Cliente solicitó comprobante electrónico
+164,116,7,14,2025-12-02,5,392.40,Compra en tienda física
+165,130,8,16,2024-08-30,4,264.50,Pedido generado por campaña regional
+166,79,10,19,2023-12-10,4,168.40,Pedido generado por campaña regional
+167,108,4,8,2025-12-24,2,171.10,Pedido generado por campaña regional
+168,43,3,5,2024-09-08,4,106.70,Pedido generado por campaña regional
+169,99,7,13,2025-10-08,4,156.80,Retiro en tienda acordado con el cliente
+170,19,6,11,2026-03-08,4,139.30,Pedido regular sin observaciones
+171,6,9,18,2025-01-08,4,3305.90,Venta con seguimiento comercial
+172,112,8,15,2023-01-03,4,809.50,Venta con seguimiento comercial
+173,32,8,15,2024-02-28,4,315.40,Compra en tienda física
+174,77,4,7,2026-04-21,2,5578.50,Cliente pidió confirmación telefónica
+175,74,6,11,2025-03-01,4,204.50,Entrega coordinada desde tienda
+176,74,6,11,2025-10-26,4,119.15,Entrega coordinada desde tienda
+177,41,5,9,2025-12-23,2,295.60,Cliente solicitó comprobante electrónico
+178,88,3,6,2025-10-06,2,105.70,Compra en tienda física
+179,110,9,18,2025-05-11,3,2460.10,Entrega coordinada desde tienda
+180,120,6,12,2022-10-30,4,254.80,Cliente pidió confirmación telefónica
+181,15,5,10,2025-10-26,4,61.40,Pedido generado por campaña regional
+182,57,4,8,2025-06-02,4,255.20,Compra en tienda física
+183,6,9,17,2025-07-28,6,17.70,Compra en tienda física
+184,45,10,20,2026-02-03,2,254.30,Entrega coordinada desde tienda
+185,137,7,13,2024-03-24,4,841.80,Entrega coordinada desde tienda
+186,37,2,4,2026-02-20,6,148.40,Cliente solicitó comprobante electrónico
+187,25,2,3,2025-12-18,3,131.25,Entrega coordinada desde tienda
+188,47,1,2,2024-10-13,5,959.10,Cliente solicitó comprobante electrónico
+189,147,8,15,2024-11-25,4,124.40,Pedido generado por campaña regional
+190,102,2,4,2025-06-15,4,288.20,Preparación prioritaria por disponibilidad de stock
+191,115,4,8,2026-01-25,4,481.50,Promoción aplicada según temporada
+192,105,6,12,2022-08-08,4,117.20,Pedido generado por campaña regional
+193,37,8,16,2024-07-23,2,175.70,Cliente solicitó comprobante electrónico
+194,11,3,6,2024-07-11,4,157.80,Compra en tienda física
+195,67,6,12,2025-07-29,4,630.00,Pedido regular sin observaciones
+196,65,7,14,2023-07-13,4,268.50,Compra en tienda física
+197,72,6,11,2025-09-29,1,943.00,Compra en tienda física
+198,118,9,17,2025-12-12,5,38.60,Promoción aplicada según temporada
+199,131,3,5,2023-11-11,4,76.70,Cliente pidió confirmación telefónica
+200,144,8,16,2026-04-07,2,524.75,Retiro en tienda acordado con el cliente
+201,100,6,11,2026-03-15,4,413.40,Compra en tienda física
+202,53,7,14,2026-04-29,4,63.40,Retiro en tienda acordado con el cliente
+203,45,2,4,2026-04-27,4,2583.30,Entrega coordinada desde tienda
+204,12,7,13,2025-11-23,2,361.30,Retiro en tienda acordado con el cliente
+205,44,3,6,2024-11-14,4,583.35,Cliente solicitó comprobante electrónico
+206,93,1,2,2026-01-21,1,785.45,Cliente pidió confirmación telefónica
+207,113,6,12,2024-04-06,4,187.50,Cliente pidió confirmación telefónica
+208,128,6,11,2026-01-19,3,823.50,Venta con seguimiento comercial
+209,39,5,10,2026-02-03,4,261.00,Venta con seguimiento comercial
+210,12,10,19,2025-10-10,1,310.20,Pedido generado por campaña regional
+211,110,9,18,2025-06-21,4,182.90,Preparación prioritaria por disponibilidad de stock
+212,10,10,19,2023-03-25,1,183.20,Preparación prioritaria por disponibilidad de stock
+213,136,5,9,2024-09-15,3,78.80,Pedido generado por campaña regional
+214,131,3,6,2026-02-27,2,397.90,Entrega coordinada desde tienda
+215,103,10,20,2025-04-24,4,141.05,Preparación prioritaria por disponibilidad de stock
+216,121,7,14,2026-02-23,1,108.50,Venta con seguimiento comercial
+217,113,6,11,2024-05-08,4,447.40,Compra en tienda física
+218,85,1,2,2026-02-05,5,409.10,Pedido regular sin observaciones
+219,119,3,6,2026-03-20,4,406.15,Entrega coordinada desde tienda
+220,90,5,10,2023-09-06,4,268.40,Promoción aplicada según temporada
+221,4,4,7,2025-08-01,4,233.00,Cliente solicitó comprobante electrónico
+222,76,9,18,2024-10-10,4,16.50,Entrega coordinada desde tienda
+223,99,7,14,2025-12-29,5,213.00,Pedido generado por campaña regional
+224,7,2,4,2025-08-26,4,28.80,Pedido generado por campaña regional
+225,10,10,19,2023-06-10,4,45.25,Venta con seguimiento comercial
+226,101,5,10,2023-05-02,2,876.95,Cliente pidió confirmación telefónica
+227,148,1,1,2026-02-08,4,333.05,Venta con seguimiento comercial
+228,74,6,12,2025-04-12,4,125.90,Promoción aplicada según temporada
+229,57,4,7,2025-11-24,3,458.20,Cliente pidió confirmación telefónica
+230,108,4,7,2023-04-06,4,128.55,Cliente solicitó comprobante electrónico
+231,3,9,17,2024-10-23,1,183.50,Entrega coordinada desde tienda
+232,140,4,8,2023-06-13,1,233.30,Preparación prioritaria por disponibilidad de stock
+233,113,6,11,2026-04-03,1,115.70,Venta con seguimiento comercial
+234,23,9,17,2025-03-19,4,316.80,Retiro en tienda acordado con el cliente
+235,44,3,6,2023-05-19,1,269.40,Pedido generado por campaña regional
+236,142,5,9,2026-02-18,4,85.80,Pedido generado por campaña regional
+237,112,8,15,2025-12-14,4,96.40,Retiro en tienda acordado con el cliente
+238,135,8,16,2025-10-08,4,522.50,Venta con seguimiento comercial
+239,48,3,6,2023-07-19,4,67.00,Pedido generado por campaña regional
+240,48,4,8,2022-08-05,3,3218.20,Cliente pidió confirmación telefónica
+241,51,6,12,2024-10-14,4,292.20,Pedido regular sin observaciones
+242,92,3,6,2024-08-31,4,334.00,Cliente pidió confirmación telefónica
+243,94,5,10,2025-12-28,4,55.70,Retiro en tienda acordado con el cliente
+244,5,1,2,2025-04-04,3,62.55,Compra en tienda física
+245,97,5,9,2026-02-01,4,94.90,Pedido regular sin observaciones
+246,147,8,16,2023-04-05,4,455.30,Cliente pidió confirmación telefónica
+247,94,5,10,2026-02-16,4,130.10,Cliente pidió confirmación telefónica
+248,67,9,18,2024-06-11,4,1628.50,Venta con seguimiento comercial
+249,83,1,2,2022-06-10,4,262.90,Compra en tienda física
+250,33,5,10,2025-05-20,4,401.75,Cliente solicitó comprobante electrónico
+251,28,8,15,2026-03-15,4,162.70,Cliente pidió confirmación telefónica
+252,12,7,13,2026-02-11,4,400.10,Venta con seguimiento comercial
+253,70,9,17,2024-12-09,4,206.70,Entrega coordinada desde tienda
+254,83,1,1,2025-10-19,3,329.80,Retiro en tienda acordado con el cliente
+255,49,7,13,2026-04-10,3,89.50,Venta con seguimiento comercial
+256,103,10,19,2024-12-06,1,127.90,Cliente solicitó comprobante electrónico
+257,144,8,15,2026-01-01,4,183.60,Compra en tienda física
+258,141,10,20,2024-02-12,4,420.30,Retiro en tienda acordado con el cliente
+259,14,10,20,2024-09-19,4,241.80,Retiro en tienda acordado con el cliente
+260,31,3,5,2025-08-08,4,193.90,Retiro en tienda acordado con el cliente
+261,97,5,10,2026-03-01,6,37.30,Promoción aplicada según temporada
+262,18,3,5,2024-12-19,3,173.50,Compra en tienda física
+263,41,5,10,2025-10-13,4,370.05,Cliente pidió confirmación telefónica
+264,51,9,18,2025-07-06,4,83.30,Pedido regular sin observaciones
+265,96,3,5,2025-09-12,4,219.90,Retiro en tienda acordado con el cliente
+266,125,8,15,2026-04-22,1,528.60,Venta con seguimiento comercial
+267,61,6,12,2026-02-17,4,156.90,Pedido regular sin observaciones
+268,130,1,2,2023-07-08,4,126.50,Entrega coordinada desde tienda
+269,113,2,3,2024-12-16,4,93.60,Cliente solicitó comprobante electrónico
+270,73,2,4,2026-02-03,4,99.80,Pedido regular sin observaciones
+271,31,3,6,2025-02-27,4,1721.20,Compra en tienda física
+272,71,7,14,2024-02-21,4,66.80,Cliente pidió confirmación telefónica
+273,102,9,18,2024-12-20,3,41.00,Entrega coordinada desde tienda
+274,75,7,13,2025-07-05,4,214.30,Venta con seguimiento comercial
+275,83,1,1,2025-10-07,4,44.00,Compra en tienda física
+276,32,8,16,2025-03-30,4,105.00,Pedido regular sin observaciones
+277,111,5,9,2022-09-15,4,233.40,Pedido regular sin observaciones
+278,108,4,7,2024-11-11,5,652.80,Entrega coordinada desde tienda
+279,7,2,4,2025-10-24,4,58.25,Retiro en tienda acordado con el cliente
+280,21,7,14,2025-12-24,4,276.00,Pedido regular sin observaciones
+281,9,10,19,2023-10-10,4,407.40,Cliente pidió confirmación telefónica
+282,83,8,15,2025-01-08,4,227.70,Pedido regular sin observaciones
+283,53,1,2,2025-03-11,4,58.55,Pedido generado por campaña regional
+284,63,7,13,2025-07-30,6,226.10,Venta con seguimiento comercial
+285,52,10,20,2026-01-17,2,30.40,Pedido generado por campaña regional
+286,56,6,11,2023-04-16,4,68.20,Retiro en tienda acordado con el cliente
+287,54,1,1,2025-09-04,4,258.80,Cliente pidió confirmación telefónica
+288,66,7,13,2026-03-01,4,598.90,Cliente pidió confirmación telefónica
+289,135,9,18,2026-02-12,2,19.00,Pedido generado por campaña regional
+290,90,9,17,2024-12-27,4,4461.30,Pedido regular sin observaciones
+291,90,5,9,2024-05-26,4,305.50,Pedido generado por campaña regional
+292,34,2,3,2025-11-17,5,676.20,Cliente solicitó comprobante electrónico
+293,30,4,7,2023-03-11,4,47.90,Entrega coordinada desde tienda
+294,73,2,3,2024-10-03,4,59.10,Pedido generado por campaña regional
+295,31,10,19,2025-11-15,4,97.80,Entrega coordinada desde tienda
+296,40,1,1,2025-08-23,4,62.80,Compra en tienda física
+297,48,7,14,2024-11-26,4,63.50,Entrega coordinada desde tienda
+298,60,5,10,2025-04-08,4,209.40,Preparación prioritaria por disponibilidad de stock
+299,7,2,3,2025-07-14,2,210.50,Pedido regular sin observaciones
+300,126,2,3,2025-09-03,5,67.50,Pedido generado por campaña regional

@@ -1,0 +1,51 @@
+product_id,product_name,category_id,price,stock,description,status
+1,Smartphone Andino X1,1,349.90,130,Teléfono inteligente con 128 GB y cámara principal de alta resolución,TRUE
+2,Laptop Ultraliviana 14,1,799.00,64,"Equipo portátil para productividad, estudio y trabajo híbrido",TRUE
+3,Audífonos Bluetooth Pro,1,59.90,220,Audífonos inalámbricos con estuche de carga y micrófono integrado,TRUE
+4,Parlante Portátil Caribe,1,44.50,180,Parlante compacto resistente para uso en casa o exteriores,TRUE
+5,Mouse Inalámbrico Ergo,1,18.90,300,Mouse ergonómico con conexión USB y batería de larga duración,TRUE
+6,Teclado Mecánico Compacto,1,72.00,95,Teclado compacto con retroiluminación para oficina o gaming,TRUE
+7,Cargador USB-C Rápido,1,21.50,260,Cargador de pared con puerto USB-C de carga rápida,TRUE
+8,Power Bank 20000 mAh,1,39.90,150,Batería externa de alta capacidad para viajes y emergencias,TRUE
+9,Licuadora 6 Velocidades,2,64.90,120,Licuadora familiar con vaso resistente y cuchillas de acero,TRUE
+10,Cafetera Programable,2,52.75,90,Cafetera de goteo con temporizador y jarra de vidrio,TRUE
+11,Set de Ollas Antiadherentes,2,89.90,70,Juego de ollas para cocina diaria con tapas incluidas,TRUE
+12,Organizador Modular,2,24.90,200,"Organizador plástico apilable para clóset, cocina o baño",TRUE
+13,Juego de Sábanas Queen,2,45.00,115,Sábanas suaves de algodón mixto para cama queen,TRUE
+14,Lámpara LED de Escritorio,2,28.90,160,Lámpara regulable con brazo flexible para lectura o estudio,TRUE
+15,Aspiradora Compacta,2,119.00,55,Aspiradora liviana para hogares pequeños y oficinas,TRUE
+16,Camiseta Básica Algodón,3,12.90,500,Camiseta de algodón unisex para uso cotidiano,TRUE
+17,Jeans Slim Fit,3,39.90,240,Pantalón jean de corte moderno y tela resistente,TRUE
+18,Chaqueta Impermeable,3,69.50,85,Chaqueta liviana con protección contra lluvia,TRUE
+19,Zapatillas Urbanas,3,58.90,170,Calzado cómodo para uso diario en ciudad,TRUE
+20,Mochila Ejecutiva,3,42.00,140,Mochila con compartimento para laptop y bolsillos internos,TRUE
+21,Gorra Bordada,3,11.50,260,Gorra ajustable con bordado frontal,TRUE
+22,Cinturón Cuero Sintético,3,18.75,190,Cinturón formal con hebilla metálica,TRUE
+23,Crema Hidratante Aloe,4,8.90,340,Crema corporal hidratante con extracto de aloe,TRUE
+24,Shampoo Nutritivo,4,7.50,420,Shampoo para limpieza diaria y cuidado del cabello,TRUE
+25,Protector Solar FPS 50,4,14.90,260,Protector solar facial y corporal de alta protección,TRUE
+26,Set Cuidado Facial,4,32.00,110,Kit de limpieza e hidratación facial para rutina diaria,TRUE
+27,Perfume Floral 100 ml,4,48.90,75,Fragancia floral de larga duración,TRUE
+28,Afeitadora Eléctrica,4,36.50,95,Afeitadora recargable con cabezales flexibles,TRUE
+29,Café Molido Premium,5,9.80,500,Café latinoamericano molido en empaque sellado,TRUE
+30,Chocolate Amargo 70%,5,4.20,600,Barra de chocolate con alto porcentaje de cacao,TRUE
+31,Aceite de Oliva 500 ml,5,8.75,310,Aceite de oliva para cocina y ensaladas,TRUE
+32,Quinua Orgánica 1 kg,5,6.90,380,Quinua seleccionada para preparaciones saludables,TRUE
+33,Mix de Frutos Secos,5,7.40,290,"Mezcla de nueces, almendras y pasas",TRUE
+34,Galletas Integrales,5,3.60,450,Galletas de grano entero para lonchera o merienda,TRUE
+35,Bebida Isotónica Pack,5,10.50,210,Pack de bebidas para hidratación deportiva,TRUE
+36,Balón de Fútbol Pro,6,24.90,160,Balón laminado para entrenamiento y partidos recreativos,TRUE
+37,Mat de Yoga Antideslizante,6,22.50,145,Colchoneta de yoga con superficie antideslizante,TRUE
+38,Mancuernas 5 kg Par,6,34.90,100,Par de mancuernas recubiertas para entrenamiento en casa,TRUE
+39,Botella Deportiva 750 ml,6,8.90,360,Botella reusable con tapa hermética,TRUE
+40,Banda Elástica Resistencia,6,6.50,420,Banda de resistencia para ejercicios de fuerza y movilidad,TRUE
+41,Casco Bicicleta Urbano,6,41.00,80,Casco ventilado para ciclismo urbano,TRUE
+42,Bloques de Construcción,7,29.90,130,Set de bloques para juego creativo infantil,TRUE
+43,Rompecabezas 1000 Piezas,7,17.50,170,Rompecabezas familiar con ilustración latinoamericana,TRUE
+44,Muñeca Articulada,7,21.90,115,Muñeca articulada con accesorios incluidos,TRUE
+45,Carro a Control Remoto,7,37.90,95,Vehículo recargable con control remoto,TRUE
+46,Juego de Mesa Estrategia,7,26.50,140,Juego de mesa para grupos y familias,TRUE
+47,Cuaderno Profesional,8,3.90,700,Cuaderno de tapa dura para apuntes escolares o laborales,TRUE
+48,Set de Marcadores,8,5.80,520,"Marcadores de colores para oficina, estudio o dibujo",TRUE
+49,Agenda Ejecutiva,8,9.90,260,Agenda anual con secciones de planificación semanal,TRUE
+50,Resma Papel Carta,8,6.75,400,Papel blanco tamaño carta para impresión y copiado,TRUE

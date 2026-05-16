@@ -1,0 +1,7 @@
+order_status_id,name,description
+1,Pendiente,"Pedido registrado, pendiente de confirmación o pago"
+2,Procesando,Pedido confirmado y en preparación
+3,Enviado,Pedido despachado hacia el cliente
+4,Entregado,Pedido recibido satisfactoriamente por el cliente
+5,Cancelado,Pedido cancelado antes de completarse
+6,Devuelto,Pedido entregado y luego devuelto total o parcialmente

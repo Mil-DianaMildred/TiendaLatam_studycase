@@ -1,0 +1,701 @@
+client_id,name,last_name,email,phone,registration_date,country_id,city,client_type_id,status
+1,Manuela,Vázquez,manuela.vazquez001@clientes.tiendalatam.test,+54 28728463,2025-03-01,1,Rosario,2,TRUE
+2,Carlos,López,carlos.lopez002@clientes.tiendalatam.test,+591 22575562,2026-01-01,2,Sucre,1,TRUE
+3,Eduardo,Lozano,eduardo.lozano003@clientes.tiendalatam.test,+56 89089901,2021-09-22,4,Antofagasta,1,TRUE
+4,Magdalena,Maldonado,magdalena.maldonado004@clientes.tiendalatam.test,+55 30868105,2025-07-30,3,Belo Horizonte,1,TRUE
+5,Trinidad,Peña,trinidad.pena005@clientes.tiendalatam.test,+593 91030736,2022-07-09,7,Quito,1,TRUE
+6,Mateo,Aranda,mateo.aranda006@clientes.tiendalatam.test,+591 49349722,2024-06-22,2,Sucre,3,TRUE
+7,Cristian,Torres,cristian.torres007@clientes.tiendalatam.test,+598 16150444,2025-11-28,10,Montevideo,2,TRUE
+8,Ignacio,Maldonado,ignacio.maldonado008@clientes.tiendalatam.test,+56 70855700,2026-04-14,4,Santiago,2,TRUE
+9,Ximena,Flores,ximena.flores009@clientes.tiendalatam.test,+56 91756179,2024-02-01,4,Concepción,2,TRUE
+10,Nicolás,Saldaña,nicolas.saldana010@clientes.tiendalatam.test,+52 39476249,2023-06-16,8,Puebla,2,TRUE
+11,Cristóbal,Cisneros,cristobal.cisneros011@clientes.tiendalatam.test,+56 45935572,2025-08-19,4,Santiago,1,FALSE
+12,Damián,Valdez,damian.valdez012@clientes.tiendalatam.test,+506 63100814,2024-11-24,6,San José,3,TRUE
+13,Aurora,Saldaña,aurora.saldana013@clientes.tiendalatam.test,+55 82340307,2022-10-30,3,Rio de Janeiro,1,TRUE
+14,Eduardo,Castillo,eduardo.castillo014@clientes.tiendalatam.test,+593 78387461,2026-01-08,7,Guayaquil,1,TRUE
+15,Jimena,Cordero,jimena.cordero015@clientes.tiendalatam.test,+55 90048665,2025-11-27,3,Rio de Janeiro,1,TRUE
+16,Adriana,Rodríguez,adriana.rodriguez016@clientes.tiendalatam.test,+51 25374874,2026-04-25,9,Trujillo,2,TRUE
+17,Constanza,Padilla,constanza.padilla017@clientes.tiendalatam.test,+506 31227574,2023-07-30,6,San José,1,FALSE
+18,Esperanza,Castro,esperanza.castro018@clientes.tiendalatam.test,+57 78139880,2025-12-14,5,Cartagena,4,TRUE
+19,Mariana,Paredes,mariana.paredes019@clientes.tiendalatam.test,+51 31682744,2023-09-28,9,Arequipa,1,TRUE
+20,Javiera,Fuentes,javiera.fuentes020@clientes.tiendalatam.test,+54 12614124,2024-10-04,1,La Plata,1,TRUE
+21,Lucía,Acosta,lucia.acosta021@clientes.tiendalatam.test,+57 86149359,2026-04-14,5,Medellín,4,TRUE
+22,Daniel,Camacho,daniel.camacho022@clientes.tiendalatam.test,+591 83793389,2024-07-31,2,Santa Cruz,1,TRUE
+23,Ángela,Bravo,angela.bravo023@clientes.tiendalatam.test,+56 63551839,2025-01-17,4,Valparaíso,4,TRUE
+24,Isabella,Salazar,isabella.salazar024@clientes.tiendalatam.test,+51 40158366,2024-05-20,9,Cusco,1,TRUE
+25,María,Flores,maria.flores025@clientes.tiendalatam.test,+598 94705205,2024-11-06,10,Montevideo,1,TRUE
+26,Esteban,Acosta,esteban.acosta026@clientes.tiendalatam.test,+506 47376585,2021-10-17,6,San José,2,TRUE
+27,Augusto,Salazar,augusto.salazar027@clientes.tiendalatam.test,+598 73481353,2022-10-02,10,Colonia,3,TRUE
+28,Lautaro,Beltrán,lautaro.beltran028@clientes.tiendalatam.test,+593 72682989,2022-06-23,7,Guayaquil,3,TRUE
+29,Martina,Navarro,martina.navarro029@clientes.tiendalatam.test,+591 24665841,2025-03-20,2,La Paz,1,TRUE
+30,Florencia,Barrios,florencia.barrios030@clientes.tiendalatam.test,+593 43528453,2024-06-05,7,Quito,3,TRUE
+31,Diego,Iglesias,diego.iglesias031@clientes.tiendalatam.test,+51 11980765,2025-09-26,9,Lima,4,FALSE
+32,Bianca,Estrada,bianca.estrada032@clientes.tiendalatam.test,+55 38688676,2025-11-13,3,Belo Horizonte,3,FALSE
+33,Catalina,Tapia,catalina.tapia033@clientes.tiendalatam.test,+54 48285503,2022-12-23,1,Mendoza,1,FALSE
+34,Mariana,Álvarez,mariana.alvarez034@clientes.tiendalatam.test,+51 49823450,2026-04-25,9,Cusco,1,TRUE
+35,Lucía,Sánchez,lucia.sanchez035@clientes.tiendalatam.test,+54 88406989,2025-07-01,1,Rosario,1,FALSE
+36,Mateo,Romero,mateo.romero036@clientes.tiendalatam.test,+54 19196777,2024-10-05,1,La Plata,1,TRUE
+37,Claudia,Quiroga,claudia.quiroga037@clientes.tiendalatam.test,+591 15334035,2023-05-28,2,Santa Cruz,2,TRUE
+38,Catalina,Suárez,catalina.suarez038@clientes.tiendalatam.test,+51 99889098,2024-12-17,9,Trujillo,2,TRUE
+39,Cristóbal,Flores,cristobal.flores039@clientes.tiendalatam.test,+57 11250299,2024-03-14,5,Barranquilla,1,FALSE
+40,Romina,Ríos,romina.rios040@clientes.tiendalatam.test,+591 27778019,2026-04-25,2,Santa Cruz,4,FALSE
+41,Roberto,Quintero,roberto.quintero041@clientes.tiendalatam.test,+506 82909480,2025-12-18,6,Alajuela,2,TRUE
+42,Tania,Aranda,tania.aranda042@clientes.tiendalatam.test,+51 50181935,2026-04-16,9,Lima,4,TRUE
+43,Camila,Aranda,camila.aranda043@clientes.tiendalatam.test,+57 30863865,2025-12-16,5,Bogotá,1,TRUE
+44,Romina,Fuentes,romina.fuentes044@clientes.tiendalatam.test,+56 43704923,2025-06-09,4,Concepción,3,TRUE
+45,Sofía,García,sofia.garcia045@clientes.tiendalatam.test,+593 54769200,2022-06-09,7,Guayaquil,2,TRUE
+46,Cristian,Cordero,cristian.cordero046@clientes.tiendalatam.test,+52 85283645,2023-07-20,8,Tijuana,1,TRUE
+47,Carlos,Paredes,carlos.paredes047@clientes.tiendalatam.test,+55 88183110,2025-12-22,3,Salvador,1,TRUE
+48,Trinidad,Suárez,trinidad.suarez048@clientes.tiendalatam.test,+506 43491314,2021-12-06,6,San José,2,TRUE
+49,Aurora,Vargas,aurora.vargas049@clientes.tiendalatam.test,+593 41774346,2024-11-14,7,Cuenca,3,FALSE
+50,Alejandro,Vega,alejandro.vega050@clientes.tiendalatam.test,+593 65259205,2025-09-30,7,Quito,3,TRUE
+51,Ximena,Reyes,ximena.reyes051@clientes.tiendalatam.test,+57 61343880,2025-09-30,5,Medellín,3,TRUE
+52,Macarena,Mora,macarena.mora052@clientes.tiendalatam.test,+52 39920292,2023-05-01,8,Monterrey,1,TRUE
+53,Vicente,Roldán,vicente.roldan053@clientes.tiendalatam.test,+591 63643924,2023-11-21,2,Cochabamba,2,TRUE
+54,Catalina,Castro,catalina.castro054@clientes.tiendalatam.test,+54 87925434,2023-11-26,1,Buenos Aires,4,TRUE
+55,Rocío,Espinoza,rocio.espinoza055@clientes.tiendalatam.test,+593 68571795,2022-07-28,7,Guayaquil,2,TRUE
+56,Tomás,Pérez,tomas.perez056@clientes.tiendalatam.test,+598 68526649,2024-02-25,10,Montevideo,1,FALSE
+57,Emilia,Torres,emilia.torres057@clientes.tiendalatam.test,+56 99152472,2024-10-15,4,Concepción,4,TRUE
+58,Romina,Bravo,romina.bravo058@clientes.tiendalatam.test,+591 99508850,2025-04-01,2,Cochabamba,1,TRUE
+59,Pilar,Méndez,pilar.mendez059@clientes.tiendalatam.test,+55 33357554,2023-09-23,3,Rio de Janeiro,2,TRUE
+60,Emiliano,Suárez,emiliano.suarez060@clientes.tiendalatam.test,+54 67698610,2024-10-29,1,Rosario,3,TRUE
+61,Ramiro,Aguilar,ramiro.aguilar061@clientes.tiendalatam.test,+52 78608612,2023-11-10,8,Puebla,1,FALSE
+62,Emiliano,Roldán,emiliano.roldan062@clientes.tiendalatam.test,+55 99100953,2025-09-12,3,São Paulo,2,TRUE
+63,Eduardo,Rojas,eduardo.rojas063@clientes.tiendalatam.test,+56 29777514,2025-10-09,4,Concepción,1,TRUE
+64,Pilar,Bermúdez,pilar.bermudez064@clientes.tiendalatam.test,+591 36096655,2024-07-15,2,Sucre,2,TRUE
+65,Salvador,Reyes,salvador.reyes065@clientes.tiendalatam.test,+55 67062156,2024-03-20,3,São Paulo,1,TRUE
+66,Marco,Salazar,marco.salazar066@clientes.tiendalatam.test,+52 26288475,2025-05-13,8,Ciudad de México,1,TRUE
+67,Salvador,Quintero,salvador.quintero067@clientes.tiendalatam.test,+51 92228802,2025-04-07,9,Trujillo,3,FALSE
+68,Roberto,Camacho,roberto.camacho068@clientes.tiendalatam.test,+51 70407340,2024-05-02,9,Cusco,1,TRUE
+69,Marcela,Acosta,marcela.acosta069@clientes.tiendalatam.test,+51 46855845,2025-02-27,9,Cusco,1,TRUE
+70,Iván,Rivera,ivan.rivera070@clientes.tiendalatam.test,+506 28572252,2023-05-26,6,Alajuela,1,TRUE
+71,Pilar,Beltrán,pilar.beltran071@clientes.tiendalatam.test,+56 54410148,2022-11-24,4,Santiago,1,TRUE
+72,Octavio,Cuevas,octavio.cuevas072@clientes.tiendalatam.test,+593 12621534,2023-03-29,7,Guayaquil,3,TRUE
+73,Mauricio,Solís,mauricio.solis073@clientes.tiendalatam.test,+54 66240084,2024-02-17,1,Rosario,1,TRUE
+74,Eduardo,Cabrera,eduardo.cabrera074@clientes.tiendalatam.test,+56 68496914,2025-09-17,4,Antofagasta,1,TRUE
+75,Laura,Barrios,laura.barrios075@clientes.tiendalatam.test,+593 27129912,2025-04-09,7,Cuenca,4,TRUE
+76,Cecilia,López,cecilia.lopez076@clientes.tiendalatam.test,+598 21267237,2026-01-18,10,Colonia,2,TRUE
+77,Ignacio,Cortés,ignacio.cortes077@clientes.tiendalatam.test,+54 38408562,2024-06-25,1,Rosario,1,TRUE
+78,Tomás,Rivera,tomas.rivera078@clientes.tiendalatam.test,+57 73123515,2025-12-18,5,Barranquilla,1,TRUE
+79,Damián,Torres,damian.torres079@clientes.tiendalatam.test,+506 97477029,2026-04-29,6,San José,1,TRUE
+80,Mariana,Acosta,mariana.acosta080@clientes.tiendalatam.test,+54 26941092,2023-06-21,1,La Plata,1,TRUE
+81,Octavio,Paredes,octavio.paredes081@clientes.tiendalatam.test,+52 32520277,2026-03-04,8,Monterrey,2,FALSE
+82,Camila,Cuevas,camila.cuevas082@clientes.tiendalatam.test,+55 13446499,2025-06-10,3,Brasília,4,TRUE
+83,Ángela,Rojas,angela.rojas083@clientes.tiendalatam.test,+593 20200074,2026-01-19,7,Guayaquil,1,TRUE
+84,Isabella,Aliaga,isabella.aliaga084@clientes.tiendalatam.test,+57 15512205,2023-06-13,5,Cartagena,1,TRUE
+85,José,Gallardo,jose.gallardo085@clientes.tiendalatam.test,+51 75793759,2024-02-01,9,Trujillo,1,FALSE
+86,Emilia,Castro,emilia.castro086@clientes.tiendalatam.test,+52 80027662,2025-02-24,8,Guadalajara,4,TRUE
+87,Olivia,Padilla,olivia.padilla087@clientes.tiendalatam.test,+51 89520597,2025-09-27,9,Cusco,1,TRUE
+88,Jazmín,Salazar,jazmin.salazar088@clientes.tiendalatam.test,+591 72372114,2025-10-23,2,Cochabamba,1,TRUE
+89,Paula,Fuentes,paula.fuentes089@clientes.tiendalatam.test,+52 38470244,2023-12-05,8,Monterrey,1,TRUE
+90,Florencia,Saldaña,florencia.saldana090@clientes.tiendalatam.test,+598 11362459,2023-08-24,10,Colonia,1,TRUE
+91,Marco,Acosta,marco.acosta091@clientes.tiendalatam.test,+593 73900135,2023-06-09,7,Guayaquil,2,TRUE
+92,Eduardo,Cisneros,eduardo.cisneros092@clientes.tiendalatam.test,+591 42655866,2025-09-08,2,Cochabamba,1,TRUE
+93,Lautaro,Aranda,lautaro.aranda093@clientes.tiendalatam.test,+51 54398056,2024-07-12,9,Trujillo,1,TRUE
+94,Mariano,Álvarez,mariano.alvarez094@clientes.tiendalatam.test,+56 52352128,2023-10-13,4,Santiago,1,TRUE
+95,Antonella,Estrada,antonella.estrada095@clientes.tiendalatam.test,+55 47111151,2025-08-03,3,Rio de Janeiro,2,FALSE
+96,Gabriel,Medina,gabriel.medina096@clientes.tiendalatam.test,+57 40532273,2024-09-26,5,Bogotá,1,TRUE
+97,Sofía,Sánchez,sofia.sanchez097@clientes.tiendalatam.test,+55 84270583,2025-05-28,3,Brasília,1,FALSE
+98,José,Bermúdez,jose.bermudez098@clientes.tiendalatam.test,+52 48163378,2025-02-27,8,Ciudad de México,1,TRUE
+99,Patricio,Cruz,patricio.cruz099@clientes.tiendalatam.test,+54 18770247,2023-02-07,1,Rosario,1,TRUE
+100,Mariana,Aliaga,mariana.aliaga100@clientes.tiendalatam.test,+54 50780112,2025-02-16,1,Córdoba,1,TRUE
+101,Patricia,Galindo,patricia.galindo101@clientes.tiendalatam.test,+593 40291214,2024-11-12,7,Cuenca,2,TRUE
+102,Lautaro,Bravo,lautaro.bravo102@clientes.tiendalatam.test,+57 86320155,2026-01-20,5,Cartagena,2,TRUE
+103,Catalina,Rivera,catalina.rivera103@clientes.tiendalatam.test,+56 31079846,2025-07-07,4,Valparaíso,1,TRUE
+104,Federico,Quiroga,federico.quiroga104@clientes.tiendalatam.test,+593 73070585,2022-12-03,7,Guayaquil,1,TRUE
+105,Jimena,Mora,jimena.mora105@clientes.tiendalatam.test,+52 45507920,2025-05-27,8,Ciudad de México,3,TRUE
+106,Felipe,Iglesias,felipe.iglesias106@clientes.tiendalatam.test,+56 40173413,2025-03-30,4,Antofagasta,2,FALSE
+107,Laura,Bravo,laura.bravo107@clientes.tiendalatam.test,+591 89865458,2025-10-18,2,La Paz,2,TRUE
+108,Federico,Lara,federico.lara108@clientes.tiendalatam.test,+591 64023778,2023-09-09,2,Sucre,4,TRUE
+109,Emilia,Cortés,emilia.cortes109@clientes.tiendalatam.test,+591 91029073,2024-08-12,2,La Paz,1,TRUE
+110,Juan,Cabrera,juan.cabrera110@clientes.tiendalatam.test,+598 87342561,2026-03-19,10,Colonia,1,TRUE
+111,Paula,Cuevas,paula.cuevas111@clientes.tiendalatam.test,+52 68503492,2024-07-08,8,Monterrey,2,TRUE
+112,Rodrigo,Cortés,rodrigo.cortes112@clientes.tiendalatam.test,+506 99943797,2022-06-06,6,Alajuela,1,TRUE
+113,Cecilia,Cisneros,cecilia.cisneros113@clientes.tiendalatam.test,+52 83832717,2024-04-08,8,Monterrey,1,TRUE
+114,Esteban,García,esteban.garcia114@clientes.tiendalatam.test,+591 98269682,2023-07-02,2,Sucre,3,TRUE
+115,Lucas,Valdez,lucas.valdez115@clientes.tiendalatam.test,+51 93940940,2022-01-27,9,Trujillo,1,TRUE
+116,Thiago,Fuentes,thiago.fuentes116@clientes.tiendalatam.test,+55 26297533,2023-07-30,3,Brasília,1,TRUE
+117,Adriana,Rodríguez,adriana.rodriguez117@clientes.tiendalatam.test,+55 84121929,2025-09-16,3,Brasília,1,TRUE
+118,Isabella,Vargas,isabella.vargas118@clientes.tiendalatam.test,+591 76890827,2025-11-04,2,Sucre,4,TRUE
+119,Augusto,Salazar,augusto.salazar119@clientes.tiendalatam.test,+593 71308842,2025-05-25,7,Guayaquil,1,TRUE
+120,Andrés,Maldonado,andres.maldonado120@clientes.tiendalatam.test,+51 65692629,2026-02-03,9,Arequipa,1,TRUE
+121,Mariano,Lara,mariano.lara121@clientes.tiendalatam.test,+54 88777447,2023-07-31,1,Rosario,1,TRUE
+122,Patricio,Peña,patricio.pena122@clientes.tiendalatam.test,+52 54619335,2025-12-02,8,Tijuana,1,TRUE
+123,Ximena,Acosta,ximena.acosta123@clientes.tiendalatam.test,+506 86745380,2024-06-15,6,San José,1,TRUE
+124,Augusto,Méndez,augusto.mendez124@clientes.tiendalatam.test,+506 61818612,2024-04-07,6,Cartago,4,TRUE
+125,Carlos,Ortiz,carlos.ortiz125@clientes.tiendalatam.test,+55 77416376,2025-03-18,3,Belo Horizonte,4,TRUE
+126,Gonzalo,Tapia,gonzalo.tapia126@clientes.tiendalatam.test,+52 12059919,2022-07-04,8,Ciudad de México,2,TRUE
+127,Augusto,Ríos,augusto.rios127@clientes.tiendalatam.test,+55 55440919,2025-03-21,3,São Paulo,2,TRUE
+128,Verónica,Méndez,veronica.mendez128@clientes.tiendalatam.test,+506 52501540,2022-05-01,6,Cartago,2,FALSE
+129,Lucas,Torres,lucas.torres129@clientes.tiendalatam.test,+51 41510328,2024-08-03,9,Lima,2,FALSE
+130,Sebastián,Díaz,sebastian.diaz130@clientes.tiendalatam.test,+591 69549527,2026-04-27,2,Sucre,1,TRUE
+131,Constanza,Domínguez,constanza.dominguez131@clientes.tiendalatam.test,+506 60310319,2021-10-05,6,San José,1,TRUE
+132,Alejandro,Rivera,alejandro.rivera132@clientes.tiendalatam.test,+55 91804602,2024-04-09,3,Rio de Janeiro,3,TRUE
+133,Renata,Barrios,renata.barrios133@clientes.tiendalatam.test,+598 95618110,2023-06-08,10,Montevideo,1,TRUE
+134,Ramiro,Iglesias,ramiro.iglesias134@clientes.tiendalatam.test,+52 31203129,2021-05-30,8,Monterrey,1,FALSE
+135,Federico,Núñez,federico.nunez135@clientes.tiendalatam.test,+57 71315464,2026-04-16,5,Barranquilla,3,TRUE
+136,Joaquín,Méndez,joaquin.mendez136@clientes.tiendalatam.test,+52 86762164,2024-02-25,8,Ciudad de México,1,TRUE
+137,Florencia,Rodríguez,florencia.rodriguez137@clientes.tiendalatam.test,+54 85957706,2025-05-17,1,Mendoza,3,TRUE
+138,Hernán,Soto,hernan.soto138@clientes.tiendalatam.test,+598 40885967,2026-04-01,10,Colonia,2,TRUE
+139,Ramiro,Castillo,ramiro.castillo139@clientes.tiendalatam.test,+598 94322033,2025-02-26,10,Punta del Este,1,TRUE
+140,Claudia,Carvajal,claudia.carvajal140@clientes.tiendalatam.test,+52 27637794,2021-11-25,8,Ciudad de México,1,TRUE
+141,Daniel,Iglesias,daniel.iglesias141@clientes.tiendalatam.test,+55 59104566,2025-07-16,3,Rio de Janeiro,1,FALSE
+142,Constanza,Navarro,constanza.navarro142@clientes.tiendalatam.test,+57 25457816,2025-10-23,5,Barranquilla,1,TRUE
+143,Marco,Carvajal,marco.carvajal143@clientes.tiendalatam.test,+56 22120246,2025-07-24,4,Antofagasta,3,TRUE
+144,Ramiro,Ríos,ramiro.rios144@clientes.tiendalatam.test,+52 88458327,2024-10-13,8,Monterrey,1,TRUE
+145,Ana,Galindo,ana.galindo145@clientes.tiendalatam.test,+56 85350823,2024-02-03,4,Antofagasta,1,TRUE
+146,Damián,Beltrán,damian.beltran146@clientes.tiendalatam.test,+52 25659979,2025-03-12,8,Monterrey,1,FALSE
+147,Sebastián,Acosta,sebastian.acosta147@clientes.tiendalatam.test,+52 82148284,2023-10-09,8,Ciudad de México,1,TRUE
+148,Víctor,Vargas,victor.vargas148@clientes.tiendalatam.test,+51 65684858,2025-04-11,9,Cusco,2,TRUE
+149,Federico,Paredes,federico.paredes149@clientes.tiendalatam.test,+57 39161443,2025-01-29,5,Bogotá,1,FALSE
+150,Iván,Domínguez,ivan.dominguez150@clientes.tiendalatam.test,+591 18126895,2025-11-20,2,Cochabamba,1,TRUE
+151,Cecilia,Aguilar,cecilia.aguilar151@clientes.tiendalatam.test,+52 96128115,2022-09-04,8,Ciudad de México,2,FALSE
+152,Daniel,Aliaga,daniel.aliaga152@clientes.tiendalatam.test,+506 37542226,2022-01-12,6,San José,1,TRUE
+153,Rodrigo,Jiménez,rodrigo.jimenez153@clientes.tiendalatam.test,+56 89991301,2023-03-30,4,Valparaíso,1,TRUE
+154,Tomás,Castro,tomas.castro154@clientes.tiendalatam.test,+55 24754064,2022-11-03,3,Salvador,2,TRUE
+155,Juan,Castro,juan.castro155@clientes.tiendalatam.test,+56 45617024,2021-07-12,4,Concepción,1,TRUE
+156,Jazmín,Carvajal,jazmin.carvajal156@clientes.tiendalatam.test,+591 78885632,2024-09-28,2,Sucre,1,TRUE
+157,Rocío,Saavedra,rocio.saavedra157@clientes.tiendalatam.test,+598 50484137,2023-04-30,10,Montevideo,1,FALSE
+158,Lautaro,Reyes,lautaro.reyes158@clientes.tiendalatam.test,+52 75802771,2022-02-22,8,Puebla,2,TRUE
+159,Miguel,Torres,miguel.torres159@clientes.tiendalatam.test,+506 26937148,2026-01-09,6,Cartago,1,TRUE
+160,Patricia,Pacheco,patricia.pacheco160@clientes.tiendalatam.test,+506 49580505,2024-10-29,6,Alajuela,1,TRUE
+161,Emilia,Lozano,emilia.lozano161@clientes.tiendalatam.test,+591 40667888,2022-06-30,2,Santa Cruz,1,TRUE
+162,Lautaro,Espinoza,lautaro.espinoza162@clientes.tiendalatam.test,+591 99269266,2024-03-18,2,Cochabamba,1,FALSE
+163,Valentina,Rivera,valentina.rivera163@clientes.tiendalatam.test,+52 22513132,2025-05-01,8,Ciudad de México,1,TRUE
+164,Lucía,Velasco,lucia.velasco164@clientes.tiendalatam.test,+55 85374852,2024-02-05,3,Salvador,1,TRUE
+165,Diego,Soto,diego.soto165@clientes.tiendalatam.test,+593 90585678,2024-04-07,7,Cuenca,1,TRUE
+166,Eduardo,Reyes,eduardo.reyes166@clientes.tiendalatam.test,+55 56991504,2024-09-01,3,Belo Horizonte,3,TRUE
+167,Lautaro,Saldaña,lautaro.saldana167@clientes.tiendalatam.test,+598 93446356,2025-08-03,10,Montevideo,2,TRUE
+168,Paula,Cabrera,paula.cabrera168@clientes.tiendalatam.test,+57 51471222,2021-09-20,5,Bogotá,4,TRUE
+169,Cecilia,Cisneros,cecilia.cisneros169@clientes.tiendalatam.test,+55 19339597,2023-01-31,3,Salvador,1,TRUE
+170,Ignacio,Gallardo,ignacio.gallardo170@clientes.tiendalatam.test,+51 70887307,2021-10-14,9,Arequipa,1,TRUE
+171,Mateo,Sánchez,mateo.sanchez171@clientes.tiendalatam.test,+598 30881581,2025-06-14,10,Colonia,1,TRUE
+172,Cecilia,Cordero,cecilia.cordero172@clientes.tiendalatam.test,+57 75184410,2025-04-15,5,Barranquilla,2,TRUE
+173,Vicente,Padilla,vicente.padilla173@clientes.tiendalatam.test,+51 24883373,2023-04-17,9,Lima,1,TRUE
+174,Eduardo,Cárdenas,eduardo.cardenas174@clientes.tiendalatam.test,+57 90440034,2024-08-01,5,Bogotá,1,TRUE
+175,Constanza,Cortés,constanza.cortes175@clientes.tiendalatam.test,+55 26104026,2026-03-01,3,Brasília,1,TRUE
+176,Cristian,Mora,cristian.mora176@clientes.tiendalatam.test,+593 77144075,2023-01-18,7,Cuenca,1,TRUE
+177,Sofía,Padilla,sofia.padilla177@clientes.tiendalatam.test,+593 12515446,2024-01-04,7,Cuenca,1,TRUE
+178,Martina,Gallardo,martina.gallardo178@clientes.tiendalatam.test,+593 48858073,2023-10-24,7,Cuenca,1,TRUE
+179,Federico,Carvajal,federico.carvajal179@clientes.tiendalatam.test,+598 21828592,2023-11-14,10,Punta del Este,1,TRUE
+180,Mateo,Cárdenas,mateo.cardenas180@clientes.tiendalatam.test,+593 51644346,2024-05-16,7,Cuenca,2,TRUE
+181,Gonzalo,Roldán,gonzalo.roldan181@clientes.tiendalatam.test,+591 36025314,2025-08-23,2,La Paz,3,TRUE
+182,Camila,Jiménez,camila.jimenez182@clientes.tiendalatam.test,+55 44355473,2025-06-21,3,Rio de Janeiro,1,TRUE
+183,Octavio,Valdez,octavio.valdez183@clientes.tiendalatam.test,+591 72270726,2025-07-31,2,Santa Cruz,2,TRUE
+184,Adrián,Galindo,adrian.galindo184@clientes.tiendalatam.test,+598 53380275,2024-06-06,10,Colonia,3,TRUE
+185,Thiago,Lara,thiago.lara185@clientes.tiendalatam.test,+591 46866075,2022-11-19,2,Sucre,1,TRUE
+186,Carlos,Ramírez,carlos.ramirez186@clientes.tiendalatam.test,+52 59491122,2022-04-11,8,Puebla,3,TRUE
+187,Olivia,Cuevas,olivia.cuevas187@clientes.tiendalatam.test,+591 84399083,2025-12-01,2,Sucre,4,TRUE
+188,Gabriel,Cortés,gabriel.cortes188@clientes.tiendalatam.test,+598 91202508,2021-12-02,10,Colonia,1,TRUE
+189,Ángela,Rivera,angela.rivera189@clientes.tiendalatam.test,+591 77719420,2022-02-25,2,Cochabamba,2,TRUE
+190,Natalia,Bustamante,natalia.bustamante190@clientes.tiendalatam.test,+52 31306555,2025-05-28,8,Tijuana,1,FALSE
+191,Patricia,Sánchez,patricia.sanchez191@clientes.tiendalatam.test,+506 94676162,2024-02-29,6,Cartago,2,TRUE
+192,Tomás,Calderón,tomas.calderon192@clientes.tiendalatam.test,+593 30182766,2022-06-16,7,Guayaquil,1,TRUE
+193,Damián,Cárdenas,damian.cardenas193@clientes.tiendalatam.test,+506 27307598,2022-10-26,6,Alajuela,1,FALSE
+194,Rodrigo,Ortiz,rodrigo.ortiz194@clientes.tiendalatam.test,+593 99941500,2023-10-18,7,Cuenca,2,FALSE
+195,Soledad,Cordero,soledad.cordero195@clientes.tiendalatam.test,+51 78248169,2026-04-26,9,Lima,1,TRUE
+196,Octavio,Fuentes,octavio.fuentes196@clientes.tiendalatam.test,+56 35770506,2023-01-28,4,Concepción,1,TRUE
+197,Cecilia,Navarro,cecilia.navarro197@clientes.tiendalatam.test,+591 92950779,2022-04-21,2,La Paz,1,TRUE
+198,Mariano,Quintero,mariano.quintero198@clientes.tiendalatam.test,+598 15864298,2022-12-17,10,Montevideo,1,TRUE
+199,Emiliano,Lozano,emiliano.lozano199@clientes.tiendalatam.test,+52 41407343,2023-06-02,8,Tijuana,1,TRUE
+200,Agustina,Bermúdez,agustina.bermudez200@clientes.tiendalatam.test,+52 69135982,2025-09-27,8,Guadalajara,1,TRUE
+201,Roberto,Rojas,roberto.rojas201@clientes.tiendalatam.test,+51 91156554,2024-02-20,9,Cusco,1,TRUE
+202,Camila,Saavedra,camila.saavedra202@clientes.tiendalatam.test,+506 26733967,2025-03-04,6,Cartago,1,TRUE
+203,Emilia,Gómez,emilia.gomez203@clientes.tiendalatam.test,+51 39801436,2023-08-10,9,Arequipa,3,FALSE
+204,Benjamín,Miranda,benjamin.miranda204@clientes.tiendalatam.test,+593 60192261,2026-02-13,7,Quito,1,FALSE
+205,Sebastián,Vega,sebastian.vega205@clientes.tiendalatam.test,+54 29602406,2024-02-08,1,Rosario,1,TRUE
+206,Jazmín,Bustamante,jazmin.bustamante206@clientes.tiendalatam.test,+55 10704803,2025-10-22,3,Belo Horizonte,3,TRUE
+207,Rocío,Calderón,rocio.calderon207@clientes.tiendalatam.test,+55 80836292,2023-04-17,3,Salvador,1,TRUE
+208,Joaquín,Gallardo,joaquin.gallardo208@clientes.tiendalatam.test,+591 95758649,2023-06-02,2,La Paz,3,TRUE
+209,Verónica,Martínez,veronica.martinez209@clientes.tiendalatam.test,+52 94819556,2022-08-04,8,Tijuana,1,TRUE
+210,Liliana,Domínguez,liliana.dominguez210@clientes.tiendalatam.test,+593 42287985,2022-10-31,7,Quito,1,TRUE
+211,Andrés,Pacheco,andres.pacheco211@clientes.tiendalatam.test,+51 83025444,2025-04-08,9,Trujillo,1,FALSE
+212,Sofía,Solís,sofia.solis212@clientes.tiendalatam.test,+593 60103798,2024-11-06,7,Guayaquil,1,TRUE
+213,Rocío,Reyes,rocio.reyes213@clientes.tiendalatam.test,+506 88101741,2025-09-03,6,San José,2,TRUE
+214,Soledad,Castro,soledad.castro214@clientes.tiendalatam.test,+51 72360629,2021-12-17,9,Trujillo,4,TRUE
+215,Ángela,Tapia,angela.tapia215@clientes.tiendalatam.test,+55 14963880,2023-02-02,3,São Paulo,1,TRUE
+216,Macarena,Roldán,macarena.roldan216@clientes.tiendalatam.test,+54 63448727,2023-03-13,1,Rosario,4,TRUE
+217,Trinidad,Sánchez,trinidad.sanchez217@clientes.tiendalatam.test,+56 98010774,2023-07-03,4,Concepción,1,TRUE
+218,Thiago,Solís,thiago.solis218@clientes.tiendalatam.test,+593 55504725,2024-01-28,7,Cuenca,4,TRUE
+219,Mateo,Cordero,mateo.cordero219@clientes.tiendalatam.test,+51 20593403,2024-08-17,9,Trujillo,1,FALSE
+220,Camila,Rivera,camila.rivera220@clientes.tiendalatam.test,+57 54012664,2023-01-29,5,Cali,2,TRUE
+221,Federico,Quintero,federico.quintero221@clientes.tiendalatam.test,+593 57183837,2025-01-12,7,Quito,1,TRUE
+222,Florencia,Ramírez,florencia.ramirez222@clientes.tiendalatam.test,+598 20071854,2026-01-23,10,Punta del Este,2,TRUE
+223,Miguel,Calderón,miguel.calderon223@clientes.tiendalatam.test,+55 68810561,2024-09-09,3,São Paulo,1,TRUE
+224,Antonia,Aliaga,antonia.aliaga224@clientes.tiendalatam.test,+506 14346684,2025-08-22,6,Alajuela,2,TRUE
+225,Esperanza,Flores,esperanza.flores225@clientes.tiendalatam.test,+506 87030477,2026-03-05,6,Alajuela,1,TRUE
+226,Felipe,López,felipe.lopez226@clientes.tiendalatam.test,+57 34970946,2023-10-27,5,Medellín,1,TRUE
+227,Cristian,Lozano,cristian.lozano227@clientes.tiendalatam.test,+57 38799154,2024-11-17,5,Cali,4,TRUE
+228,Isabella,Castillo,isabella.castillo228@clientes.tiendalatam.test,+52 19939096,2026-01-28,8,Guadalajara,1,FALSE
+229,Tania,Peña,tania.pena229@clientes.tiendalatam.test,+591 18715975,2024-05-31,2,Cochabamba,1,TRUE
+230,Maximiliano,Roldán,maximiliano.roldan230@clientes.tiendalatam.test,+55 40097200,2023-10-01,3,Rio de Janeiro,1,TRUE
+231,Maximiliano,Aranda,maximiliano.aranda231@clientes.tiendalatam.test,+52 86809773,2022-10-19,8,Ciudad de México,1,TRUE
+232,Andrés,Bravo,andres.bravo232@clientes.tiendalatam.test,+598 63440127,2024-11-03,10,Montevideo,4,TRUE
+233,Carolina,Ortiz,carolina.ortiz233@clientes.tiendalatam.test,+593 52550733,2024-09-27,7,Cuenca,2,TRUE
+234,Vanesa,Aranda,vanesa.aranda234@clientes.tiendalatam.test,+506 95871687,2025-04-23,6,San José,1,TRUE
+235,Isabella,Saavedra,isabella.saavedra235@clientes.tiendalatam.test,+51 30537388,2022-09-23,9,Lima,1,TRUE
+236,Natalia,Soto,natalia.soto236@clientes.tiendalatam.test,+56 20584397,2026-02-18,4,Concepción,1,TRUE
+237,Liliana,Carmona,liliana.carmona237@clientes.tiendalatam.test,+55 22539748,2024-11-02,3,Brasília,1,TRUE
+238,Cecilia,Galindo,cecilia.galindo238@clientes.tiendalatam.test,+55 91220369,2026-02-25,3,Rio de Janeiro,1,FALSE
+239,Sofía,Bermúdez,sofia.bermudez239@clientes.tiendalatam.test,+54 45521514,2021-12-03,1,Buenos Aires,2,TRUE
+240,Marcela,Iglesias,marcela.iglesias240@clientes.tiendalatam.test,+54 48879071,2024-04-16,1,Mendoza,2,TRUE
+241,Bruno,Flores,bruno.flores241@clientes.tiendalatam.test,+593 18041391,2023-06-17,7,Guayaquil,1,TRUE
+242,Miguel,Espinoza,miguel.espinoza242@clientes.tiendalatam.test,+506 52857920,2024-06-29,6,Cartago,2,TRUE
+243,Esteban,Saldaña,esteban.saldana243@clientes.tiendalatam.test,+55 24251766,2026-04-03,3,Brasília,1,TRUE
+244,Sebastián,Sánchez,sebastian.sanchez244@clientes.tiendalatam.test,+56 48951595,2023-07-31,4,Valparaíso,4,TRUE
+245,Raúl,Espinoza,raul.espinoza245@clientes.tiendalatam.test,+55 35479101,2024-04-19,3,Brasília,2,TRUE
+246,Hernán,Martínez,hernan.martinez246@clientes.tiendalatam.test,+52 22086184,2024-09-11,8,Monterrey,4,TRUE
+247,Diego,Sánchez,diego.sanchez247@clientes.tiendalatam.test,+56 47763008,2026-03-25,4,Concepción,1,FALSE
+248,Verónica,Rodríguez,veronica.rodriguez248@clientes.tiendalatam.test,+52 24428014,2025-03-21,8,Monterrey,1,FALSE
+249,Sofía,Cisneros,sofia.cisneros249@clientes.tiendalatam.test,+593 16866268,2025-06-21,7,Guayaquil,1,TRUE
+250,Romina,Lozano,romina.lozano250@clientes.tiendalatam.test,+591 83800569,2024-11-05,2,Sucre,1,FALSE
+251,Sebastián,Cárdenas,sebastian.cardenas251@clientes.tiendalatam.test,+591 60089832,2025-04-23,2,Santa Cruz,3,TRUE
+252,Hugo,Roldán,hugo.roldan252@clientes.tiendalatam.test,+55 63873262,2026-02-22,3,Rio de Janeiro,1,TRUE
+253,Natalia,Tapia,natalia.tapia253@clientes.tiendalatam.test,+506 29990477,2022-10-14,6,Alajuela,2,TRUE
+254,Roberto,Cárdenas,roberto.cardenas254@clientes.tiendalatam.test,+598 92745294,2023-11-20,10,Punta del Este,2,TRUE
+255,Cristian,Aliaga,cristian.aliaga255@clientes.tiendalatam.test,+51 50237208,2023-12-05,9,Cusco,1,TRUE
+256,Claudia,Bravo,claudia.bravo256@clientes.tiendalatam.test,+591 94457912,2023-11-26,2,Sucre,1,TRUE
+257,Renata,Sánchez,renata.sanchez257@clientes.tiendalatam.test,+598 88319168,2026-03-25,10,Colonia,1,TRUE
+258,Jimena,Salazar,jimena.salazar258@clientes.tiendalatam.test,+593 14237322,2025-06-13,7,Quito,1,TRUE
+259,Pilar,Vargas,pilar.vargas259@clientes.tiendalatam.test,+52 65426567,2023-02-22,8,Monterrey,2,TRUE
+260,Cristian,Castillo,cristian.castillo260@clientes.tiendalatam.test,+52 79616482,2025-08-18,8,Ciudad de México,1,TRUE
+261,Cristóbal,Castro,cristobal.castro261@clientes.tiendalatam.test,+51 71694994,2025-03-31,9,Cusco,4,TRUE
+262,Patricio,Álvarez,patricio.alvarez262@clientes.tiendalatam.test,+57 43087238,2024-01-05,5,Cartagena,1,TRUE
+263,Cristian,Suárez,cristian.suarez263@clientes.tiendalatam.test,+57 75632882,2026-02-25,5,Cali,1,TRUE
+264,Isabella,Bermúdez,isabella.bermudez264@clientes.tiendalatam.test,+57 82905845,2026-02-16,5,Cali,1,FALSE
+265,Sofía,Soto,sofia.soto265@clientes.tiendalatam.test,+55 20607151,2025-10-08,3,Brasília,1,TRUE
+266,Daniela,Carmona,daniela.carmona266@clientes.tiendalatam.test,+52 46390817,2023-07-10,8,Guadalajara,4,TRUE
+267,Víctor,Acosta,victor.acosta267@clientes.tiendalatam.test,+598 42542167,2022-10-15,10,Colonia,1,FALSE
+268,Sebastián,Beltrán,sebastian.beltran268@clientes.tiendalatam.test,+56 54331259,2023-05-08,4,Santiago,2,TRUE
+269,Roberto,Beltrán,roberto.beltran269@clientes.tiendalatam.test,+54 97629787,2025-08-13,1,La Plata,4,TRUE
+270,Javiera,Soto,javiera.soto270@clientes.tiendalatam.test,+56 96690951,2024-07-19,4,Concepción,1,TRUE
+271,Alejandro,Gallardo,alejandro.gallardo271@clientes.tiendalatam.test,+56 33593960,2025-03-18,4,Santiago,4,TRUE
+272,Aurora,Medina,aurora.medina272@clientes.tiendalatam.test,+52 15028625,2025-10-29,8,Guadalajara,1,TRUE
+273,Bruno,Iglesias,bruno.iglesias273@clientes.tiendalatam.test,+506 80372842,2022-07-24,6,Alajuela,1,FALSE
+274,Gabriel,Cruz,gabriel.cruz274@clientes.tiendalatam.test,+52 54383668,2025-11-15,8,Monterrey,1,TRUE
+275,Leonardo,Navarro,leonardo.navarro275@clientes.tiendalatam.test,+55 49597485,2023-07-11,3,São Paulo,1,TRUE
+276,Esteban,Cortés,esteban.cortes276@clientes.tiendalatam.test,+593 21641746,2023-01-17,7,Guayaquil,1,TRUE
+277,Manuela,García,manuela.garcia277@clientes.tiendalatam.test,+52 45002007,2026-04-10,8,Monterrey,1,TRUE
+278,Claudia,Bermúdez,claudia.bermudez278@clientes.tiendalatam.test,+506 11534878,2023-07-30,6,Alajuela,1,TRUE
+279,Macarena,Herrera,macarena.herrera279@clientes.tiendalatam.test,+591 64414096,2023-05-30,2,Sucre,2,FALSE
+280,Adrián,Medina,adrian.medina280@clientes.tiendalatam.test,+57 59330907,2025-12-27,5,Bogotá,2,TRUE
+281,Aurora,Calderón,aurora.calderon281@clientes.tiendalatam.test,+55 60147077,2022-10-05,3,Belo Horizonte,1,TRUE
+282,Esperanza,Salazar,esperanza.salazar282@clientes.tiendalatam.test,+51 89968863,2024-07-09,9,Arequipa,3,TRUE
+283,Beatriz,Cruz,beatriz.cruz283@clientes.tiendalatam.test,+506 18289024,2024-06-02,6,San José,3,FALSE
+284,Laura,Cortés,laura.cortes284@clientes.tiendalatam.test,+51 79839059,2023-03-19,9,Arequipa,1,TRUE
+285,Esteban,Lozano,esteban.lozano285@clientes.tiendalatam.test,+52 17467311,2025-06-08,8,Ciudad de México,1,TRUE
+286,Olivia,Bravo,olivia.bravo286@clientes.tiendalatam.test,+54 12921981,2024-06-18,1,La Plata,1,TRUE
+287,Sofía,Cordero,sofia.cordero287@clientes.tiendalatam.test,+598 56241881,2025-07-14,10,Montevideo,2,TRUE
+288,Carlos,Soto,carlos.soto288@clientes.tiendalatam.test,+591 64877191,2022-02-19,2,Sucre,1,TRUE
+289,Ignacio,Lozano,ignacio.lozano289@clientes.tiendalatam.test,+593 60666702,2025-03-04,7,Guayaquil,1,TRUE
+290,Damián,Peña,damian.pena290@clientes.tiendalatam.test,+51 25922674,2025-03-30,9,Arequipa,1,TRUE
+291,Salvador,Martínez,salvador.martinez291@clientes.tiendalatam.test,+56 50045602,2024-10-02,4,Santiago,1,TRUE
+292,Manuela,Tapia,manuela.tapia292@clientes.tiendalatam.test,+593 56460773,2024-04-28,7,Quito,1,TRUE
+293,Cecilia,Gallardo,cecilia.gallardo293@clientes.tiendalatam.test,+591 92533595,2025-12-13,2,La Paz,2,FALSE
+294,Sebastián,Quiroga,sebastian.quiroga294@clientes.tiendalatam.test,+56 14506531,2021-07-17,4,Santiago,1,TRUE
+295,Martina,Quintero,martina.quintero295@clientes.tiendalatam.test,+56 41452485,2025-12-10,4,Santiago,1,TRUE
+296,Constanza,Mora,constanza.mora296@clientes.tiendalatam.test,+55 87324220,2025-08-19,3,Salvador,1,TRUE
+297,Mauricio,Jiménez,mauricio.jimenez297@clientes.tiendalatam.test,+506 98612211,2025-04-13,6,San José,1,TRUE
+298,Marcela,Cordero,marcela.cordero298@clientes.tiendalatam.test,+51 84605013,2023-08-15,9,Arequipa,1,FALSE
+299,Cristóbal,Gallardo,cristobal.gallardo299@clientes.tiendalatam.test,+593 64795619,2026-02-25,7,Cuenca,1,TRUE
+300,Eduardo,Lara,eduardo.lara300@clientes.tiendalatam.test,+52 29374563,2025-07-24,8,Guadalajara,3,FALSE
+301,Gonzalo,Castillo,gonzalo.castillo301@clientes.tiendalatam.test,+593 62132722,2024-11-18,7,Cuenca,1,TRUE
+302,Valentina,Carmona,valentina.carmona302@clientes.tiendalatam.test,+52 35566010,2025-03-11,8,Monterrey,1,TRUE
+303,Gabriel,Velasco,gabriel.velasco303@clientes.tiendalatam.test,+54 85007641,2025-01-15,1,Buenos Aires,1,TRUE
+304,Antonella,Álvarez,antonella.alvarez304@clientes.tiendalatam.test,+57 25745913,2026-01-18,5,Bogotá,2,TRUE
+305,Pablo,Cárdenas,pablo.cardenas305@clientes.tiendalatam.test,+598 42122457,2026-01-26,10,Colonia,1,TRUE
+306,Macarena,Ríos,macarena.rios306@clientes.tiendalatam.test,+51 58270683,2024-02-18,9,Trujillo,1,TRUE
+307,Pablo,Paredes,pablo.paredes307@clientes.tiendalatam.test,+52 51999682,2022-06-28,8,Monterrey,1,TRUE
+308,Catalina,Aranda,catalina.aranda308@clientes.tiendalatam.test,+55 88387434,2023-04-29,3,São Paulo,1,TRUE
+309,Ignacio,Aliaga,ignacio.aliaga309@clientes.tiendalatam.test,+506 42981324,2022-11-23,6,San José,1,TRUE
+310,Mariano,Fuentes,mariano.fuentes310@clientes.tiendalatam.test,+57 71851421,2025-04-29,5,Barranquilla,1,TRUE
+311,Paula,Iglesias,paula.iglesias311@clientes.tiendalatam.test,+51 96142207,2023-01-03,9,Cusco,4,TRUE
+312,Esperanza,García,esperanza.garcia312@clientes.tiendalatam.test,+591 65350347,2025-11-02,2,La Paz,1,TRUE
+313,Antonella,Miranda,antonella.miranda313@clientes.tiendalatam.test,+55 71204580,2022-03-20,3,São Paulo,1,TRUE
+314,Cecilia,Fuentes,cecilia.fuentes314@clientes.tiendalatam.test,+598 12111482,2025-04-06,10,Punta del Este,1,TRUE
+315,Verónica,Soto,veronica.soto315@clientes.tiendalatam.test,+51 12300840,2021-06-19,9,Trujillo,1,TRUE
+316,Sebastián,Pacheco,sebastian.pacheco316@clientes.tiendalatam.test,+55 29984682,2024-05-08,3,São Paulo,1,TRUE
+317,Benjamín,Rivera,benjamin.rivera317@clientes.tiendalatam.test,+506 60070135,2023-07-02,6,Alajuela,4,TRUE
+318,Jimena,Rivera,jimena.rivera318@clientes.tiendalatam.test,+56 97742922,2023-06-13,4,Concepción,4,TRUE
+319,Ignacio,Aranda,ignacio.aranda319@clientes.tiendalatam.test,+593 73888323,2021-10-19,7,Guayaquil,1,TRUE
+320,Soledad,Vega,soledad.vega320@clientes.tiendalatam.test,+52 85947990,2023-01-08,8,Puebla,4,FALSE
+321,Antonella,Aliaga,antonella.aliaga321@clientes.tiendalatam.test,+54 73820568,2026-01-04,1,Córdoba,1,FALSE
+322,Beatriz,González,beatriz.gonzalez322@clientes.tiendalatam.test,+57 34072553,2025-04-28,5,Cartagena,4,TRUE
+323,Salvador,Cárdenas,salvador.cardenas323@clientes.tiendalatam.test,+598 20326375,2026-03-19,10,Montevideo,1,TRUE
+324,Iván,Vega,ivan.vega324@clientes.tiendalatam.test,+593 61518966,2024-11-24,7,Cuenca,2,TRUE
+325,Diego,Díaz,diego.diaz325@clientes.tiendalatam.test,+591 68664992,2026-04-17,2,Cochabamba,1,TRUE
+326,Benjamín,Cortés,benjamin.cortes326@clientes.tiendalatam.test,+598 13976288,2025-01-15,10,Colonia,2,TRUE
+327,Adriana,Méndez,adriana.mendez327@clientes.tiendalatam.test,+56 67961650,2024-06-08,4,Concepción,1,TRUE
+328,Manuela,Flores,manuela.flores328@clientes.tiendalatam.test,+598 21010955,2024-02-17,10,Punta del Este,1,TRUE
+329,Cristóbal,Carvajal,cristobal.carvajal329@clientes.tiendalatam.test,+55 24301022,2025-08-29,3,Belo Horizonte,1,FALSE
+330,Daniel,Gómez,daniel.gomez330@clientes.tiendalatam.test,+57 35151299,2024-05-30,5,Bogotá,1,TRUE
+331,Valentina,Domínguez,valentina.dominguez331@clientes.tiendalatam.test,+591 84386123,2024-09-08,2,La Paz,1,TRUE
+332,Constanza,Beltrán,constanza.beltran332@clientes.tiendalatam.test,+593 62049575,2023-11-14,7,Quito,2,TRUE
+333,Jimena,Méndez,jimena.mendez333@clientes.tiendalatam.test,+56 32750139,2024-11-14,4,Valparaíso,1,TRUE
+334,Emilia,Maldonado,emilia.maldonado334@clientes.tiendalatam.test,+591 66519399,2024-08-11,2,Santa Cruz,1,TRUE
+335,Patricia,Bustamante,patricia.bustamante335@clientes.tiendalatam.test,+56 36246038,2024-01-16,4,Antofagasta,1,TRUE
+336,Lucas,Méndez,lucas.mendez336@clientes.tiendalatam.test,+593 54230340,2021-05-05,7,Guayaquil,1,TRUE
+337,Mauricio,Cortés,mauricio.cortes337@clientes.tiendalatam.test,+598 90961645,2025-10-15,10,Montevideo,4,TRUE
+338,Constanza,Fuentes,constanza.fuentes338@clientes.tiendalatam.test,+593 87293208,2023-10-26,7,Guayaquil,3,TRUE
+339,Felipe,Aliaga,felipe.aliaga339@clientes.tiendalatam.test,+593 36816708,2023-08-25,7,Guayaquil,1,TRUE
+340,Rocío,Barrios,rocio.barrios340@clientes.tiendalatam.test,+51 38138531,2025-04-25,9,Lima,1,TRUE
+341,Hernán,Castillo,hernan.castillo341@clientes.tiendalatam.test,+593 95004924,2025-05-09,7,Cuenca,1,TRUE
+342,Carolina,Lozano,carolina.lozano342@clientes.tiendalatam.test,+593 90253323,2022-11-27,7,Guayaquil,1,TRUE
+343,Carlos,Carvajal,carlos.carvajal343@clientes.tiendalatam.test,+593 82062301,2024-08-31,7,Cuenca,1,FALSE
+344,Laura,Bustamante,laura.bustamante344@clientes.tiendalatam.test,+56 15945401,2022-07-30,4,Concepción,1,TRUE
+345,Camila,Rodríguez,camila.rodriguez345@clientes.tiendalatam.test,+506 23234748,2025-03-11,6,Alajuela,1,TRUE
+346,Raúl,Vázquez,raul.vazquez346@clientes.tiendalatam.test,+598 69831384,2024-09-17,10,Colonia,1,TRUE
+347,Vicente,López,vicente.lopez347@clientes.tiendalatam.test,+51 74796438,2025-04-22,9,Arequipa,1,TRUE
+348,Vicente,Bravo,vicente.bravo348@clientes.tiendalatam.test,+591 56045630,2026-03-19,2,Santa Cruz,1,TRUE
+349,Thiago,Lozano,thiago.lozano349@clientes.tiendalatam.test,+52 52803305,2024-07-27,8,Ciudad de México,1,TRUE
+350,Soledad,Reyes,soledad.reyes350@clientes.tiendalatam.test,+54 32059232,2025-06-01,1,Rosario,4,TRUE
+351,Rodrigo,Saldaña,rodrigo.saldana351@clientes.tiendalatam.test,+51 67226329,2024-09-13,9,Arequipa,4,TRUE
+352,Adrián,Padilla,adrian.padilla352@clientes.tiendalatam.test,+55 63094168,2024-03-29,3,Rio de Janeiro,1,TRUE
+353,Antonia,García,antonia.garcia353@clientes.tiendalatam.test,+598 38829445,2023-03-08,10,Punta del Este,1,TRUE
+354,Verónica,Romero,veronica.romero354@clientes.tiendalatam.test,+591 59095909,2025-09-27,2,La Paz,1,TRUE
+355,Adrián,Espinoza,adrian.espinoza355@clientes.tiendalatam.test,+52 90124068,2023-07-21,8,Tijuana,1,TRUE
+356,Lucas,Castro,lucas.castro356@clientes.tiendalatam.test,+506 49922369,2022-08-13,6,Alajuela,4,TRUE
+357,Joaquín,Bravo,joaquin.bravo357@clientes.tiendalatam.test,+506 25696616,2025-04-13,6,San José,1,TRUE
+358,Fernanda,Bermúdez,fernanda.bermudez358@clientes.tiendalatam.test,+593 61500679,2024-09-06,7,Cuenca,1,TRUE
+359,Laura,Fuentes,laura.fuentes359@clientes.tiendalatam.test,+55 48766747,2024-10-14,3,Salvador,1,TRUE
+360,José,Fuentes,jose.fuentes360@clientes.tiendalatam.test,+54 28325379,2024-06-09,1,Rosario,1,TRUE
+361,Jimena,Fuentes,jimena.fuentes361@clientes.tiendalatam.test,+52 65784972,2024-11-17,8,Puebla,2,TRUE
+362,Esperanza,Vázquez,esperanza.vazquez362@clientes.tiendalatam.test,+598 49203644,2022-12-29,10,Montevideo,1,TRUE
+363,Aurora,Valdez,aurora.valdez363@clientes.tiendalatam.test,+52 83782999,2023-09-10,8,Tijuana,1,TRUE
+364,Iván,Pérez,ivan.perez364@clientes.tiendalatam.test,+51 69239219,2023-08-01,9,Trujillo,1,FALSE
+365,Carlos,Lozano,carlos.lozano365@clientes.tiendalatam.test,+56 45274462,2022-07-10,4,Concepción,1,TRUE
+366,Pablo,Velasco,pablo.velasco366@clientes.tiendalatam.test,+591 57060874,2024-05-21,2,Santa Cruz,3,TRUE
+367,Pablo,Suárez,pablo.suarez367@clientes.tiendalatam.test,+598 17966873,2024-05-04,10,Montevideo,1,TRUE
+368,Cristian,Medina,cristian.medina368@clientes.tiendalatam.test,+55 48833650,2025-01-04,3,Brasília,1,FALSE
+369,Salvador,Beltrán,salvador.beltran369@clientes.tiendalatam.test,+591 17957216,2024-09-11,2,Santa Cruz,4,TRUE
+370,Miguel,Cortés,miguel.cortes370@clientes.tiendalatam.test,+55 43226234,2022-09-17,3,Rio de Janeiro,2,TRUE
+371,Nicolás,Gallardo,nicolas.gallardo371@clientes.tiendalatam.test,+598 60354777,2024-08-05,10,Colonia,1,TRUE
+372,Esteban,Maldonado,esteban.maldonado372@clientes.tiendalatam.test,+591 59535894,2025-12-19,2,Sucre,1,TRUE
+373,Adrián,Domínguez,adrian.dominguez373@clientes.tiendalatam.test,+591 18500100,2024-12-15,2,Sucre,3,TRUE
+374,Nicolás,Cortés,nicolas.cortes374@clientes.tiendalatam.test,+56 48063218,2026-03-26,4,Antofagasta,1,TRUE
+375,Jimena,Sánchez,jimena.sanchez375@clientes.tiendalatam.test,+52 16166355,2024-11-23,8,Monterrey,1,TRUE
+376,Thiago,Tapia,thiago.tapia376@clientes.tiendalatam.test,+591 10090721,2024-06-22,2,Santa Cruz,4,TRUE
+377,Roberto,Maldonado,roberto.maldonado377@clientes.tiendalatam.test,+55 22527880,2026-04-25,3,Brasília,2,TRUE
+378,Benjamín,Bravo,benjamin.bravo378@clientes.tiendalatam.test,+55 41426254,2024-02-03,3,São Paulo,1,TRUE
+379,Carolina,Ortiz,carolina.ortiz379@clientes.tiendalatam.test,+56 89682313,2022-06-18,4,Antofagasta,1,TRUE
+380,Lautaro,Ortiz,lautaro.ortiz380@clientes.tiendalatam.test,+506 74115841,2021-05-29,6,San José,1,TRUE
+381,Cristóbal,Paredes,cristobal.paredes381@clientes.tiendalatam.test,+591 50165370,2025-06-25,2,La Paz,1,TRUE
+382,Andrés,Pacheco,andres.pacheco382@clientes.tiendalatam.test,+55 85603667,2025-07-23,3,Rio de Janeiro,1,TRUE
+383,Bautista,Bustamante,bautista.bustamante383@clientes.tiendalatam.test,+56 69375757,2024-05-23,4,Valparaíso,3,TRUE
+384,Vicente,Cordero,vicente.cordero384@clientes.tiendalatam.test,+591 52211967,2022-07-04,2,Sucre,3,TRUE
+385,Vanesa,López,vanesa.lopez385@clientes.tiendalatam.test,+56 98369672,2025-03-08,4,Concepción,3,TRUE
+386,Constanza,Sánchez,constanza.sanchez386@clientes.tiendalatam.test,+56 42123815,2025-01-17,4,Antofagasta,1,TRUE
+387,Gonzalo,Rodríguez,gonzalo.rodriguez387@clientes.tiendalatam.test,+598 58465780,2024-08-20,10,Montevideo,4,TRUE
+388,Maximiliano,Iglesias,maximiliano.iglesias388@clientes.tiendalatam.test,+598 33188838,2025-11-27,10,Punta del Este,2,FALSE
+389,Andrés,Rodríguez,andres.rodriguez389@clientes.tiendalatam.test,+54 45189912,2025-08-13,1,La Plata,1,FALSE
+390,Emiliano,Miranda,emiliano.miranda390@clientes.tiendalatam.test,+593 65758338,2026-03-05,7,Cuenca,1,TRUE
+391,Florencia,Rivera,florencia.rivera391@clientes.tiendalatam.test,+51 51594998,2025-03-03,9,Arequipa,1,FALSE
+392,Javiera,Cárdenas,javiera.cardenas392@clientes.tiendalatam.test,+55 88710263,2026-04-02,3,Salvador,2,TRUE
+393,Ximena,Padilla,ximena.padilla393@clientes.tiendalatam.test,+591 42029368,2025-04-24,2,Cochabamba,1,TRUE
+394,Hugo,Ramírez,hugo.ramirez394@clientes.tiendalatam.test,+52 51512209,2024-05-14,8,Tijuana,2,TRUE
+395,Ximena,Rodríguez,ximena.rodriguez395@clientes.tiendalatam.test,+54 31989243,2023-01-18,1,Córdoba,1,TRUE
+396,Agustina,Ortiz,agustina.ortiz396@clientes.tiendalatam.test,+57 46072958,2024-09-15,5,Medellín,2,TRUE
+397,Nicolás,Pacheco,nicolas.pacheco397@clientes.tiendalatam.test,+506 18572753,2026-01-10,6,Alajuela,1,FALSE
+398,Esteban,Carvajal,esteban.carvajal398@clientes.tiendalatam.test,+52 17440911,2025-02-14,8,Puebla,1,TRUE
+399,Raúl,Cruz,raul.cruz399@clientes.tiendalatam.test,+57 40655922,2024-01-27,5,Bogotá,2,TRUE
+400,Sofía,Camacho,sofia.camacho400@clientes.tiendalatam.test,+54 58852098,2025-11-24,1,Córdoba,1,TRUE
+401,Ángela,Gallardo,angela.gallardo401@clientes.tiendalatam.test,+54 40133935,2026-02-14,1,La Plata,1,TRUE
+402,Raúl,Paredes,raul.paredes402@clientes.tiendalatam.test,+57 26025721,2025-06-12,5,Bogotá,1,FALSE
+403,Martina,Torres,martina.torres403@clientes.tiendalatam.test,+51 72423883,2023-01-26,9,Lima,3,TRUE
+404,José,Paredes,jose.paredes404@clientes.tiendalatam.test,+591 36933626,2023-10-20,2,Sucre,1,TRUE
+405,Agustina,Velasco,agustina.velasco405@clientes.tiendalatam.test,+56 76217748,2025-07-06,4,Antofagasta,4,TRUE
+406,Mariana,García,mariana.garcia406@clientes.tiendalatam.test,+51 65034115,2025-06-27,9,Arequipa,1,TRUE
+407,María,Méndez,maria.mendez407@clientes.tiendalatam.test,+54 51273379,2025-02-25,1,Rosario,1,TRUE
+408,Miguel,Maldonado,miguel.maldonado408@clientes.tiendalatam.test,+52 22485824,2023-06-03,8,Ciudad de México,1,TRUE
+409,Agustina,Tapia,agustina.tapia409@clientes.tiendalatam.test,+593 21395409,2025-11-09,7,Cuenca,1,TRUE
+410,Víctor,Aliaga,victor.aliaga410@clientes.tiendalatam.test,+593 18359464,2025-02-27,7,Quito,1,FALSE
+411,Benjamín,Cortés,benjamin.cortes411@clientes.tiendalatam.test,+57 52688984,2023-05-31,5,Cali,1,TRUE
+412,Camila,Vargas,camila.vargas412@clientes.tiendalatam.test,+55 24181143,2026-02-27,3,Salvador,1,TRUE
+413,Octavio,Suárez,octavio.suarez413@clientes.tiendalatam.test,+51 70655283,2024-03-31,9,Trujillo,1,TRUE
+414,Cristian,Calderón,cristian.calderon414@clientes.tiendalatam.test,+55 15412975,2022-08-29,3,Brasília,1,TRUE
+415,Benjamín,Roldán,benjamin.roldan415@clientes.tiendalatam.test,+56 16570040,2022-11-12,4,Concepción,2,TRUE
+416,Jazmín,Saldaña,jazmin.saldana416@clientes.tiendalatam.test,+54 83835976,2026-04-20,1,Mendoza,1,TRUE
+417,José,Ramírez,jose.ramirez417@clientes.tiendalatam.test,+55 39835008,2025-09-21,3,São Paulo,1,TRUE
+418,Carolina,Martínez,carolina.martinez418@clientes.tiendalatam.test,+591 18653290,2024-02-04,2,Cochabamba,1,TRUE
+419,Isabella,Pérez,isabella.perez419@clientes.tiendalatam.test,+591 71873691,2025-09-28,2,Cochabamba,1,FALSE
+420,Ana,Méndez,ana.mendez420@clientes.tiendalatam.test,+593 67265875,2024-05-12,7,Guayaquil,1,TRUE
+421,Mariana,González,mariana.gonzalez421@clientes.tiendalatam.test,+57 92423989,2023-02-13,5,Barranquilla,2,TRUE
+422,Patricio,Ramírez,patricio.ramirez422@clientes.tiendalatam.test,+593 21773787,2023-09-22,7,Cuenca,1,TRUE
+423,Marcela,Iglesias,marcela.iglesias423@clientes.tiendalatam.test,+51 12621269,2023-03-13,9,Arequipa,4,TRUE
+424,Vicente,Aliaga,vicente.aliaga424@clientes.tiendalatam.test,+51 77430081,2024-01-13,9,Cusco,1,TRUE
+425,Ana,Maldonado,ana.maldonado425@clientes.tiendalatam.test,+598 17863981,2021-09-19,10,Montevideo,3,TRUE
+426,Roberto,Díaz,roberto.diaz426@clientes.tiendalatam.test,+598 43266810,2024-01-10,10,Montevideo,2,TRUE
+427,Raúl,Solís,raul.solis427@clientes.tiendalatam.test,+54 57621071,2025-10-06,1,Córdoba,4,FALSE
+428,Leonardo,Domínguez,leonardo.dominguez428@clientes.tiendalatam.test,+56 89398174,2023-01-13,4,Concepción,1,TRUE
+429,Beatriz,Álvarez,beatriz.alvarez429@clientes.tiendalatam.test,+598 76065552,2026-03-04,10,Montevideo,1,TRUE
+430,Hugo,Vázquez,hugo.vazquez430@clientes.tiendalatam.test,+54 12674689,2021-11-18,1,Córdoba,1,TRUE
+431,Magdalena,Castro,magdalena.castro431@clientes.tiendalatam.test,+56 53431355,2026-01-30,4,Valparaíso,1,TRUE
+432,Gonzalo,Carvajal,gonzalo.carvajal432@clientes.tiendalatam.test,+55 19735027,2025-05-24,3,São Paulo,1,FALSE
+433,Mauricio,Cortés,mauricio.cortes433@clientes.tiendalatam.test,+591 28314232,2024-03-13,2,Cochabamba,4,TRUE
+434,Alejandro,Saldaña,alejandro.saldana434@clientes.tiendalatam.test,+52 92370625,2024-05-18,8,Monterrey,3,TRUE
+435,Macarena,Medina,macarena.medina435@clientes.tiendalatam.test,+55 27092408,2024-12-24,3,Belo Horizonte,1,TRUE
+436,Octavio,Aliaga,octavio.aliaga436@clientes.tiendalatam.test,+598 14346338,2025-05-21,10,Punta del Este,1,TRUE
+437,Adrián,Aliaga,adrian.aliaga437@clientes.tiendalatam.test,+598 23973438,2025-09-27,10,Montevideo,4,TRUE
+438,Cristóbal,Mendoza,cristobal.mendoza438@clientes.tiendalatam.test,+56 95387542,2025-07-13,4,Concepción,3,TRUE
+439,José,Ríos,jose.rios439@clientes.tiendalatam.test,+506 38143348,2025-05-29,6,Alajuela,1,TRUE
+440,Diego,Solís,diego.solis440@clientes.tiendalatam.test,+591 68816911,2023-07-10,2,La Paz,2,FALSE
+441,Vicente,Iglesias,vicente.iglesias441@clientes.tiendalatam.test,+52 60378298,2025-12-24,8,Puebla,1,TRUE
+442,Jazmín,Flores,jazmin.flores442@clientes.tiendalatam.test,+56 14484588,2025-11-30,4,Valparaíso,1,TRUE
+443,Laura,Méndez,laura.mendez443@clientes.tiendalatam.test,+591 31596235,2026-03-08,2,Cochabamba,2,TRUE
+444,Patricia,Bustamante,patricia.bustamante444@clientes.tiendalatam.test,+591 74791834,2026-01-08,2,Cochabamba,2,TRUE
+445,Roberto,Sánchez,roberto.sanchez445@clientes.tiendalatam.test,+598 23590593,2025-03-20,10,Punta del Este,1,FALSE
+446,Cecilia,Soto,cecilia.soto446@clientes.tiendalatam.test,+51 49916439,2024-04-04,9,Trujillo,1,TRUE
+447,Diego,Carvajal,diego.carvajal447@clientes.tiendalatam.test,+52 10512117,2024-12-01,8,Guadalajara,1,TRUE
+448,Daniela,Díaz,daniela.diaz448@clientes.tiendalatam.test,+598 13454186,2025-03-31,10,Punta del Este,1,TRUE
+449,Macarena,Cárdenas,macarena.cardenas449@clientes.tiendalatam.test,+52 73209094,2026-04-05,8,Ciudad de México,1,TRUE
+450,Paula,Paredes,paula.paredes450@clientes.tiendalatam.test,+51 61196706,2022-06-05,9,Cusco,1,TRUE
+451,Eduardo,Cabrera,eduardo.cabrera451@clientes.tiendalatam.test,+52 85731895,2023-07-23,8,Monterrey,1,TRUE
+452,Iván,Beltrán,ivan.beltran452@clientes.tiendalatam.test,+591 89151743,2025-04-07,2,Cochabamba,1,TRUE
+453,Verónica,Camacho,veronica.camacho453@clientes.tiendalatam.test,+51 86868410,2024-02-29,9,Cusco,3,TRUE
+454,Raúl,Saavedra,raul.saavedra454@clientes.tiendalatam.test,+54 86703472,2022-04-27,1,La Plata,2,TRUE
+455,Laura,Aguilar,laura.aguilar455@clientes.tiendalatam.test,+52 35867257,2022-08-30,8,Guadalajara,1,TRUE
+456,Marcela,Jiménez,marcela.jimenez456@clientes.tiendalatam.test,+593 89865944,2026-04-17,7,Quito,1,FALSE
+457,Antonia,Saldaña,antonia.saldana457@clientes.tiendalatam.test,+591 63332084,2026-01-26,2,La Paz,1,TRUE
+458,Víctor,Saavedra,victor.saavedra458@clientes.tiendalatam.test,+54 66316931,2024-09-18,1,La Plata,1,TRUE
+459,Camila,Aliaga,camila.aliaga459@clientes.tiendalatam.test,+598 23554707,2024-11-24,10,Montevideo,3,TRUE
+460,Antonia,Fuentes,antonia.fuentes460@clientes.tiendalatam.test,+593 86775659,2025-12-19,7,Guayaquil,2,TRUE
+461,Hugo,Cisneros,hugo.cisneros461@clientes.tiendalatam.test,+55 15205303,2023-08-16,3,Salvador,1,TRUE
+462,Nicolás,Paredes,nicolas.paredes462@clientes.tiendalatam.test,+54 12715612,2025-05-06,1,Mendoza,1,TRUE
+463,Renata,Castillo,renata.castillo463@clientes.tiendalatam.test,+52 50329802,2023-10-21,8,Ciudad de México,4,TRUE
+464,Hugo,Gómez,hugo.gomez464@clientes.tiendalatam.test,+57 35224301,2025-10-17,5,Barranquilla,1,FALSE
+465,Agustina,Ramírez,agustina.ramirez465@clientes.tiendalatam.test,+52 79158328,2024-04-01,8,Tijuana,3,TRUE
+466,Vanesa,Pacheco,vanesa.pacheco466@clientes.tiendalatam.test,+593 86325904,2025-05-30,7,Quito,1,TRUE
+467,Carlos,Tapia,carlos.tapia467@clientes.tiendalatam.test,+54 16785951,2025-10-25,1,Córdoba,4,TRUE
+468,Benjamín,Morales,benjamin.morales468@clientes.tiendalatam.test,+52 14102122,2023-08-13,8,Tijuana,1,TRUE
+469,Adriana,Peña,adriana.pena469@clientes.tiendalatam.test,+52 56204319,2024-06-01,8,Tijuana,1,FALSE
+470,Ana,Solís,ana.solis470@clientes.tiendalatam.test,+591 16664050,2025-07-18,2,Cochabamba,1,TRUE
+471,Ramiro,Suárez,ramiro.suarez471@clientes.tiendalatam.test,+56 46115786,2026-03-23,4,Valparaíso,2,TRUE
+472,Daniel,Castro,daniel.castro472@clientes.tiendalatam.test,+54 90683906,2025-12-01,1,Mendoza,3,TRUE
+473,Lautaro,Méndez,lautaro.mendez473@clientes.tiendalatam.test,+57 56802956,2025-01-19,5,Cali,1,TRUE
+474,Claudia,Reyes,claudia.reyes474@clientes.tiendalatam.test,+51 10986174,2023-10-05,9,Cusco,1,TRUE
+475,Soledad,Quiroga,soledad.quiroga475@clientes.tiendalatam.test,+506 91745321,2025-11-06,6,Cartago,1,TRUE
+476,Adrián,Cortés,adrian.cortes476@clientes.tiendalatam.test,+506 47162866,2024-07-25,6,Alajuela,1,TRUE
+477,Mariana,Saavedra,mariana.saavedra477@clientes.tiendalatam.test,+57 42252798,2026-01-01,5,Medellín,3,TRUE
+478,Cecilia,Espinoza,cecilia.espinoza478@clientes.tiendalatam.test,+598 28781020,2025-09-20,10,Punta del Este,2,TRUE
+479,Martina,Solís,martina.solis479@clientes.tiendalatam.test,+57 14740436,2026-04-27,5,Barranquilla,1,FALSE
+480,Ángela,Vázquez,angela.vazquez480@clientes.tiendalatam.test,+506 81757508,2025-10-06,6,Cartago,2,TRUE
+481,Mauricio,Mendoza,mauricio.mendoza481@clientes.tiendalatam.test,+506 98263548,2026-02-24,6,Cartago,3,TRUE
+482,Mariano,Saldaña,mariano.saldana482@clientes.tiendalatam.test,+55 34571018,2022-06-25,3,Brasília,4,FALSE
+483,Eduardo,Bravo,eduardo.bravo483@clientes.tiendalatam.test,+56 66434872,2025-03-21,4,Concepción,3,TRUE
+484,Isabella,Camacho,isabella.camacho484@clientes.tiendalatam.test,+57 17204398,2023-07-18,5,Barranquilla,3,TRUE
+485,Gabriel,Miranda,gabriel.miranda485@clientes.tiendalatam.test,+591 26081422,2026-02-28,2,Sucre,3,TRUE
+486,Fernanda,Rojas,fernanda.rojas486@clientes.tiendalatam.test,+54 55992373,2023-09-28,1,Córdoba,1,TRUE
+487,Cristóbal,Romero,cristobal.romero487@clientes.tiendalatam.test,+52 20846331,2026-01-17,8,Guadalajara,1,TRUE
+488,Jazmín,Maldonado,jazmin.maldonado488@clientes.tiendalatam.test,+54 38102825,2023-01-21,1,Buenos Aires,2,TRUE
+489,Daniel,Bustamante,daniel.bustamante489@clientes.tiendalatam.test,+52 68211760,2025-08-05,8,Ciudad de México,2,TRUE
+490,Carlos,Carmona,carlos.carmona490@clientes.tiendalatam.test,+593 36764927,2026-03-23,7,Quito,2,FALSE
+491,Juan,García,juan.garcia491@clientes.tiendalatam.test,+51 94112495,2026-01-01,9,Arequipa,2,TRUE
+492,Camila,Solís,camila.solis492@clientes.tiendalatam.test,+57 77556678,2025-12-15,5,Medellín,1,TRUE
+493,Bruno,Saavedra,bruno.saavedra493@clientes.tiendalatam.test,+57 90043415,2025-10-15,5,Cali,1,TRUE
+494,Bianca,Domínguez,bianca.dominguez494@clientes.tiendalatam.test,+55 35290114,2025-05-01,3,Brasília,1,FALSE
+495,Eduardo,Ortiz,eduardo.ortiz495@clientes.tiendalatam.test,+54 38345472,2025-10-01,1,Córdoba,2,TRUE
+496,Damián,González,damian.gonzalez496@clientes.tiendalatam.test,+506 60357475,2023-01-02,6,Cartago,3,TRUE
+497,Diego,Reyes,diego.reyes497@clientes.tiendalatam.test,+54 97720360,2024-10-10,1,La Plata,3,TRUE
+498,Isabella,Aranda,isabella.aranda498@clientes.tiendalatam.test,+52 43921959,2022-08-18,8,Puebla,1,TRUE
+499,Pilar,Díaz,pilar.diaz499@clientes.tiendalatam.test,+54 98916958,2025-05-12,1,Rosario,1,TRUE
+500,Esteban,Galindo,esteban.galindo500@clientes.tiendalatam.test,+593 25802066,2025-05-19,7,Quito,1,TRUE
+501,Vanesa,Ríos,vanesa.rios501@clientes.tiendalatam.test,+598 80215481,2024-08-18,10,Montevideo,4,TRUE
+502,Adriana,Valdez,adriana.valdez502@clientes.tiendalatam.test,+55 37876214,2024-04-05,3,São Paulo,2,TRUE
+503,Felipe,Bermúdez,felipe.bermudez503@clientes.tiendalatam.test,+54 99794603,2023-05-26,1,Buenos Aires,1,FALSE
+504,Tomás,Mora,tomas.mora504@clientes.tiendalatam.test,+591 71304112,2025-08-24,2,La Paz,4,TRUE
+505,Sofía,Medina,sofia.medina505@clientes.tiendalatam.test,+591 58347193,2024-06-29,2,Santa Cruz,3,TRUE
+506,José,Castillo,jose.castillo506@clientes.tiendalatam.test,+591 99034004,2025-07-05,2,La Paz,2,TRUE
+507,Rocío,Gómez,rocio.gomez507@clientes.tiendalatam.test,+598 60012498,2026-01-04,10,Punta del Este,3,TRUE
+508,Antonia,Estrada,antonia.estrada508@clientes.tiendalatam.test,+52 66604960,2024-03-22,8,Monterrey,2,TRUE
+509,Camila,Gallardo,camila.gallardo509@clientes.tiendalatam.test,+54 89289163,2022-08-10,1,Córdoba,1,TRUE
+510,Vanesa,Domínguez,vanesa.dominguez510@clientes.tiendalatam.test,+598 92055138,2024-05-20,10,Punta del Este,1,TRUE
+511,Bianca,Cruz,bianca.cruz511@clientes.tiendalatam.test,+55 65201639,2025-11-01,3,Belo Horizonte,1,TRUE
+512,Octavio,Bermúdez,octavio.bermudez512@clientes.tiendalatam.test,+54 85834657,2025-03-22,1,La Plata,1,FALSE
+513,Emilia,Salazar,emilia.salazar513@clientes.tiendalatam.test,+51 74683506,2025-12-11,9,Lima,1,TRUE
+514,José,Herrera,jose.herrera514@clientes.tiendalatam.test,+51 77856130,2024-02-25,9,Lima,3,TRUE
+515,Javiera,Acosta,javiera.acosta515@clientes.tiendalatam.test,+591 54411953,2025-12-06,2,Sucre,4,TRUE
+516,Joaquín,Rivera,joaquin.rivera516@clientes.tiendalatam.test,+593 71618633,2023-05-02,7,Guayaquil,1,TRUE
+517,Cristóbal,Morales,cristobal.morales517@clientes.tiendalatam.test,+52 76756320,2022-05-27,8,Puebla,2,TRUE
+518,Adriana,García,adriana.garcia518@clientes.tiendalatam.test,+54 22199793,2024-03-26,1,La Plata,3,FALSE
+519,Damián,Tapia,damian.tapia519@clientes.tiendalatam.test,+51 55748676,2025-02-27,9,Arequipa,1,TRUE
+520,Marco,Galindo,marco.galindo520@clientes.tiendalatam.test,+52 90524080,2023-05-02,8,Monterrey,1,TRUE
+521,Esperanza,Vázquez,esperanza.vazquez521@clientes.tiendalatam.test,+591 10294869,2025-06-07,2,La Paz,1,TRUE
+522,Natalia,Paredes,natalia.paredes522@clientes.tiendalatam.test,+57 24270328,2026-03-22,5,Cartagena,1,TRUE
+523,Tomás,Bustamante,tomas.bustamante523@clientes.tiendalatam.test,+593 36296134,2022-10-23,7,Quito,1,FALSE
+524,Ángela,Navarro,angela.navarro524@clientes.tiendalatam.test,+52 24464073,2024-03-09,8,Guadalajara,2,TRUE
+525,Octavio,Lozano,octavio.lozano525@clientes.tiendalatam.test,+598 71389561,2025-02-21,10,Montevideo,2,FALSE
+526,Gonzalo,Sánchez,gonzalo.sanchez526@clientes.tiendalatam.test,+52 84252780,2022-10-08,8,Ciudad de México,4,TRUE
+527,Federico,Cuevas,federico.cuevas527@clientes.tiendalatam.test,+51 33306944,2024-07-27,9,Arequipa,2,TRUE
+528,Javiera,Miranda,javiera.miranda528@clientes.tiendalatam.test,+598 61628545,2024-02-29,10,Colonia,1,TRUE
+529,Benjamín,Navarro,benjamin.navarro529@clientes.tiendalatam.test,+56 49483304,2025-05-09,4,Concepción,1,TRUE
+530,Ximena,Aranda,ximena.aranda530@clientes.tiendalatam.test,+51 52132393,2024-04-10,9,Trujillo,2,FALSE
+531,Lucas,Medina,lucas.medina531@clientes.tiendalatam.test,+56 56344519,2025-02-20,4,Valparaíso,4,TRUE
+532,Iván,Cortés,ivan.cortes532@clientes.tiendalatam.test,+55 25489430,2025-05-31,3,Salvador,2,TRUE
+533,Aurora,Carmona,aurora.carmona533@clientes.tiendalatam.test,+593 48376603,2024-12-16,7,Cuenca,3,TRUE
+534,Ignacio,Jiménez,ignacio.jimenez534@clientes.tiendalatam.test,+591 17122263,2021-06-26,2,La Paz,2,TRUE
+535,Jimena,Núñez,jimena.nunez535@clientes.tiendalatam.test,+55 29653285,2025-07-19,3,Brasília,3,TRUE
+536,Trinidad,Lozano,trinidad.lozano536@clientes.tiendalatam.test,+51 23754633,2023-09-22,9,Lima,2,TRUE
+537,Joaquín,Roldán,joaquin.roldan537@clientes.tiendalatam.test,+56 48606206,2024-11-17,4,Antofagasta,2,TRUE
+538,Cristóbal,Aranda,cristobal.aranda538@clientes.tiendalatam.test,+593 17221208,2024-02-19,7,Cuenca,1,TRUE
+539,Adrián,Paredes,adrian.paredes539@clientes.tiendalatam.test,+52 88971743,2025-02-05,8,Guadalajara,1,TRUE
+540,Jazmín,Castro,jazmin.castro540@clientes.tiendalatam.test,+56 19995059,2025-08-19,4,Concepción,1,TRUE
+541,Lautaro,Maldonado,lautaro.maldonado541@clientes.tiendalatam.test,+593 84705402,2024-09-10,7,Quito,1,TRUE
+542,Olivia,Vargas,olivia.vargas542@clientes.tiendalatam.test,+54 15360735,2025-11-10,1,Rosario,1,TRUE
+543,Mauricio,Fuentes,mauricio.fuentes543@clientes.tiendalatam.test,+598 86863404,2022-01-13,10,Colonia,1,TRUE
+544,Paula,Saavedra,paula.saavedra544@clientes.tiendalatam.test,+51 19150490,2025-05-28,9,Arequipa,3,TRUE
+545,Vicente,Vázquez,vicente.vazquez545@clientes.tiendalatam.test,+593 38635863,2024-10-22,7,Quito,2,TRUE
+546,Augusto,Saldaña,augusto.saldana546@clientes.tiendalatam.test,+598 97147586,2023-09-19,10,Colonia,1,TRUE
+547,Manuela,Pérez,manuela.perez547@clientes.tiendalatam.test,+598 53075436,2024-06-01,10,Colonia,1,TRUE
+548,Mariano,Soto,mariano.soto548@clientes.tiendalatam.test,+57 13315946,2022-08-11,5,Cartagena,4,TRUE
+549,Bianca,Pérez,bianca.perez549@clientes.tiendalatam.test,+51 49786693,2024-02-08,9,Cusco,3,TRUE
+550,Octavio,Carmona,octavio.carmona550@clientes.tiendalatam.test,+591 81565674,2024-09-10,2,Santa Cruz,1,TRUE
+551,Camila,Suárez,camila.suarez551@clientes.tiendalatam.test,+56 82176148,2025-04-10,4,Antofagasta,3,TRUE
+552,Carolina,Vargas,carolina.vargas552@clientes.tiendalatam.test,+593 13188066,2025-07-08,7,Cuenca,1,TRUE
+553,Tomás,Saldaña,tomas.saldana553@clientes.tiendalatam.test,+54 19454577,2022-05-25,1,Córdoba,1,TRUE
+554,Marcela,Cisneros,marcela.cisneros554@clientes.tiendalatam.test,+593 68119636,2023-07-14,7,Guayaquil,1,TRUE
+555,Andrés,Cuevas,andres.cuevas555@clientes.tiendalatam.test,+54 16109168,2022-08-25,1,La Plata,2,TRUE
+556,Jimena,Lara,jimena.lara556@clientes.tiendalatam.test,+591 91411889,2026-02-10,2,Cochabamba,1,TRUE
+557,Ana,Camacho,ana.camacho557@clientes.tiendalatam.test,+593 30981381,2024-05-19,7,Cuenca,1,TRUE
+558,Adrián,Jiménez,adrian.jimenez558@clientes.tiendalatam.test,+51 50004466,2024-03-06,9,Trujillo,2,FALSE
+559,Adriana,Saldaña,adriana.saldana559@clientes.tiendalatam.test,+506 28974879,2025-09-11,6,San José,1,TRUE
+560,Macarena,Suárez,macarena.suarez560@clientes.tiendalatam.test,+51 56150987,2025-01-04,9,Lima,1,FALSE
+561,Paula,Vázquez,paula.vazquez561@clientes.tiendalatam.test,+55 92796892,2025-11-16,3,Rio de Janeiro,3,TRUE
+562,Salvador,Aranda,salvador.aranda562@clientes.tiendalatam.test,+598 71909967,2023-01-31,10,Montevideo,2,TRUE
+563,Daniela,Cuevas,daniela.cuevas563@clientes.tiendalatam.test,+57 75389589,2025-04-12,5,Bogotá,4,TRUE
+564,Emiliano,Galindo,emiliano.galindo564@clientes.tiendalatam.test,+56 19369589,2025-04-12,4,Santiago,3,TRUE
+565,Macarena,Cuevas,macarena.cuevas565@clientes.tiendalatam.test,+598 30454105,2024-06-08,10,Colonia,1,TRUE
+566,María,Espinoza,maria.espinoza566@clientes.tiendalatam.test,+593 43041067,2023-10-30,7,Quito,3,TRUE
+567,Fernanda,Vega,fernanda.vega567@clientes.tiendalatam.test,+57 74418331,2025-03-03,5,Cali,1,TRUE
+568,Alejandro,Calderón,alejandro.calderon568@clientes.tiendalatam.test,+51 21002322,2023-10-11,9,Lima,3,TRUE
+569,Catalina,Flores,catalina.flores569@clientes.tiendalatam.test,+51 20120010,2022-10-22,9,Arequipa,3,TRUE
+570,Martina,Velasco,martina.velasco570@clientes.tiendalatam.test,+598 38556255,2025-02-19,10,Colonia,3,TRUE
+571,Damián,Vargas,damian.vargas571@clientes.tiendalatam.test,+51 59099345,2024-10-22,9,Cusco,1,FALSE
+572,Olivia,Miranda,olivia.miranda572@clientes.tiendalatam.test,+57 78506338,2024-12-25,5,Medellín,1,TRUE
+573,Salvador,Roldán,salvador.roldan573@clientes.tiendalatam.test,+56 28840235,2021-06-09,4,Valparaíso,1,TRUE
+574,Trinidad,Pérez,trinidad.perez574@clientes.tiendalatam.test,+55 39369404,2026-03-05,3,Belo Horizonte,2,TRUE
+575,Tania,Suárez,tania.suarez575@clientes.tiendalatam.test,+56 79509378,2023-07-25,4,Santiago,3,TRUE
+576,Sofía,Cortés,sofia.cortes576@clientes.tiendalatam.test,+52 23854626,2024-07-07,8,Ciudad de México,2,TRUE
+577,Iván,Aliaga,ivan.aliaga577@clientes.tiendalatam.test,+57 33333727,2025-10-22,5,Cartagena,1,TRUE
+578,Ignacio,Vázquez,ignacio.vazquez578@clientes.tiendalatam.test,+591 79306247,2024-12-22,2,Cochabamba,1,TRUE
+579,María,Miranda,maria.miranda579@clientes.tiendalatam.test,+52 28652010,2023-12-20,8,Tijuana,1,TRUE
+580,Mariana,Romero,mariana.romero580@clientes.tiendalatam.test,+57 31120146,2024-09-11,5,Medellín,1,TRUE
+581,Rodrigo,Cruz,rodrigo.cruz581@clientes.tiendalatam.test,+56 74628070,2022-08-25,4,Antofagasta,2,TRUE
+582,Manuela,Pérez,manuela.perez582@clientes.tiendalatam.test,+593 27164449,2024-12-27,7,Quito,1,TRUE
+583,Miguel,Ramírez,miguel.ramirez583@clientes.tiendalatam.test,+54 32325960,2025-02-16,1,La Plata,1,TRUE
+584,Adrián,Martínez,adrian.martinez584@clientes.tiendalatam.test,+598 98817918,2026-03-15,10,Colonia,3,FALSE
+585,Patricio,Mendoza,patricio.mendoza585@clientes.tiendalatam.test,+598 39442512,2023-04-19,10,Punta del Este,3,TRUE
+586,Cecilia,Roldán,cecilia.roldan586@clientes.tiendalatam.test,+55 45503367,2025-09-10,3,Salvador,1,TRUE
+587,Andrés,Mora,andres.mora587@clientes.tiendalatam.test,+598 60762668,2026-02-04,10,Colonia,1,TRUE
+588,Mariana,Calderón,mariana.calderon588@clientes.tiendalatam.test,+51 22924976,2023-03-19,9,Cusco,1,FALSE
+589,Valentina,Estrada,valentina.estrada589@clientes.tiendalatam.test,+51 98502178,2025-01-08,9,Lima,1,TRUE
+590,Pilar,Paredes,pilar.paredes590@clientes.tiendalatam.test,+593 15830187,2025-10-19,7,Cuenca,2,TRUE
+591,Vicente,Velasco,vicente.velasco591@clientes.tiendalatam.test,+52 87325627,2026-02-22,8,Puebla,1,TRUE
+592,Emiliano,Quiroga,emiliano.quiroga592@clientes.tiendalatam.test,+56 82978342,2024-07-18,4,Santiago,1,TRUE
+593,Natalia,Morales,natalia.morales593@clientes.tiendalatam.test,+54 79761254,2025-05-29,1,La Plata,1,TRUE
+594,Maximiliano,Reyes,maximiliano.reyes594@clientes.tiendalatam.test,+506 30774029,2025-05-03,6,Alajuela,1,TRUE
+595,Beatriz,Carvajal,beatriz.carvajal595@clientes.tiendalatam.test,+51 92125234,2023-07-19,9,Cusco,1,TRUE
+596,Marco,Estrada,marco.estrada596@clientes.tiendalatam.test,+593 33987338,2025-07-25,7,Cuenca,1,TRUE
+597,Vicente,Cárdenas,vicente.cardenas597@clientes.tiendalatam.test,+57 28531242,2023-07-04,5,Cartagena,3,TRUE
+598,Sebastián,Aguilar,sebastian.aguilar598@clientes.tiendalatam.test,+52 78228715,2025-07-16,8,Guadalajara,1,TRUE
+599,Antonia,García,antonia.garcia599@clientes.tiendalatam.test,+54 22225702,2024-11-01,1,Córdoba,3,TRUE
+600,Catalina,Vázquez,catalina.vazquez600@clientes.tiendalatam.test,+591 59772648,2025-01-08,2,La Paz,1,TRUE
+601,Damián,Saavedra,damian.saavedra601@clientes.tiendalatam.test,+593 48449249,2024-02-24,7,Cuenca,2,TRUE
+602,Thiago,Rodríguez,thiago.rodriguez602@clientes.tiendalatam.test,+55 37072687,2026-03-02,3,Belo Horizonte,3,FALSE
+603,Patricia,Roldán,patricia.roldan603@clientes.tiendalatam.test,+56 79231333,2024-09-16,4,Santiago,2,TRUE
+604,Damián,García,damian.garcia604@clientes.tiendalatam.test,+506 31131878,2025-04-15,6,San José,1,TRUE
+605,Víctor,Rojas,victor.rojas605@clientes.tiendalatam.test,+593 79490249,2024-03-20,7,Guayaquil,1,TRUE
+606,Mariano,Saldaña,mariano.saldana606@clientes.tiendalatam.test,+51 88239864,2026-01-31,9,Trujillo,1,FALSE
+607,Bruno,Cisneros,bruno.cisneros607@clientes.tiendalatam.test,+598 87162674,2023-08-18,10,Montevideo,1,TRUE
+608,Romina,Medina,romina.medina608@clientes.tiendalatam.test,+51 55629449,2024-08-30,9,Lima,4,TRUE
+609,Federico,Quintero,federico.quintero609@clientes.tiendalatam.test,+51 60610858,2026-03-14,9,Trujillo,1,TRUE
+610,Víctor,López,victor.lopez610@clientes.tiendalatam.test,+52 74688940,2025-07-28,8,Puebla,1,TRUE
+611,Cristóbal,Beltrán,cristobal.beltran611@clientes.tiendalatam.test,+56 57391778,2025-02-22,4,Valparaíso,1,TRUE
+612,Valentina,Cisneros,valentina.cisneros612@clientes.tiendalatam.test,+56 55901507,2025-10-25,4,Concepción,1,FALSE
+613,Raúl,Cabrera,raul.cabrera613@clientes.tiendalatam.test,+506 34532913,2024-07-17,6,San José,4,TRUE
+614,Joaquín,Acosta,joaquin.acosta614@clientes.tiendalatam.test,+52 45622106,2026-01-21,8,Guadalajara,1,TRUE
+615,Mariana,Reyes,mariana.reyes615@clientes.tiendalatam.test,+598 26089818,2023-06-26,10,Punta del Este,4,TRUE
+616,Esperanza,Iglesias,esperanza.iglesias616@clientes.tiendalatam.test,+598 15672460,2025-04-02,10,Montevideo,3,TRUE
+617,Bianca,Romero,bianca.romero617@clientes.tiendalatam.test,+598 78603195,2023-10-29,10,Punta del Este,1,TRUE
+618,Lautaro,Estrada,lautaro.estrada618@clientes.tiendalatam.test,+54 82580645,2024-12-07,1,La Plata,1,TRUE
+619,Isabella,Saavedra,isabella.saavedra619@clientes.tiendalatam.test,+55 71749629,2025-11-26,3,Belo Horizonte,1,TRUE
+620,Sebastián,Cortés,sebastian.cortes620@clientes.tiendalatam.test,+593 58533442,2025-04-15,7,Cuenca,2,TRUE
+621,Augusto,Bustamante,augusto.bustamante621@clientes.tiendalatam.test,+56 56049627,2024-10-29,4,Concepción,1,TRUE
+622,Martina,Maldonado,martina.maldonado622@clientes.tiendalatam.test,+506 70495821,2023-04-06,6,Alajuela,1,TRUE
+623,Mariano,Cabrera,mariano.cabrera623@clientes.tiendalatam.test,+56 41649234,2024-12-06,4,Santiago,1,TRUE
+624,José,Castro,jose.castro624@clientes.tiendalatam.test,+55 66575546,2023-03-05,3,Belo Horizonte,1,FALSE
+625,Bianca,Lara,bianca.lara625@clientes.tiendalatam.test,+51 43685164,2025-11-13,9,Trujillo,1,TRUE
+626,Antonella,Núñez,antonella.nunez626@clientes.tiendalatam.test,+55 73960038,2024-03-18,3,São Paulo,3,TRUE
+627,Maximiliano,Saldaña,maximiliano.saldana627@clientes.tiendalatam.test,+57 84825240,2025-07-12,5,Cali,4,TRUE
+628,Ramiro,Calderón,ramiro.calderon628@clientes.tiendalatam.test,+591 36703705,2021-08-14,2,Cochabamba,1,TRUE
+629,Javiera,Roldán,javiera.roldan629@clientes.tiendalatam.test,+57 75430302,2024-10-15,5,Cali,2,TRUE
+630,Olivia,Jiménez,olivia.jimenez630@clientes.tiendalatam.test,+598 32491607,2022-04-25,10,Punta del Este,2,FALSE
+631,Martina,Flores,martina.flores631@clientes.tiendalatam.test,+598 20618223,2024-04-24,10,Colonia,1,TRUE
+632,Hugo,Cárdenas,hugo.cardenas632@clientes.tiendalatam.test,+57 46406303,2023-10-31,5,Cali,3,TRUE
+633,Jazmín,Beltrán,jazmin.beltran633@clientes.tiendalatam.test,+598 32457056,2026-02-22,10,Colonia,1,TRUE
+634,Pablo,Mendoza,pablo.mendoza634@clientes.tiendalatam.test,+57 63290556,2025-06-22,5,Bogotá,1,TRUE
+635,Ana,Cárdenas,ana.cardenas635@clientes.tiendalatam.test,+51 80327779,2025-12-17,9,Lima,2,TRUE
+636,Damián,Solís,damian.solis636@clientes.tiendalatam.test,+55 51523026,2023-07-21,3,São Paulo,1,TRUE
+637,Gonzalo,Mendoza,gonzalo.mendoza637@clientes.tiendalatam.test,+55 13834774,2024-05-28,3,Rio de Janeiro,1,TRUE
+638,Iván,Cabrera,ivan.cabrera638@clientes.tiendalatam.test,+52 83624500,2026-01-27,8,Puebla,1,FALSE
+639,Patricia,Tapia,patricia.tapia639@clientes.tiendalatam.test,+55 94697764,2025-05-15,3,Salvador,2,TRUE
+640,Vicente,Estrada,vicente.estrada640@clientes.tiendalatam.test,+51 82433029,2024-05-15,9,Trujillo,1,TRUE
+641,Mariana,Lara,mariana.lara641@clientes.tiendalatam.test,+593 11416778,2023-10-15,7,Guayaquil,1,TRUE
+642,Augusto,Carmona,augusto.carmona642@clientes.tiendalatam.test,+506 11116303,2025-11-12,6,Alajuela,2,TRUE
+643,Octavio,Padilla,octavio.padilla643@clientes.tiendalatam.test,+57 49315407,2025-07-26,5,Bogotá,1,TRUE
+644,Marco,Padilla,marco.padilla644@clientes.tiendalatam.test,+56 62982727,2024-10-29,4,Antofagasta,1,TRUE
+645,Catalina,Rivera,catalina.rivera645@clientes.tiendalatam.test,+593 66672010,2025-03-10,7,Quito,2,TRUE
+646,Jimena,Cabrera,jimena.cabrera646@clientes.tiendalatam.test,+598 48208680,2025-09-17,10,Colonia,2,TRUE
+647,Paula,Castillo,paula.castillo647@clientes.tiendalatam.test,+56 48868823,2023-08-03,4,Santiago,1,TRUE
+648,Gabriel,Cortés,gabriel.cortes648@clientes.tiendalatam.test,+598 12603206,2024-06-11,10,Punta del Este,1,FALSE
+649,Nicolás,Ortiz,nicolas.ortiz649@clientes.tiendalatam.test,+591 68843284,2021-08-28,2,Cochabamba,2,TRUE
+650,Magdalena,Gallardo,magdalena.gallardo650@clientes.tiendalatam.test,+52 51819114,2022-11-18,8,Guadalajara,3,TRUE
+651,Mateo,Jiménez,mateo.jimenez651@clientes.tiendalatam.test,+54 17521339,2024-02-03,1,Rosario,1,TRUE
+652,Tomás,Méndez,tomas.mendez652@clientes.tiendalatam.test,+55 11693222,2024-10-22,3,Rio de Janeiro,1,TRUE
+653,Leonardo,González,leonardo.gonzalez653@clientes.tiendalatam.test,+52 36733470,2023-06-25,8,Guadalajara,1,TRUE
+654,Antonia,Bravo,antonia.bravo654@clientes.tiendalatam.test,+56 53360807,2024-09-21,4,Antofagasta,1,TRUE
+655,Tomás,Estrada,tomas.estrada655@clientes.tiendalatam.test,+51 95700705,2025-07-12,9,Lima,1,TRUE
+656,Joaquín,Padilla,joaquin.padilla656@clientes.tiendalatam.test,+56 53555463,2022-01-18,4,Santiago,1,TRUE
+657,José,Pérez,jose.perez657@clientes.tiendalatam.test,+593 87990837,2024-12-18,7,Quito,3,TRUE
+658,Manuela,Herrera,manuela.herrera658@clientes.tiendalatam.test,+506 77098020,2025-01-03,6,San José,1,TRUE
+659,Trinidad,Vargas,trinidad.vargas659@clientes.tiendalatam.test,+54 81988124,2026-02-13,1,Buenos Aires,3,TRUE
+660,Thiago,Álvarez,thiago.alvarez660@clientes.tiendalatam.test,+51 12865928,2023-05-23,9,Trujillo,2,TRUE
+661,Cristian,Quintero,cristian.quintero661@clientes.tiendalatam.test,+54 85031037,2022-10-08,1,Mendoza,1,TRUE
+662,Vicente,Cortés,vicente.cortes662@clientes.tiendalatam.test,+55 72866875,2023-02-19,3,Salvador,1,TRUE
+663,Andrés,Pacheco,andres.pacheco663@clientes.tiendalatam.test,+51 30807167,2026-01-26,9,Arequipa,1,TRUE
+664,Vanesa,Miranda,vanesa.miranda664@clientes.tiendalatam.test,+52 60874366,2024-10-20,8,Ciudad de México,2,FALSE
+665,Joaquín,Cortés,joaquin.cortes665@clientes.tiendalatam.test,+506 18501586,2025-02-03,6,Cartago,2,TRUE
+666,Octavio,Aranda,octavio.aranda666@clientes.tiendalatam.test,+51 30687181,2024-02-29,9,Cusco,2,TRUE
+667,Natalia,Torres,natalia.torres667@clientes.tiendalatam.test,+591 15875684,2025-03-03,2,La Paz,3,TRUE
+668,Bianca,Álvarez,bianca.alvarez668@clientes.tiendalatam.test,+56 23254482,2025-12-11,4,Santiago,1,TRUE
+669,Lucas,Velasco,lucas.velasco669@clientes.tiendalatam.test,+52 44351488,2024-03-02,8,Tijuana,1,TRUE
+670,Damián,Fuentes,damian.fuentes670@clientes.tiendalatam.test,+54 20731620,2025-06-09,1,Córdoba,1,TRUE
+671,Cristian,Ramírez,cristian.ramirez671@clientes.tiendalatam.test,+593 92803389,2024-01-16,7,Guayaquil,1,TRUE
+672,Antonella,Saavedra,antonella.saavedra672@clientes.tiendalatam.test,+57 23035125,2022-03-28,5,Bogotá,1,TRUE
+673,Beatriz,Castro,beatriz.castro673@clientes.tiendalatam.test,+56 84950330,2024-02-26,4,Valparaíso,2,TRUE
+674,Ramiro,Tapia,ramiro.tapia674@clientes.tiendalatam.test,+598 99287317,2022-07-19,10,Punta del Este,1,TRUE
+675,Romina,Navarro,romina.navarro675@clientes.tiendalatam.test,+51 98252435,2025-09-08,9,Cusco,1,FALSE
+676,Adriana,Cortés,adriana.cortes676@clientes.tiendalatam.test,+506 59891348,2024-05-27,6,Alajuela,1,TRUE
+677,Joaquín,Aliaga,joaquin.aliaga677@clientes.tiendalatam.test,+506 83232714,2025-10-18,6,Cartago,1,TRUE
+678,Jazmín,Lozano,jazmin.lozano678@clientes.tiendalatam.test,+57 63296593,2026-02-08,5,Cali,1,TRUE
+679,Fernanda,Lara,fernanda.lara679@clientes.tiendalatam.test,+54 10881653,2023-09-02,1,La Plata,1,TRUE
+680,Adriana,Roldán,adriana.roldan680@clientes.tiendalatam.test,+54 84668420,2025-11-21,1,Rosario,1,TRUE
+681,Mariana,Castillo,mariana.castillo681@clientes.tiendalatam.test,+52 45566111,2022-06-15,8,Monterrey,1,TRUE
+682,Raúl,Cisneros,raul.cisneros682@clientes.tiendalatam.test,+57 86378602,2023-05-23,5,Bogotá,4,TRUE
+683,Bianca,Bermúdez,bianca.bermudez683@clientes.tiendalatam.test,+52 22799546,2025-06-16,8,Guadalajara,1,TRUE
+684,Mateo,Ramírez,mateo.ramirez684@clientes.tiendalatam.test,+598 54881018,2025-06-25,10,Punta del Este,1,TRUE
+685,Aurora,Calderón,aurora.calderon685@clientes.tiendalatam.test,+591 11534696,2024-04-16,2,Santa Cruz,2,TRUE
+686,Cristóbal,Iglesias,cristobal.iglesias686@clientes.tiendalatam.test,+51 85821325,2022-01-27,9,Lima,1,TRUE
+687,Jazmín,Quiroga,jazmin.quiroga687@clientes.tiendalatam.test,+54 87209399,2023-04-28,1,Mendoza,1,TRUE
+688,Daniel,Navarro,daniel.navarro688@clientes.tiendalatam.test,+593 21079017,2023-09-12,7,Quito,1,TRUE
+689,Martina,Miranda,martina.miranda689@clientes.tiendalatam.test,+57 68316409,2024-10-29,5,Bogotá,2,TRUE
+690,Bianca,Cárdenas,bianca.cardenas690@clientes.tiendalatam.test,+51 97543303,2022-10-09,9,Arequipa,1,TRUE
+691,Manuela,Flores,manuela.flores691@clientes.tiendalatam.test,+51 45736421,2026-04-26,9,Arequipa,2,TRUE
+692,Tania,Beltrán,tania.beltran692@clientes.tiendalatam.test,+591 66846657,2026-02-06,2,La Paz,1,TRUE
+693,Laura,Peña,laura.pena693@clientes.tiendalatam.test,+54 92707781,2023-12-19,1,Rosario,3,TRUE
+694,Renata,Rojas,renata.rojas694@clientes.tiendalatam.test,+52 60173377,2025-02-08,8,Ciudad de México,1,TRUE
+695,Lucas,Jiménez,lucas.jimenez695@clientes.tiendalatam.test,+54 48612439,2022-05-19,1,Córdoba,1,TRUE
+696,Juan,Vega,juan.vega696@clientes.tiendalatam.test,+52 38052785,2022-08-05,8,Puebla,2,TRUE
+697,Patricio,Galindo,patricio.galindo697@clientes.tiendalatam.test,+57 28971329,2024-10-26,5,Cartagena,2,TRUE
+698,Tomás,Mendoza,tomas.mendoza698@clientes.tiendalatam.test,+51 18067834,2024-02-11,9,Lima,1,TRUE
+699,Damián,Rodríguez,damian.rodriguez699@clientes.tiendalatam.test,+54 18938604,2025-02-01,1,Mendoza,1,TRUE
+700,Juan,Medina,juan.medina700@clientes.tiendalatam.test,+506 97162488,2025-11-17,6,San José,1,FALSE
