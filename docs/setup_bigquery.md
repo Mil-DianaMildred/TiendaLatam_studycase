@@ -72,15 +72,15 @@ Numeros que deberías ver:
 |-------|-------|
 | categories | 8 |
 | client_types | 4 |
-| clients | 149 |
+| clients | 700 |
 | countries | 10 |
-| employees | 19 |
-| locations | 9 |
-| order_details | 846 |
+| employees | 20 |
+| locations | 10 |
+| order_details | 12,279 |
 | order_statuses | 6 |
-| orders | 299 |
+| orders | 4,000 |
 | positions | 5 |
-| products | 49 |
+| products | 50 |
 
 ## Paso 6 — Ejecutar la primera query
 

@@ -12,7 +12,7 @@ Los CSVs originales se cargan en BigQuery (data warehouse en la nube), donde el 
 ┌─────────────────┐
 │  11 archivos    │
 │  CSV originales │   (Data del projecto)
-│  (data/)        │
+│  (data_expanded/)│
 └────────┬────────┘
          │
          │  carga manual una sola vez vía UI de BigQuery
