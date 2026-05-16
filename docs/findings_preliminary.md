@@ -2,7 +2,7 @@
 
 Estos números se obtuvieron ejecutando las queries del proyecto contra el dataset expandido (`data_expanded/`). Sirven como teaser para el caso de estudio y como sanity check del pipeline en BigQuery.
 
-## Métricas globales (órdenes status 3 o 4)
+## Métricas globales (status = Entregado y Enviado)
 
 - Revenue total: **$1,473,497.20**
 - Órdenes válidas: **3,045**
