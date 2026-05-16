@@ -1,6 +1,6 @@
 # TiendaLatam — Análisis de Growth & Retención
 
-Caso de estudio para portafolio de Product Manager. Análisis end-to-end de una cadena retail con presencia en 10 países de Latinoamérica, enfocado en identificar palancas de crecimiento, mejorar la retención de clientes y construir un dashboard ejecutivo en Looker Studio.
+Análisis end-to-end de una cadena retail con presencia en 10 países de Latinoamérica, enfocado en identificar palancas de crecimiento, mejorar la retención de clientes y construir un dashboard ejecutivo en Looker Studio.
 
 ## El problema de negocio
 
@@ -10,27 +10,23 @@ TiendaLatam opera tiendas físicas en Argentina, Bolivia, Brasil, Chile, Colombi
 2. ¿Qué segmentos de clientes generan más valor a largo plazo (LTV) y cuáles están en riesgo de churn?
 3. ¿Qué decisiones de producto, pricing y operación pueden tomarse con los datos actuales?
 
-Este proyecto entrega 15 consultas SQL accionables, un modelo de cohortes y RFM, y un dashboard ejecutivo en Looker Studio que sintetiza los hallazgos.
-
 ## Stack técnico
 
 | Capa | Herramienta | Por qué |
 |------|------------|---------|
 | Almacenamiento + SQL | Google BigQuery (sandbox gratis) | Data warehouse serverless, sin instalación, SQL estándar |
 | Visualización | Looker Studio | BI tool gratuita de Google, conector nativo a BigQuery, dashboards compartibles vía link público |
-| Presentación | Tu sitio web | Caso de estudio narrativo + dashboard incrustado vía iframe |
 
-Costo total del proyecto: **$0**.
+Ver `ARQUITECTURE.md` para el diagrama completo del flujo de datos.
 
-Ver `docs/architecture.md` para el diagrama completo del flujo de datos.
-
-## Estructura del repositorio
+## Estructura del repositorio (V1 - PENDING UPDATES)
 
 ```
 proyecto-tiendalatam/
 ├── README.md                       # Este archivo
 ├── ROADMAP.md                      # Plan de ejecución de 5 días
-├── data/                           # CSVs originales (11 tablas)
+├── ARCHITECTURE.md                 # Cómo está montado el proyecto técnicamente
+├── data_expanded/                  # CSVs originales (11 tablas)
 ├── sql/
 │   ├── 01_setup_views.sql          # Vistas analíticas para Looker Studio
 │   ├── 01_schema.sql               # DDL Postgres (referencia, no usado)
@@ -38,8 +34,8 @@ proyecto-tiendalatam/
 │   ├── 04_growth_metrics.sql       # KPIs de crecimiento
 │   ├── 05_retention_rfm.sql        # Cohortes y segmentación RFM
 │   └── 06_pm_insights.sql          # Preguntas de Product Management
-└── docs/
-    ├── architecture.md             # Cómo está montado el proyecto técnicamente
+│   └── PENDING UPDATES
+├── docs/
     ├── setup_bigquery.md           # Guía paso a paso de setup
     ├── data_model.md               # Diccionario de datos
     ├── business_questions.md       # Las 15 preguntas que responde el proyecto
@@ -47,7 +43,7 @@ proyecto-tiendalatam/
     └── dashboard_design.md         # Estructura del dashboard en Looker Studio
 ```
 
-## Dataset
+## Dataset (PENDING UPDATES)
 
 | Tabla | Filas | Descripción |
 |-------|-------|-------------|
@@ -63,7 +59,7 @@ proyecto-tiendalatam/
 | countries | 10 | Países LATAM |
 | positions | 5 | Cargos del equipo |
 
-## Hallazgos principales
+## Hallazgos principales PENDING UPDATES
 
 Tres hallazgos validados contra los datos:
 
