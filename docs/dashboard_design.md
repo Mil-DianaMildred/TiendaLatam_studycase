@@ -148,7 +148,7 @@ Para embeber en tu website:
 
 ## 7. Tips de diseño que diferencian
 
-- Usa títulos con conclusión, no descriptivos. Mal: "Revenue por mes". Bien: "Diciembre 2025 fue el mejor mes con $10,825 (+94% MoM)".
+- Usa títulos con conclusión, no descriptivos. Mal: "Revenue por mes". Bien: "Abril 2026 fue el mejor mes con $220,459 — crecimiento sostenido desde 2021".
 - Pon el periodo de análisis visible en el header de cada página.
 - Una historia por página: si un visual no responde la pregunta de la página, sácalo.
 - Crea bookmarks por país para presentaciones rápidas.

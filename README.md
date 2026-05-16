@@ -17,16 +17,16 @@ TiendaLatam opera tiendas físicas en Argentina, Bolivia, Brasil, Chile, Colombi
 | Almacenamiento + SQL | Google BigQuery (sandbox gratis) | Data warehouse serverless, sin instalación, SQL estándar |
 | Visualización | Looker Studio | BI tool gratuita de Google, conector nativo a BigQuery, dashboards compartibles vía link público |
 
-Ver `ARQUITECTURE.md` para el diagrama completo del flujo de datos.
+Ver `ARCHITECTURE.md` para el diagrama completo del flujo de datos.
 
-## Estructura del repositorio (V1 - PENDING UPDATES)
+## Estructura del repositorio
 
 ```
 proyecto-tiendalatam/
 ├── README.md                       # Este archivo
 ├── ROADMAP.md                      # Plan de ejecución de 5 días
 ├── ARCHITECTURE.md                 # Cómo está montado el proyecto técnicamente
-├── data_expanded/                  # CSVs originales (11 tablas)
+├── data_expanded/                  # CSVs del dataset (11 tablas, ~17k filas)
 ├── sql/
 │   ├── 01_setup_views.sql          # Vistas analíticas para Looker Studio
 │   ├── 01_schema.sql               # DDL Postgres (referencia, no usado)
@@ -34,8 +34,7 @@ proyecto-tiendalatam/
 │   ├── 04_growth_metrics.sql       # KPIs de crecimiento
 │   ├── 05_retention_rfm.sql        # Cohortes y segmentación RFM
 │   └── 06_pm_insights.sql          # Preguntas de Product Management
-│   └── PENDING UPDATES
-├── docs/
+└── docs/
     ├── setup_bigquery.md           # Guía paso a paso de setup
     ├── data_model.md               # Diccionario de datos
     ├── business_questions.md       # Las 15 preguntas que responde el proyecto
@@ -43,40 +42,39 @@ proyecto-tiendalatam/
     └── dashboard_design.md         # Estructura del dashboard en Looker Studio
 ```
 
-## Dataset (PENDING UPDATES)
+## Dataset
 
 | Tabla | Filas | Descripción |
 |-------|-------|-------------|
-| clients | 149 | Clientes activos e inactivos, segmentados por tipo |
-| orders | 299 | Pedidos entre mayo 2022 y abril 2026 |
-| order_details | 846 | Líneas de pedido con cantidad y precio unitario |
-| products | 49 | Catálogo de productos en 8 categorías |
-| employees | 19 | Vendedores distribuidos en 9 tiendas |
-| locations | 9 | Tiendas físicas en 10 países LATAM |
+| clients | 700 | Clientes activos e inactivos, segmentados por tipo |
+| orders | 4,000 | Pedidos entre julio 2021 y abril 2026 |
+| order_details | 12,279 | Líneas de pedido con cantidad y precio unitario |
+| products | 50 | Catálogo de productos en 8 categorías |
+| employees | 20 | Vendedores distribuidos en 10 tiendas |
+| locations | 10 | Tiendas físicas, una por país LATAM |
 | categories | 8 | Tecnología, Hogar, Moda, Belleza, Alimentos, Deportes, Juguetería, Papelería |
 | client_types | 4 | Minorista, Mayorista, Corporativo, VIP |
 | order_statuses | 6 | Pendiente, Procesando, Enviado, Entregado, Cancelado, Devuelto |
 | countries | 10 | Países LATAM |
 | positions | 5 | Cargos del equipo |
 
-## Hallazgos principales PENDING UPDATES
+## Hallazgos principales
 
 Tres hallazgos validados contra los datos:
 
-- **26 clientes Champions generan el 40.2% del revenue** total.
-- **Uruguay tiene el AOV más alto** ($741) — 2.4x el de México ($313).
-- **44.7% churn rate (180d+)** y **mediana de 163 días al 2do pedido**, lo que sugiere oportunidad clara de campañas de re-engagement.
+- **132 clientes Champions generan el 56.4% del revenue** total — concentración de valor más pronunciada que la regla de Pareto clásica.
+- **Ecuador y Perú lideran en revenue** ($195K y $183K respectivamente), pero **Argentina tiene el AOV más alto** ($563) a pesar de tener menos órdenes.
+- **Churn rate de 25.3%** y mediana de **74 días al 2do pedido** — la ventana de re-engagement es más corta de lo habitual, lo que favorece campañas de activación tempranas.
 
 Detalles en `docs/findings_preliminary.md`.
 
 ## Cómo replicarlo
 
 1. Crear una cuenta Google Cloud (gratis, sin tarjeta).
-2. Seguir `docs/setup_bigquery.md` para crear el proyecto y cargar los CSVs.
+2. Seguir `docs/setup_bigquery.md` para crear el proyecto `tiendalatam-casestudy` y cargar los CSVs de `data_expanded/`.
 3. Ejecutar `sql/01_setup_views.sql` para crear las vistas analíticas.
 4. Ejecutar las consultas exploratorias y de análisis (`sql/03` a `sql/06`).
 5. Conectar Looker Studio a las vistas y construir el dashboard siguiendo `docs/dashboard_design.md`.
-6. Publicar el dashboard como link público y embeberlo en tu sitio web.
 
 ## Sobre la autora
 

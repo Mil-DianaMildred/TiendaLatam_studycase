@@ -49,7 +49,7 @@ Decisión: dónde invertir más espacio en tienda, dónde reducir SKUs.
 La pregunta más importante del bloque. Identifica si la retención mejora con el tiempo (señal de PMF) o degrada.
 
 **Q7. ¿Cómo se segmentan los clientes con RFM?**
-Etiquetar a cada uno de los 149 clientes en un segmento accionable (Champions, At Risk, etc.).
+Etiquetar a cada uno de los 636 clientes compradores en un segmento accionable (Champions, At Risk, etc.).
 
 **Q8. ¿Qué % del revenue viene de cada segmento RFM?**
 Casi siempre 20% de clientes (Champions + Loyal) generan 70-80% del revenue. Cuantifícalo.
