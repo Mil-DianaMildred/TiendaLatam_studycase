@@ -6,8 +6,8 @@
 -- la que va en el dashboard y en el caso de estudio.
 --
 -- Resultado esperado (orden por revenue desc):
---   Champions, Needs Attention, At Risk, New/Promising, Loyal,
---   Hibernating, About to Sleep, Lost.
+--   Champions (~56%), Loyal (~20%), At Risk (~11%), New/Promising (~3%),
+--   About to Sleep (~3%), Needs Attention (~2%), Lost (~2%), Hibernating (~2%).
 --
 -- Cómo usarla:
 --   - Pegala completa en BigQuery Studio y ejecuta.
