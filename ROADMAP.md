@@ -16,7 +16,15 @@ Tareas:
 
 > **Tip:** Tómate el tiempo para este paso. Sentirse perdido aquí es normal — es mucha información para un cerebro humano, pero no para la AI. Apóyate en ella para resolver dudas, generar queries rápidos o pedir datos ya procesados. Todo va cobrando sentido a medida que pasas más tiempo con la data y construyes contexto.
 
-??? Ejecutar `sql/01_setup_views.sql` para crear las 5 vistas analíticas.
+---
+
+## Data Strategy - Definiciones 
+
+Con base a la data que se tiene
+que quiere hacer el negocion, compamy vision
+cual es tu rol en la compania
+hay algun objetivo en specifico?
+
 
 ---
 
@@ -126,4 +134,7 @@ Lo que demuestra cada parte:
 - Forecast simple de revenue con función LAG/LEAD o regresión lineal en Power BI.
 
 
+??? Ejecutar `sql/01_setup_views.sql` para crear las 5 vistas analíticas.
+
 ![alt text](image.png)
+
