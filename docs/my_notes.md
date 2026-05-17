@@ -91,53 +91,6 @@ Este es mi primer análisis sobre `03_exploratory`, son notas semiestructuradas 
 
 ---
 
-## 5. Distribución de Clientes por Tipo y País
-
-| País | Tipo de Cliente | Clientes |
-|---|---|---:|
-| Argentina | Minorista | 42 |
-| Argentina | Corporativo | 8 |
-| Argentina | Mayorista | 7 |
-| Argentina | VIP | 6 |
-| Bolivia | Minorista | 40 |
-| Bolivia | Mayorista | 15 |
-| Bolivia | Corporativo | 11 |
-| Bolivia | VIP | 9 |
-| Brasil | Minorista | 49 |
-| Brasil | Mayorista | 13 |
-| Brasil | Corporativo | 8 |
-| Brasil | VIP | 3 |
-| Chile | Minorista | 42 |
-| Chile | Mayorista | 10 |
-| Chile | Corporativo | 9 |
-| Chile | VIP | 7 |
-| Colombia | Minorista | 30 |
-| Colombia | Mayorista | 11 |
-| Colombia | VIP | 9 |
-| Colombia | Corporativo | 6 |
-| Costa Rica | Minorista | 32 |
-| Costa Rica | Mayorista | 12 |
-| Costa Rica | Corporativo | 4 |
-| Costa Rica | VIP | 4 |
-| Ecuador | Minorista | 50 |
-| Ecuador | Mayorista | 16 |
-| Ecuador | Corporativo | 9 |
-| Ecuador | VIP | 2 |
-| México | Minorista | 57 |
-| México | Mayorista | 16 |
-| México | Corporativo | 6 |
-| México | VIP | 6 |
-| Perú | Minorista | 50 |
-| Perú | Mayorista | 13 |
-| Perú | Corporativo | 10 |
-| Perú | VIP | 8 |
-| Uruguay | Minorista | 40 |
-| Uruguay | Mayorista | 15 |
-| Uruguay | Corporativo | 9 |
-| Uruguay | VIP | 6 |
-
----
-
 ## 6. Productos sin Ventas
 
 No hay productos sin ventas.
