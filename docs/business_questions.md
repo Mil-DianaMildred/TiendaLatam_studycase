@@ -2,6 +2,30 @@
 
 Cada pregunta está vinculada al archivo SQL donde se resuelve y al panel del dashboard donde se visualiza. Cuando termines el análisis, vuelve aquí y agrega tus respuestas con números reales — eso es lo que vas a contar en el caso de estudio.
 
+
+Que se consindera revenue? solo las ordenes en estados de entregado.
+Convenciones
+GMV (Gross Merchandise Value) = es la suma en dinero de todas las órdenes realizadas en un periodo de tiempo. 
+Revenue = es la suma en dinero de todas las órdenes es estado "entregadas"
+
+
+
+
+1. What is the business and data about?
+
+- Revenue total: **$1,473,497.20 de 1,958,767.55** 75,22%
+- Órdenes válidas: **3,045 de 4,000** 76,12%
+- Clientes compradores únicos: **636 de 700** 90,86%
+- AOV global: **$483.84**
+- Ventana de análisis: julio 2021 → abril 2026
+- Sucursales: 10
+
+
+| total_orders | unique_clients	| first_order	| last_order |	total_revenue |	avg_order_value | 
+| 4000 |	700 |	2021-07-01 | 2026-04-29 |	$195,8767.55	| 489.69 |
+2. 
+
+
 ## Bloque 1 — Exploración (sql/03_exploratory.sql)
 
 **E1. ¿Qué volumen maneja el negocio y en qué ventana de tiempo?**

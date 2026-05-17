@@ -2,11 +2,11 @@
 
 Estos números se obtuvieron ejecutando las queries del proyecto contra el dataset expandido (`data_expanded/`). Sirven como teaser para el caso de estudio y como sanity check del pipeline en BigQuery.
 
-## Métricas globales (status = Entregado y Enviado)
+## Métricas globales (status = Entregado y Enviado vs all)
 
-- Revenue total: **$1,473,497.20**
-- Órdenes válidas: **3,045**
-- Clientes compradores únicos: **636 de 700**
+- Revenue total: **$1,473,497.20 de 1,958,767.55** 75,22%
+- Órdenes válidas: **3,045 de 4,000** 76,12%
+- Clientes compradores únicos: **636 de 700** 90,86%
 - AOV global: **$483.84**
 - Ventana de análisis: julio 2021 → abril 2026
 
@@ -127,10 +127,3 @@ Priorizadas con criterio ICE (Impact × Confidence × Ease, escala 1-10):
 - Tecnología concentra el 74% del revenue: ¿el catálogo es demasiado estrecho? Riesgo de dependencia de una sola categoría.
 - 2026 ya casi iguala 2025 en solo 4 meses: verificar en BigQuery que las fechas de 2026 son reales y no errores de ingesta.
 
-
-NOTAS MIAS: CAMBIOS SOLICITADOS 
-- El dashboard Resumen Ejecutivo actualmente solo muestra Revenue, Órdenes, 
-AOV y Clientes activos. Necesito agregar 3 métricas de salud del negocio:
-1. Churn rate (clientes sin compra en últimos 180 días)
-2. Tasa de cancelación + devolución combinada (status_id 5 y 6)
-3. % del revenue que viene de clientes Champions (RFM)

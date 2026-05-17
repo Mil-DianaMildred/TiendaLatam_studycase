@@ -80,3 +80,5 @@ JOIN `tiendalatam-casestudy.tiendalatam.categories` ca ON p.category_id = ca.cat
 LEFT JOIN `tiendalatam-casestudy.tiendalatam.order_details` od ON p.product_id = od.product_id
 WHERE od.detail_id IS NULL
 ORDER BY p.stock DESC;
+
+-- 7. Clientes sin pedidos
