@@ -10,7 +10,7 @@ Vamos a conectar las 5 vistas que creamos en BigQuery (no las tablas crudas — 
 
 | Vista | Para qué la usaremos |
 |-------|----------------------|
-| `v_orders_enriched` | KPIs principales, mapa por país, performance por tienda |
+| `v_orders_enriched` | KPIs principales, mapa por país, performance por punto de distribución |
 | `v_order_lines` | Análisis de productos, categorías, ABC |
 | `v_rfm_segments` | Distribución de segmentos, % revenue por segmento |
 | `v_cohort_retention` | Heatmap de cohortes |

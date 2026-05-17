@@ -18,10 +18,10 @@ Este es mi primer análisis sobre `03_exploratory`, son notas semiestructuradas 
 | AOV | $489.69 |
 
 1. ¿Cuáles son las razones detrás de la diferencia del GMV y el revenue? ¿De qué porcentaje estamos hablando? ¿Es este porcentaje normal para esta industria y tipo de negocio? ¿Cómo están el GMV y el revenue en comparación a la competencia? ¿Cuáles son las mejores fuentes de esta información?
-2. ¿En qué moneda está el dinero? ¿Todas las sucursales manejan la misma moneda? ¿Tiene esto alguna afectación en el revenue?
-3. ¿Todas las sucursales se lanzaron al mismo tiempo?
+2. ¿En qué moneda está el dinero? ¿Todos los puntos de distribución manejan la misma moneda? ¿Tiene esto alguna afectación en el revenue?
+3. ¿Todos los puntos de distribución se lanzaron al mismo tiempo?
 4. ¿Cuál es el average order value de la competencia? ¿Cómo está posicionado TiendaLatam en comparación a la competencia? Hacer benchmark.
-5. ¿Cuál es la distribución de las órdenes en el tiempo? ¿Por sucursal? ¿Por país?
+5. ¿Cuál es la distribución de las órdenes en el tiempo? ¿Por punto de distribución? ¿Por país?
 6. ¿Qué más data tengo de esos usuarios? ¿Cuál es el ICP?
 
 ---
@@ -87,7 +87,7 @@ Este es mi primer análisis sobre `03_exploratory`, son notas semiestructuradas 
 1. El volumen de unidades vendidas es muy similar entre el top 10.
 2. ¿Cuánto representa el top 10 del revenue total? ¿Qué volumen de productos representa el 80% del revenue?
 3. ¿De cuántos productos es el total del catálogo? ¿Cuál es la estrategia de la empresa en términos de catálogo? ¿Buscan diversificación o centralización? ¿Qué movimiento sería más conveniente?
-4. ¿Cómo es la distribución de productos por país/sucursal? ¿Hay varias sucursales por país?
+4. ¿Cómo es la distribución de productos por país/punto de distribución? ¿Hay varios puntos de distribución por país?
 
 ---
 

@@ -1,10 +1,10 @@
 # TiendaLatam — Análisis de Growth & Retención
 
-Análisis end-to-end de una cadena retail con presencia en 10 países de Latinoamérica, enfocado en identificar palancas de crecimiento, mejorar la retención de clientes y construir un dashboard ejecutivo en Looker Studio.
+Análisis end-to-end de una empresa tecnológica de retail 100% online con operaciones en 10 países de Latinoamérica, enfocado en identificar palancas de crecimiento, mejorar la retención de clientes y construir un dashboard ejecutivo en Looker Studio.
 
 ## El problema de negocio
 
-TiendaLatam opera tiendas físicas en Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay. El equipo directivo necesita responder tres preguntas:
+TiendaLatam es una empresa tecnológica de retail que opera exclusivamente a través de canales digitales en Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay. No cuenta con tiendas físicas — su modelo se apoya en puntos de distribución logística por país. Su propuesta de valor es ofrecer la mejor relación calidad–precio del mercado, compitiendo directamente con tiendas locales mediante precios significativamente más competitivos. El equipo directivo necesita responder tres preguntas:
 
 1. ¿De dónde viene el crecimiento real y dónde estamos perdiendo clientes?
 2. ¿Qué segmentos de clientes generan más valor a largo plazo (LTV) y cuáles están en riesgo de churn?
@@ -50,8 +50,8 @@ proyecto-tiendalatam/
 | orders | 4,000 | Pedidos entre julio 2021 y abril 2026 |
 | order_details | 12,279 | Líneas de pedido con cantidad y precio unitario |
 | products | 50 | Catálogo de productos en 8 categorías |
-| employees | 20 | Vendedores distribuidos en 10 tiendas |
-| locations | 10 | Tiendas físicas, una por país LATAM |
+| employees | 20 | Equipo de ventas distribuido en 10 países |
+| locations | 10 | Puntos de distribución logística, uno por país LATAM |
 | categories | 8 | Tecnología, Hogar, Moda, Belleza, Alimentos, Deportes, Juguetería, Papelería |
 | client_types | 4 | Minorista, Mayorista, Corporativo, VIP |
 | order_statuses | 6 | Pendiente, Procesando, Enviado, Entregado, Cancelado, Devuelto |

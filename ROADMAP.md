@@ -13,12 +13,14 @@ Tareas:
 - ✅ Crear con AI un `product-growth-metrics-ref` para mapear el universo ideal de métricas según el tipo de producto y evaluar el potencial de la data existente.
 - ✅ Documenta las consideraciones de negocio sobre cómo se calculan las métricas. Por ejemplo, algunas empresas calculan el revenue solo con órdenes en status `entregado`, otras incluyen también `enviado`. Asegúrate de tener claridad en cada métrica y documenta los matices relevantes para que sean tenidos en cuenta durante el procesamiento con AI. `CLAUDE`
 - ✅ Generar con AI `findings_preliminary`: analiza los hallazgos, documenta las observaciones iniciales y las preguntas que surgen `my_notes`.
+- Hacer discovery sobre los puntos que consideres mas relevantes para el objetivo al que quieres llegar, un par de sessiones con alguien que conozca en profundidad mejorara la calidad de tus insights
 
 > **Tip:** Tómate el tiempo para este paso. Sentirse perdido aquí es normal — es mucha información para un cerebro humano, pero no para la AI. Apóyate en ella para resolver dudas, generar queries rápidos o pedir datos ya procesados. Todo va cobrando sentido a medida que pasas más tiempo con la data y construyes contexto.
 
 ---
 
 ## Data Strategy - Definiciones 
+Framework: Product Strategy Stack
 
 Con base a la data que se tiene
 que quiere hacer el negocion, compamy vision
@@ -33,15 +35,15 @@ hay algun objetivo en specifico?
 **Objetivo:** responder las preguntas de crecimiento del negocio.
 
 Tareas:
-- Ejecutar `sql/04_growth_metrics.sql`: MoM revenue growth, ticket promedio, nuevos clientes vs recurrentes, performance por país y por categoría.
-- Calcular la North Star Metric candidata. Mi recomendación para retail: "ingresos generados por clientes recurrentes en los últimos 90 días". Justifica por qué la elegiste.
+- Ejecutar `sql/04_growth_metrics.sql`: MoM revenue growth, ticket promedio, nuevos clientes vs recurrentes, performance por país y por canal.
+- Calcular la North Star Metric candidata. Mi recomendación para retail digital: "ingresos generados por clientes recurrentes en los últimos 90 días". Justifica por qué la elegiste.
 - Identificar los 3 países con mejor performance y los 3 con peor, y formular hipótesis del porqué.
 
 Entregable: archivo `docs/business_questions.md` actualizado con respuestas a las preguntas Q1-Q5 y una primera versión de tu North Star Metric.
 
 Tiempo estimado: 3-4 horas.
 
-Tip PM: no te quedes en "Argentina vendió X". Avanza a "Argentina creció X% pero su ticket promedio bajó Y%, lo cual sugiere que estamos vendiendo más unidades pero más baratas — vale la pena revisar el mix de categorías".
+Tip PM: no te quedes en "Argentina vendió X". Avanza a "Argentina creció X% pero su ticket promedio bajó Y%, lo cual sugiere que estamos vendiendo más unidades pero más baratas — vale la pena revisar el mix de categorías". En un modelo online, también pregunta: ¿hay diferencias en el canal de adquisición o en el comportamiento de compra digital entre países?
 
 ---
 
@@ -58,7 +60,7 @@ Entregable: tabla de cohortes lista para visualizar, segmentación RFM con cada 
 
 Tiempo estimado: 4-5 horas.
 
-Tip PM: termina este día con una respuesta concreta a "si fueras PM de TiendaLatam, ¿qué propondrías como próximo experimento de retención?". Esa respuesta es oro en una entrevista.
+Tip PM: termina este día con una respuesta concreta a "si fueras PM de TiendaLatam, ¿qué propondrías como próximo experimento de retención en un canal 100% digital?". Esa respuesta es oro en una entrevista.
 
 ---
 
@@ -129,7 +131,7 @@ Lo que demuestra cada parte:
 
 - Crear un PRD ficticio para 1 de las 3 recomendaciones de producto.
 - Diseñar un experimento A/B para validar una hipótesis de retención.
-- Hacer un análisis competitivo de TiendaLatam vs Mercado Libre / Falabella / Linio.
+- Hacer un análisis competitivo de TiendaLatam vs tiendas locales de cada país y vs players regionales (Mercado Libre, Falabella, Linio) — el diferenciador clave es precio.
 - Construir un funnel ficticio (visitas → carrito → checkout → entregado) e identificar el cuello de botella.
 - Forecast simple de revenue con función LAG/LEAD o regresión lineal en Power BI.
 

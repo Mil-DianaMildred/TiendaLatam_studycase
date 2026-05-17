@@ -49,13 +49,13 @@ Distribución actual: Minorista 432 (61.7%), Mayorista 128 (18.3%), Corporativo 
 Para análisis de revenue se usan típicamente los estados 3 (Enviado) y 4 (Entregado).
 
 ### positions
-Cargos: Gerente de tienda, Vendedor, Cajero, Coordinador logístico, Asesor comercial.
+Cargos: Gerente de tienda, Vendedor, Cajero, Coordinador logístico, Asesor comercial. (Nomenclatura del dataset original; en el modelo 100% digital de TiendaLatam estos roles corresponden a gestión de puntos de distribución, ventas digitales y atención al cliente.)
 
 ### locations
-10 tiendas físicas, una por país LATAM (10 ciudades).
+10 puntos de distribución logística, uno por país LATAM (10 ciudades).
 
 ### employees
-20 empleados distribuidos en las 10 tiendas. `employee_position` → positions.
+20 empleados distribuidos en los 10 puntos de distribución. `employee_position` → positions.
 
 ### products
 50 productos en 8 categorías. Rango de precios: $3.60 – $799.00. Campos clave: `price`, `stock`, `status` (activo/inactivo).

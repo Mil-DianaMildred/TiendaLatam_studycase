@@ -39,7 +39,7 @@ Pregunta clave de Growth PM. Un negocio sano tiene cada vez más revenue de recu
 Cruza revenue con % de cancelaciones/devoluciones. Un país puede vender mucho pero tener mala calidad operativa.
 
 **Q5. ¿Qué categorías de producto crecen y cuáles estancan?**
-Decisión: dónde invertir más espacio en tienda, dónde reducir SKUs.
+Decisión: dónde invertir en el catálogo digital, dónde reducir SKUs.
 
 ---
 

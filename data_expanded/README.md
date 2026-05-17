@@ -31,7 +31,7 @@ Todas estas invariantes están garantizadas:
 - Todo `order_details.product_id` existe en products.
 - Todo `order.location_id` existe en locations.
 - Todo `order.employee_id` existe en employees.
-- Cada empleado solo aparece en órdenes de su tienda asignada.
+- Cada empleado solo aparece en órdenes de su punto de distribución asignado.
 - `total_amount` de cada orden = suma exacta de sus detalles (sin redondeo perdido).
 - Ninguna orden tiene fecha anterior al registro de su cliente.
 - Todas las fechas están dentro de 2021-01-01 a 2026-04-30.
