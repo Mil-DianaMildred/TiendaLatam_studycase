@@ -6,31 +6,31 @@ falta descripcion del roadmap, aclarar que el mi framewotk y el caso de uso
 **Objetivo:** montar BigQuery, cargar los datos, hacer la primera exploración y contextualización.
 
 Tareas:
-- ✅ Crear cuenta de Google Cloud (gratis, sin tarjeta) y proyecto `tiendalatam-casestudy`. Seguir `docs/setup_bigquery.md` paso a paso.
-- ✅ Activar BigQuery sandbox y crear el dataset `tiendalatam`.
-- ✅ Cargar los CSVs de `data_expanded/` con autodetección de esquema.
-- ✅ Generar con AI un plan de EDA y ejecutarlo. `sql/03_exploratory.sql` — 6 queries que dan el panorama general: volumen, fechas, distribución de status y productos top.
-- ✅ Crear con AI un `product-growth-metrics-ref` para mapear el universo ideal de métricas según el tipo de producto y evaluar el potencial de la data existente.
-- ✅ Documenta las consideraciones de negocio sobre cómo se calculan las métricas. Por ejemplo, algunas empresas calculan el revenue solo con órdenes en status `entregado`, otras incluyen también `enviado`. Asegúrate de tener claridad en cada métrica y documenta los matices relevantes para que sean tenidos en cuenta durante el procesamiento con AI. `CLAUDE`
-- ✅ Generar con AI `findings_preliminary`: analiza los hallazgos, documenta las observaciones iniciales y las preguntas que surgen `my_notes`.
+- Crear cuenta de Google Cloud (gratis, sin tarjeta) y proyecto `tiendalatam-casestudy`. Seguir `docs/setup_bigquery.md` paso a paso.
+- Activar BigQuery sandbox y crear el dataset `tiendalatam`.
+- Cargar los CSVs de `data_expanded/` con autodetección de esquema.
+- Generar con AI un plan de EDA y ejecutarlo. `sql/03_exploratory.sql` — 6 queries que dan el panorama general: volumen, fechas, distribución de status y productos top.
+- Crear con AI un `product-growth-metrics-ref` para mapear el universo ideal de métricas según el tipo de producto y evaluar el potencial de la data existente.
+- Documenta las consideraciones de negocio sobre cómo se calculan las métricas. Por ejemplo, algunas empresas calculan el revenue solo con órdenes en status `entregado`, otras incluyen también `enviado`. Asegúrate de tener claridad en cada métrica y documenta los matices relevantes para que sean tenidos en cuenta durante el procesamiento con AI. `CLAUDE`
+- Generar con AI `findings_preliminary`: analiza los hallazgos, documenta las observaciones iniciales y las preguntas que surgen `my_notes`.
 - Hacer discovery sobre los puntos que consideres mas relevantes para el objetivo al que quieres llegar, un par de sessiones con alguien que conozca en profundidad mejorara la calidad de tus insights
 
 > **Tip:** Tómate el tiempo para este paso. Sentirse perdido aquí es normal — es mucha información para un cerebro humano, pero no para la AI. Apóyate en ella para resolver dudas, generar queries rápidos o pedir datos ya procesados. Todo va cobrando sentido a medida que pasas más tiempo con la data y construyes contexto.
 
 ---
 
-## Data Strategy - Definiciones 
-Framework: Product Strategy Stack
+## Data Strategy - Preguntas de negocio 
 
-Con base a la data que se tiene
-que quiere hacer el negocion, compamy vision
-cual es tu rol en la compania
-hay algun objetivo en specifico?
+**Objetivo:** Definir las preguntas que el negocios debe responder en base a la mission y estrategia de la compañia. 
 
+Tareas:
+- Consultar la mission y estrategias que la compañia tiene para alinear caulquier estructuracion de data e insights que generen valor en la direccion de que la compañia busca.
+- Genera con AI y con `my notes` una lista de preguntas que esten alineadas al tipo de producto y a la estrategia de la compania `business_questions`.
+- Genera con AI los queries que van a responder a las `business_questions` basados en el dataset que tienes. (`growth_metrics`, `retention_rfm`,`more_insights`, REVISAR SI MAS)
 
 ---
 
-## Día 2 — Métricas de Growth
+## Métricas de Growth
 
 **Objetivo:** responder las preguntas de crecimiento del negocio.
 
