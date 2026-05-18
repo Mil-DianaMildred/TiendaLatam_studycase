@@ -2,13 +2,19 @@
 
 Estos números se obtuvieron ejecutando las queries del proyecto contra el dataset expandido (`data_expanded/`). Sirven como teaser para el caso de estudio y como sanity check del pipeline en BigQuery.
 
-## Métricas globales (status = Entregado y Enviado vs all)
+## Métricas globales
 
-- Revenue total: **$1,473,497.20 de 1,958,767.55** 75,22%
-- Órdenes válidas: **3,045 de 4,000** 76,12%
-- Clientes compradores únicos: **636 de 700** 90,86%
-- AOV global: **$483.84**
-- Ventana de análisis: julio 2021 → abril 2026
+| Métrica | Valor | % |
+|---|---|---|
+| Total órdenes | 4,000 | -- |
+| Órdenes válidas | 3,045 | 76.12% |
+| Clientes únicos | 700 | --- |
+| Clientes con órdenes | 636 | 90.86% |
+| GMV | $1,958,767.55 | --- |
+| Revenue | $1,473,497.20 | 75.22% |
+| AOV | $489.69 | - |
+| Primera orden | 2021-07-01 | - |
+| Última orden | 2026-04-29 | - |
 
 ## Salud operativa
 

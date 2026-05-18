@@ -45,7 +45,12 @@ SELECT
   p.product_name,
   ca.name AS category,
   SUM(od.quantity) AS units_sold,
-  ROUND(SUM(od.quantity * od.unit_price), 2) AS revenue
+  ROUND(SUM(od.quantity * od.unit_price), 2) AS revenue,
+  ROUND(
+    SUM(od.quantity * od.unit_price) * 100.0
+    / SUM(SUM(od.quantity * od.unit_price)) OVER (),
+    2
+  ) AS pct_of_revenue
 FROM `tiendalatam-casestudy.tiendalatam.order_details` od
 JOIN `tiendalatam-casestudy.tiendalatam.products` p    ON od.product_id = p.product_id
 JOIN `tiendalatam-casestudy.tiendalatam.categories` ca ON p.category_id = ca.category_id
@@ -94,7 +99,7 @@ JOIN `tiendalatam-casestudy.tiendalatam.client_types` ct ON c.client_type_id = c
 WHERE o.order_status_id IN (3, 4)
 GROUP BY ct.name
 
--- 8. Distribucion de ventas por producto
+-- 8. Distribucion de ventas por producto (Top 20/50)
 SELECT
   p.product_id,
   p.product_name,
@@ -115,6 +120,24 @@ LEFT JOIN `tiendalatam-casestudy.tiendalatam.order_details` od ON p.product_id =
 LEFT JOIN `tiendalatam-casestudy.tiendalatam.orders` o         ON od.order_id = o.order_id
                                                                AND o.order_status_id IN (3, 4)
 GROUP BY p.product_id, p.product_name, ca.name, p.price
-ORDER BY revenue DESC NULLS LAST;
+ORDER BY revenue DESC NULLS LAST
+LIMIT 20;
+
+-- 9. Revenue por categoría
+SELECT
+  ca.name                                    AS category,
+  COUNT(DISTINCT od.order_id)                AS orders,
+  SUM(od.quantity)                           AS units_sold,
+  ROUND(SUM(od.quantity * od.unit_price), 2) AS revenue,
+  ROUND(100 * SUM(od.quantity * od.unit_price)
+        / SUM(SUM(od.quantity * od.unit_price)) OVER (), 2) AS pct_revenue
+FROM `tiendalatam-casestudy.tiendalatam.order_details` od
+JOIN `tiendalatam-casestudy.tiendalatam.products` p        ON od.product_id = p.product_id
+JOIN `tiendalatam-casestudy.tiendalatam.categories` ca     ON p.category_id = ca.category_id
+JOIN `tiendalatam-casestudy.tiendalatam.orders` o          ON od.order_id = o.order_id
+WHERE o.order_status_id IN (3, 4)
+GROUP BY ca.name
+ORDER BY revenue DESC;
+
 
 

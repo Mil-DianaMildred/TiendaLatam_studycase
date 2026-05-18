@@ -1,5 +1,5 @@
 # Roadmap
-falta descripcion del roadmap, aclarar que el mi framewotk y el caso de uso
+Falta descripcion del roadmap, aclarar que el mi framewotk y el caso de uso
 ---
 ## Setup y exploración (Foundation)
 

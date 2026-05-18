@@ -7,15 +7,18 @@ Este es mi primer análisis sobre `03_exploratory`, son notas semiestructuradas 
 
 ## 1. Volumen y Rango Temporal
 
-| Métrica | Valor |
-|---|---|
-| Total órdenes | 4,000 |
-| Clientes únicos | 700 |
-| Primera orden | 2021-07-01 |
-| Última orden | 2026-04-29 |
-| GMV | $1,958,767.55 |
-| Revenue | $1,473,497.20 |
-| AOV | $489.69 |
+| Métrica | Valor | % |
+|---|---|---|
+| Total órdenes | 4,000 | -- |
+| Órdenes válidas | 3,045 | 76.12% |
+| Clientes únicos | 700 | --- |
+| Clientes con órdenes | 636 | 90.86% |
+| GMV | $1,958,767.55 | --- |
+| Revenue | $1,473,497.20 | 75.22% |
+| AOV | $489.69 | - |
+| Primera orden | 2021-07-01 | - |
+| Última orden | 2026-04-29 | - |
+
 
 1. ¿Cuáles son las razones detrás de la diferencia del GMV y el revenue? ¿De qué porcentaje estamos hablando? ¿Es este porcentaje normal para esta industria y tipo de negocio? ¿Cómo están el GMV y el revenue en comparación a la competencia? ¿Cuáles son las mejores fuentes de esta información?
 2. ¿En qué moneda está el dinero? ¿Todos los puntos de distribución manejan la misma moneda? ¿Tiene esto alguna afectación en el revenue?
