@@ -77,7 +77,6 @@ SELECT
   , 1)                                                             AS pct_revenue
 FROM orders_classified
 GROUP BY month, client_segment
-ORDER BY month, client_segment;gment
 ORDER BY month, client_segment;
 
 -- Q4. Performance por país (calidad operativa)
