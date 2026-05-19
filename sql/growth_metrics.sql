@@ -111,3 +111,53 @@ JOIN `tiendalatam-casestudy.tiendalatam.orders` o      ON od.order_id = o.order_
 WHERE o.order_status_id IN (3, 4)
 GROUP BY ca.name
 ORDER BY revenue DESC;
+
+-- AOV trimestral - solo clientes minoristas
+SELECT
+  DATE_TRUNC(o.registration_date, QUARTER) AS quarter,
+  ROUND(AVG(o.total_amount), 2) AS aov
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c       ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
+WHERE o.order_status_id IN (3, 4)
+  AND LOWER(ct.name) = 'minorista'
+GROUP BY 1
+ORDER BY 1;
+
+-- AOV trimestral pivoteado por tipo de cliente
+SELECT
+  DATE_TRUNC(o.registration_date, QUARTER) AS quarter,
+  ROUND(AVG(CASE WHEN LOWER(ct.name) = 'minorista'   THEN o.total_amount END), 2) AS aov_minorista,
+  ROUND(AVG(CASE WHEN LOWER(ct.name) = 'mayorista'   THEN o.total_amount END), 2) AS aov_mayorista,
+  ROUND(AVG(CASE WHEN LOWER(ct.name) = 'vip'         THEN o.total_amount END), 2) AS aov_vip,
+  ROUND(AVG(CASE WHEN LOWER(ct.name) = 'corporativo' THEN o.total_amount END), 2) AS aov_corporativo
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c       ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.client_types` ct ON c.client_type_id = ct.client_type_id
+WHERE o.order_status_id IN (3, 4)
+GROUP BY 1
+ORDER BY 1;
+
+--- Lanzamiento por país: fecha del primer pedido + métricas acumuladas
+SELECT
+  co.name                          AS country,
+  MIN(o.registration_date)         AS first_order_date,
+  DATE_DIFF(
+    CURRENT_DATE(),
+    MIN(o.registration_date),
+    MONTH
+  )                                AS months_active,
+  COUNT(DISTINCT o.client_id)      AS total_buyers,
+  COUNT(o.order_id)                AS total_orders,
+  ROUND(SUM(o.total_amount), 2)    AS total_revenue
+
+FROM `tiendalatam-casestudy.tiendalatam.orders` o
+JOIN `tiendalatam-casestudy.tiendalatam.clients` c
+  ON o.client_id = c.client_id
+JOIN `tiendalatam-casestudy.tiendalatam.countries` co
+  ON c.country_id = co.country_id
+
+WHERE o.order_status_id IN (3, 4)   -- solo Enviado / Entregado
+
+GROUP BY co.name
+ORDER BY first_order_date ASC;
