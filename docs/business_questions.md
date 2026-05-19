@@ -13,6 +13,7 @@ TiendaLatam nació como retail presencial y ha completado su transición a un mo
 > Antes de responder cualquier pregunta estratégica, es necesario entender qué tan grande es el negocio, qué tan sana es la operación y qué datos están disponibles. Este bloque es la base factual de todo lo que sigue.
 
 **E1. ¿Qué volumen maneja el negocio y en qué ventana de tiempo?**
+SQL: `sql/exploratory.sql` query 1 (volumen y rango temporal)
 Foco: GMV, revenue (órdenes Enviado + Entregado), # órdenes válidas, # clientes únicos, AOV global, ventana de fechas.
 *Por qué importa:* establece el punto de partida. Sin esta foto de referencia no es posible medir si la estrategia está funcionando.
 
@@ -37,6 +38,7 @@ Foco: GMV, revenue (órdenes Enviado + Entregado), # órdenes válidas, # client
 ---
 
 **E2. ¿Qué tan saludable es la operación según los estados de pedido?**
+SQL: `sql/exploratory.sql` query 2 (distribución de estados de pedido)
 Foco: % entregado, % cancelado, % devuelto. Alerta si cancelado + devuelto > 10%.
 *Por qué importa:* un modelo digital que promete la mejor relación calidad-precio se rompe si la operación falla. La tasa de entrega es el primer indicador de que la promesa se cumple o no.
 
@@ -58,6 +60,7 @@ Foco: % entregado, % cancelado, % devuelto. Alerta si cancelado + devuelto > 10%
 ---
 
 **E2b. ¿Cuánto del GMV se convierte en revenue real y cómo compara con la industria?**
+SQL: `sql/exploratory.sql` query 2 (misma distribución de estados) + benchmark en `docs/benchmark_tiendalatam_latam`
 Foco: desglosar el gap GMV ($1,958,767) → revenue ($1,473,497) — un 24.78% que no se captura. Contrastar la distribución de estados contra benchmarks LATAM publicados.
 *Por qué importa:* si la promesa de precio atrae al cliente pero la operación falla en casi 1 de cada 4 órdenes, el moat se erosiona. Este número es la brecha entre lo que el negocio podría ser y lo que realmente captura.
 
@@ -89,6 +92,7 @@ Benchmark comparativo — análisis completo en `docs/benchmark_tiendalatam_lata
 ---
 
 **E3. ¿Cómo se distribuyen los clientes por tipo?**
+SQL: `sql/exploratory.sql` queries 5 (distribución por tipo y país) y 7 (revenue por tipo de cliente)
 Foco: proporción Minorista / Mayorista / Corporativo / VIP por mercado. Identificar sobre-indexaciones.
 *Por qué importa:* la misión apunta al consumidor latinoamericano individual — Minorista es el segmento más alineado. Entender el mix actual revela si la base de clientes responde al posicionamiento.
 
@@ -107,7 +111,7 @@ Foco: proporción Minorista / Mayorista / Corporativo / VIP por mercado. Identif
 ---
 
 **E4. ¿Cuáles son los productos top y a qué categoría pertenecen?**
-SQL: `sql/exploratory.sql`
+SQL: `sql/exploratory.sql` query 4 (top 10 por unidades), query 8 (ABC top 20/50 por revenue), query 9 (revenue por categoría)
 Foco: ¿hay un producto que arrastra solo el revenue? ¿Qué % del catálogo genera el 80% de las ventas?
 *Por qué importa:* la Laptop Ultraliviana representa el 33.2% del revenue total. Eso es una dependencia crítica, no una fortaleza.
 
@@ -173,7 +177,7 @@ Foco: ¿hay un producto que arrastra solo el revenue? ¿Qué % del catálogo gen
 ---
 
 **E5. ¿Qué productos tienen ventas mínimas o stock estancado?**
-SQL: `sql/exploratory.sql`
+SQL: `sql/exploratory.sql` query 8 (distribución de ventas por producto — fila inferior de la curva)
 Foco: SKUs con bajo revenue a pesar de tener ventas. Candidatos a revisión de precio o estrategia de categoría.
 *Por qué importa:* en un modelo digital el costo de catálogo es bajo, pero el costo de confusión para el usuario no lo es. Un catálogo con productos de valor marginal diluye la percepción de precio competitivo.
 
@@ -193,7 +197,7 @@ Foco: SKUs con bajo revenue a pesar de tener ventas. Candidatos a revisión de p
 ---
 
 **E6. ¿Quién es realmente el cliente de TiendaLatam? (ICP)**
-SQL: `sql/exploratory.sql`
+SQL: `sql/exploratory.sql` queries 5 y 7 + `sql/retention_rfm.sql` Q9 (LTV por tipo)
 Foco: perfil del cliente más valioso — tipo, AOV, frecuencia de compra, LTV. ¿El cliente que más compra es el que la misión describe?
 *Por qué importa:* la misión habla de "cualquier latinoamericano". Si el 63% del revenue viene de Minoristas pero el LTV de Corporativos fuera 5x mayor, habría una decisión estratégica pendiente. Los datos resuelven esa tensión.
 
@@ -540,6 +544,7 @@ Foco: mediana y distribución del tiempo a la segunda compra. ¿Cuál es el mome
 ---
 
 **A2-Q9b. ¿Las órdenes en estado "Pendiente" y "Procesando" representan un cuello de botella con impacto en retención?**
+SQL: `sql/exploratory.sql` query 2 (datos de distribución de estados — misma fuente que E2)
 Foco: volumen de órdenes en estados intermedios (296 Pendiente + 350 Procesando = 16.2% del total). ¿Hay clientes con múltiples órdenes atascadas? ¿Se correlaciona con menor frecuencia de recompra?
 *Decisión que habilita:* la experiencia post-compra es el único punto de contacto operativo con el cliente. Si una orden queda atascada y nadie la resuelve, ese cliente no vuelve. Este análisis conecta directamente salud operativa con tasa de retención.
 
@@ -574,6 +579,7 @@ Foco: LTV acumulado de Minorista vs Mayorista vs Corporativo vs VIP.
 ---
 
 **A2-Q9c. ¿Vale la pena la apuesta por clientes VIP y Corporativos, o están desviando foco de la misión?**
+SQL: `sql/retention_rfm.sql` Q9 (LTV por tipo — misma fuente que A2-Q9)
 Foco: comparar LTV, frecuencia y churn de VIP/Corporativo vs Minorista. ¿El costo de adquirir y retener un cliente Corporativo se justifica frente al volumen de Minoristas?
 *Decisión que habilita:* la misión apunta al "cualquier latinoamericano" — consumidor individual. Esta pregunta fuerza una respuesta con datos sobre la tensión entre misión y mix de clientes.
 
@@ -656,6 +662,7 @@ Foco: evolución anual del revenue global. Identificar el punto de inflexión de
 ---
 
 **A3-Q11b. ¿Todos los mercados se lanzaron al mismo tiempo, o hay diferencias de madurez que distorsionan la comparación?**
+SQL: `sql/growth_metrics.sql` (Lanzamiento por país — query sin número, línea 141)
 Foco: fecha de primera orden por país. Si Colombia lanzó 12 meses después que Ecuador, comparar su revenue absoluto es injusto y lleva a decisiones equivocadas.
 *Decisión que habilita:* construir una comparación justa entre mercados — la base para priorizar la Apuesta 3. Un mercado "underperforming" puede ser simplemente más joven.
 
