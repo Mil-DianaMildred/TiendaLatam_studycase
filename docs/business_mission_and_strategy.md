@@ -3,6 +3,14 @@
 
 ---
 
+## Contexto de la empresa
+
+TiendaLatam nació como una cadena de retail con tiendas presenciales distribuidas en Latinoamérica. A lo largo de los últimos años transformó su modelo operativo: cerró las tiendas al público y reconvirtió cada punto en un centro de distribución logística —uno por país. Hoy opera 100% online, sin atención presencial al cliente.
+
+Para el 2026, el equipo directivo está formalizando este pivote con una misión y estrategia claras. No se trata solo de un cambio de canal — es un reposicionamiento estructural del negocio: eliminar los costos del modelo presencial (arriendo, operación de tienda, intermediarios) para trasladar ese diferencial directamente al precio del producto.
+
+---
+
 ## Company Mission
 
 **"Que cualquier latinoamericano pueda comprar productos de calidad al mejor precio del mercado, sin depender de lo que ofrece el comercio local."**

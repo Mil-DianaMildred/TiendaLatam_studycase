@@ -1,6 +1,6 @@
 # Business Questions
 
-En base a la mission y estrategia de empresa de Tiendalatam se ha estructurada un conjunto de preguntas que buscan apoyar las 4 apuestas estratégicas de TiendaLatam `business_mission_and_strategy`.
+TiendaLatam nació como retail presencial y ha completado su transición a un modelo 100% digital, convirtiendo sus tiendas en centros de distribución. Para el 2026, el C-level está formalizando este pivote con la misión y estrategia descritas en `business_mission_and_strategy`. Las preguntas de este documento están diseñadas para medir si los datos respaldan —o cuestionan— cada una de las 4 apuestas estratégicas.
 
 **Misión:** *"Que cualquier latinoamericano pueda comprar productos de calidad al mejor precio del mercado, sin depender de lo que ofrece el comercio local."*
 

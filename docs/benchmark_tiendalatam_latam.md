@@ -5,7 +5,7 @@
 
 ## 1. Contexto y objetivo
 
-TiendaLatam opera 100% digital en 10 países de Latinoamérica (Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay), con un punto de distribución por país y un volumen acumulado de 4.000 órdenes entre julio 2021 y abril 2026 (~833 órdenes/año, ~70/mes en promedio histórico).
+TiendaLatam es una empresa de retail que migró de tiendas presenciales a un modelo 100% digital en 10 países de Latinoamérica (Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay). Sus antiguas tiendas se reconvirtieron en centros de distribución logística —uno por país— y para el 2026 el C-level está formalizando este pivote estratégico. El dataset analizado cubre 4.000 órdenes entre julio 2021 y abril 2026 (~833 órdenes/año, ~70/mes en promedio histórico).
 
 El objetivo de este análisis es contrastar la distribución actual de estados de orden de TiendaLatam contra benchmarks regionales publicados por *eCommerce Institute*, *AMVO*, *CACE*, *Deloitte*, *DHL Supply Chain*, *Merchant Risk Council* y *BlackSip*, para determinar qué métricas son competitivas y cuáles representan oportunidades estructurales.
 

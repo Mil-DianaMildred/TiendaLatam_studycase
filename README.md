@@ -1,10 +1,10 @@
 # TiendaLatam — Análisis de Growth & Retención
 
-Análisis end-to-end de una empresa tecnológica de retail 100% online con operaciones en 10 países de Latinoamérica, enfocado en identificar palancas de crecimiento, mejorar la retención de clientes y construir un dashboard ejecutivo en Looker Studio.
+Análisis end-to-end del pivote estratégico de TiendaLatam: una empresa de retail que comenzó con tiendas presenciales y ha migrado su operación a un modelo 100% digital en 10 países de Latinoamérica. El proyecto identifica palancas de crecimiento, analiza retención de clientes y construye un dashboard ejecutivo en Looker Studio.
 
 ## El problema de negocio
 
-TiendaLatam es una empresa tecnológica de retail que opera exclusivamente a través de canales digitales en Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay. No cuenta con tiendas físicas — su modelo se apoya en puntos de distribución logística por país. Su propuesta de valor es ofrecer la mejor relación calidad–precio del mercado, compitiendo directamente con tiendas locales mediante precios significativamente más competitivos. El equipo directivo necesita responder tres preguntas:
+TiendaLatam es una empresa de retail que nació como cadena de tiendas presenciales y ha completado su transición a un modelo 100% digital en 10 países de Latinoamérica (Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, México, Perú y Uruguay). Sus tiendas se reconvirtieron en centros de distribución logística —uno por país— eliminando el costo del modelo presencial para trasladarlo al precio. Para el 2026, el equipo directivo está formalizando este pivote con una estrategia orientada a competir exclusivamente por precio online. El análisis busca responder tres preguntas clave:
 
 1. ¿De dónde viene el crecimiento real y dónde estamos perdiendo clientes?
 2. ¿Qué segmentos de clientes generan más valor a largo plazo (LTV) y cuáles están en riesgo de churn?
