@@ -1,174 +1,321 @@
-# Diseño del Dashboard en Looker Studio
+# Diseño del Dashboard — TiendaLatam
 
-Guía paso a paso para construir un dashboard ejecutivo en Looker Studio (gratis, basado en navegador) que comunique los hallazgos de Growth & Retención. Pensado para que cada página responda una pregunta clara y lleve a una decisión.
+Dashboard ejecutivo en Looker Studio (5 páginas) alineado con las 4 apuestas estratégicas de TiendaLatam. Cada página responde una pregunta estratégica clara y lleva a una decisión.
 
-Antes de empezar, asegúrate de haber completado el setup de BigQuery (ver `docs/setup_bigquery.md`) y haber ejecutado `sql/setup_views.sql` para crear las vistas analíticas.
+**Prerequisito:** haber ejecutado `sql/setup_views.sql` en BigQuery. Las 9 vistas son las únicas fuentes que conecta el dashboard.
+
+---
 
 ## 1. Fuentes de datos a conectar
 
-Vamos a conectar las 5 vistas que creamos en BigQuery (no las tablas crudas — las vistas ya tienen los joins resueltos):
+En Looker Studio → **Crear → Fuente de datos → BigQuery → tiendalatam-casestudy → tiendalatam → selecciona la vista**.
 
-| Vista | Para qué la usaremos |
-|-------|----------------------|
-| `v_orders_enriched` | KPIs principales, mapa por país, performance por punto de distribución |
-| `v_order_lines` | Análisis de productos, categorías, ABC |
-| `v_rfm_segments` | Distribución de segmentos, % revenue por segmento |
-| `v_cohort_retention` | Heatmap de cohortes |
-| `v_monthly_metrics` | Línea temporal de revenue, MoM growth, nuevos vs recurrentes |
+| Vista | Páginas que la usan | Para qué |
+|-------|----------------------|----------|
+| `v_orders_enriched` | Todas | KPIs operativos, mapa de país, filtros globales |
+| `v_monthly_metrics` | Resumen, Crecimiento | Línea de revenue, nuevo vs recurrente, MoM |
+| `v_executive_health` | Resumen Ejecutivo | Scorecards de una sola fila (churn, champions %, etc.) |
+| `v_country_performance` | Resumen, Operación | Revenue/mes activo, madurez por país, diagnóstico Colombia |
+| `v_rfm_segments` | Retención | Segmentos RFM, At Risk accionable, donut de clientes |
+| `v_cohort_retention` | Retención | Heatmap de cohortes |
+| `v_abc_classification` | Catálogo | Clasificación A/B/C, revenue acumulado por SKU |
+| `v_stock_alerts` | Catálogo | Scatter stock vs ventas, lista de alertas |
+| `v_order_lines` | Catálogo | Treemap categoría → producto |
 
-Para conectar cada una: en Looker Studio → **Crear → Fuente de datos → BigQuery → tu proyecto → tiendalatam → selecciona la vista**.
+---
 
-## 2. Paleta de colores sugerida
+## 2. Paleta de colores
 
-Inspirada en una identidad LATAM cálida y profesional. En Looker Studio aplica desde Tema y diseño → Personalizar:
+Aplicar desde Tema y diseño → Personalizar. Define la paleta en la primera página y guarda como tema predeterminado.
 
-- Color de fondo: `#F5F1EA` (crema claro)
-- Color de acento principal: `#1F3A5F` (azul profundo)
-- Color secundario: `#F2A65A` (terracota)
-- Color de éxito (positivo): `#4CAF7A`
-- Color de alerta (negativo): `#D9534F`
-- Texto principal: `#2D2D2D`
+| Elemento | Hex | Uso |
+|---|---|---|
+| Fondo | `#F5F1EA` | Fondo de todas las páginas |
+| Acento principal | `#1F3A5F` | Headers, scorecards positivos |
+| Acento secundario | `#F2A65A` | Elementos de alerta media |
+| Éxito / positivo | `#4CAF7A` | Flechas de crecimiento, "Stock OK" |
+| Alerta / negativo | `#D9534F` | Flechas de caída, "Riesgo de quiebre" |
+| Texto principal | `#2D2D2D` | Títulos y etiquetas |
 
-Tip: define la paleta en la primera página, después guarda el tema como predeterminado del informe.
+---
 
-## 3. Campos calculados clave en Looker Studio
+## 3. Campos calculados en Looker Studio
 
-Looker Studio permite crear campos calculados que actúan como medidas. La sintaxis es similar a Excel/Sheets. Crea estos campos en la fuente `v_orders_enriched`:
+Crear en la fuente indicada. En Looker Studio: editar fuente de datos → **Agregar un campo**.
+
+**En `v_orders_enriched`:**
 
 ```
-% Cancelación
-= SUM(CASE WHEN order_status_id = 5 THEN 1 ELSE 0 END) / COUNT(order_id)
+Revenue (campo calculado)
+= SUM(CASE WHEN is_valid_revenue = 1 THEN total_amount ELSE 0 END)
 
-% Devolución
-= SUM(CASE WHEN order_status_id = 6 THEN 1 ELSE 0 END) / COUNT(order_id)
+% Entregado
+= SUM(is_delivered) / COUNT(order_id)
 
-Es Entregado
-= CASE WHEN order_status_id = 4 THEN 1 ELSE 0 END
+% Cancelado
+= SUM(is_cancelled) / COUNT(order_id)
+
+% Devuelto
+= SUM(is_returned) / COUNT(order_id)
+
+% En proceso (Pendiente + Procesando)
+= SUM(is_in_progress) / COUNT(order_id)
 ```
 
-En la fuente `v_rfm_segments`:
+**En `v_monthly_metrics`:**
+
+```
+% Revenue Recurrente
+= recurring_client_revenue / revenue
+```
+
+**En `v_rfm_segments`:**
 
 ```
 Es Champion
 = CASE WHEN segment = "Champions" THEN 1 ELSE 0 END
+
+Es At Risk o Hibernating
+= CASE WHEN segment IN ("At Risk", "Hibernating") THEN 1 ELSE 0 END
 ```
 
-En la fuente `v_monthly_metrics`, para calcular MoM growth en Looker Studio se usa una función de comparación temporal:
+---
 
-- Métrica: SUM(revenue)
-- Comparación: período anterior (mes anterior)
-- Looker Studio muestra automáticamente el % de cambio.
-
-## 4. Estructura de las 4 páginas
+## 4. Estructura de las 5 páginas
 
 ### Página 1 — Resumen Ejecutivo
 
-Audiencia: C-level. Objetivo: en 10 segundos saber si vamos bien o mal.
-
-Layout sugerido:
+**Audiencia:** C-level. **Pregunta:** ¿Vamos bien o mal en 10 segundos?
 
 ```
-┌─────────────────────────────────────────────────────┐
-│ TiendaLatam · Resumen Ejecutivo                    │
-│ Filtros: [Año] [País] [Tipo de Cliente]            │
-├──────────┬──────────┬──────────┬─────────────────┤
-│ Revenue  │ Órdenes  │ Clientes │ AOV             │
-│ Scorecard│ Scorecard│ activos  │ Scorecard       │
-│          │          │ Scorecard│                 │
-├──────────┴──────────┴──────────┴─────────────────┤
-│ Revenue mensual (gráfico de línea)                 │
-├───────────────────────┬────────────────────────────┤
-│ Revenue por país      │ Top 5 categorías           │
-│ (Mapa geográfico)     │ (Gráfico de barras)        │
-└───────────────────────┴────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│ TiendaLatam · Resumen Ejecutivo     [Año] [País] [Tipo cliente] │
+├────────────┬────────────┬────────────┬────────────┬─────────────┤
+│  Revenue   │   AOV      │  Clientes  │  Churn     │  Champions  │
+│  total     │  global    │  activos   │  180d      │  % revenue  │
+│ (vs mes    │ (vs mes    │ (vs mes    │            │             │
+│  anterior) │  anterior) │  anterior) │            │             │
+├────────────┴────────────┴────────────┴────────────┴─────────────┤
+│ Revenue mensual — línea histórica 2021–2026                      │
+│ Fuente: v_monthly_metrics · dimensión: month · métrica: revenue  │
+├───────────────────────────┬──────────────────────────────────────┤
+│ Revenue por país          │ Estado de órdenes — donut            │
+│ Mapa geográfico LATAM     │ Fuente: v_orders_enriched            │
+│ Fuente: v_country_performance│ dimensión: order_status          │
+│ métrica: revenue          │ alerta visual: Pendiente en naranja  │
+└───────────────────────────┴──────────────────────────────────────┘
 ```
 
-Configuración exacta:
-- Fuente: `v_orders_enriched` (filtrada a order_status_id IN (3, 4))
-- Scorecards: SUM(total_amount), COUNT_DISTINCT(order_id), COUNT_DISTINCT(client_id), AVG(total_amount)
-- Mapa: usa la dimensión `country` con tipo Geo → País.
-- Filtros (slicers): año (de registration_date), country, client_type.
+**Configuración:**
+- Scorecards (fila superior): fuente `v_executive_health`. Activar "Comparación con período anterior" en Revenue, AOV y Clientes activos.
+- Revenue mensual: fuente `v_monthly_metrics`, dimensión `month`, métrica `revenue`. Línea simple, sin desagregar.
+- Mapa: fuente `v_country_performance`, dimensión `country` (tipo Geo → País), métrica `revenue`. Color de gradiente del acento principal.
+- Donut de estados: fuente `v_orders_enriched`, dimensión `order_status`, métrica `COUNT(order_id)`. Colores: Entregado = verde, Enviado = azul, Pendiente/Procesando = naranja, Cancelado/Devuelto = rojo.
 
-Truco visual: en cada scorecard, activa "Comparación con período anterior" para mostrar la flecha verde/roja automáticamente.
+---
 
-### Página 2 — Growth
+### Página 2 — Operación & Expansión
 
-Audiencia: VP Growth / PM. Objetivo: entender la velocidad y composición del crecimiento.
+**Audiencia:** VP Operaciones, C-level. **Pregunta:** ¿Dónde está el cuello de botella operativo y qué mercados están underperformando?
 
-Visuales:
-- Scorecard con flecha: MoM growth del último mes (Revenue actual vs mes anterior).
-- Gráfico de barras apiladas: revenue mensual desglosado por nuevo vs recurrente. Fuente: `v_monthly_metrics`, dimensión = month, métrica 1 = revenue de new_clients_orders, métrica 2 = revenue - new (calcular con campo).
-- Gráfico combinado (línea + barras): barras de "nuevos clientes por mes" (eje izq), línea de "retención mes 1" (eje der). Fuente: `v_cohort_retention` filtrado a months_since_first = 1.
-- Tabla: top 10 mejores meses históricos por revenue.
-- Scorecard: tiempo promedio a segunda compra (puedes hardcodearlo o calcularlo en una vista adicional).
+```
+┌────────────────────────────────────────────────────────────────┐
+│ Operación & Expansión          [País] [Año]                    │
+├────────────┬────────────┬────────────┬──────────────────────── │
+│ % Entregado│ % Pendiente│ % Procesando│ % Cancelado           │
+│  63.5%     │   7.4%     │   8.8%      │   5.1%                │
+│ (benchmark │ (benchmark │ (benchmark  │ (benchmark            │
+│  80–85%)   │  ≤2%)      │  ≤3%)       │  6–10%)               │
+├────────────┴────────────┴────────────┴────────────────────────┤
+│ Performance por país — tabla con color condicional             │
+│ columnas: país | meses activo | revenue | revenue/mes | AOV   │
+│           | % entregado | % cancelado | % devuelto            │
+│ Fuente: v_country_performance · ordenar por revenue desc      │
+│ Color condicional: % cancelado > 6% = rojo · < 4% = verde    │
+├─────────────────────────────┬──────────────────────────────── │
+│ Revenue/mes activo vs       │ Revenue mensual por país        │
+│ % cancelación — scatter     │ barras apiladas por país        │
+│ Cada punto = 1 país         │ Fuente: v_orders_enriched       │
+│ Fuente: v_country_performance│ dimensión: month + country     │
+│ X: pct_cancelled            │ métrica: total_amount (status   │
+│ Y: revenue_per_month_active │ IN (3,4))                       │
+└─────────────────────────────┴──────────────────────────────────┘
+```
 
-### Página 3 — Producto
+**Configuración:**
+- Scorecards de métricas operativas: fuente `v_executive_health`. Los campos `pct_delivered`, `pct_in_progress`, `pct_cancelled`, `pct_returned` ya están calculados. Agrega texto debajo de cada scorecard con el benchmark (se hace con un cuadro de texto estático en Looker Studio).
+- Tabla de países: fuente `v_country_performance`. Activa "Barra de datos" en la columna `revenue` y "Escala de color" en `pct_cancelled`. Agrega una columna calculada `revenue_per_month_active / 1000` para mostrar en miles.
+- Scatter: fuente `v_country_performance`, X = `pct_cancelled`, Y = `revenue_per_month_active`, dimensión de etiqueta = `country`. Colombia debería aparecer en el cuadrante de bajo revenue + alta cancelación.
 
-Audiencia: Category Manager / PM de producto. Objetivo: decidir mix.
+---
 
-Visuales:
-- Treemap: revenue por categoría → producto. Fuente: `v_order_lines`.
-- Tabla con escala de color: clasificación ABC (necesitarás materializar la query Q11 como una vista adicional `v_abc_classification`).
-- Scatter plot: stock (eje X) vs unidades vendidas en 90 días (eje Y). Cuadrantes implícitos: alta venta + bajo stock = estrella en riesgo.
-- Tabla: top 10 combinaciones de productos (puedes materializar Q14 como vista).
-- Lista con condicional: productos con alerta "Riesgo de quiebre" o "Stock muerto" en rojo/naranja.
+### Página 3 — Catálogo & Precio
 
-### Página 4 — Clientes (RFM y Cohortes)
+**Audiencia:** Category Manager, PM de producto. **Pregunta:** ¿Dónde está la concentración de riesgo y dónde está la oportunidad de precio?
 
-Audiencia: PM de retención / CRM. Objetivo: identificar a quién retener y a quién reactivar.
+```
+┌────────────────────────────────────────────────────────────────┐
+│ Catálogo & Precio              [Categoría] [Año]               │
+├───────────────────────┬────────────────────────────────────────┤
+│ Treemap               │ Revenue por categoría — barras         │
+│ categoría → producto  │ Fuente: v_order_lines (status 3-4)    │
+│ Fuente: v_order_lines │ dimensión: category                   │
+│ (status IN (3,4))     │ métrica: SUM(line_total)              │
+│ dim: category, product_name │                                  │
+│ métrica: SUM(line_total)    │                                  │
+├───────────────────────┴────────────────────────────────────────┤
+│ Clasificación ABC — tabla con color condicional                │
+│ columnas: producto | categoría | revenue | % revenue          │
+│           | % acumulado | clase ABC | precio lista | stock    │
+│ Fuente: v_abc_classification                                   │
+│ Color: clase A = verde · B = amarillo · C = gris              │
+├─────────────────────────────┬──────────────────────────────── │
+│ Stock vs ventas 90d         │ Alertas de stock — tabla        │
+│ scatter                     │ filtrada a stock_alert =        │
+│ X: stock                    │ 'Riesgo de quiebre'             │
+│ Y: units_sold_last_90d      │ columnas: producto | stock |    │
+│ color: stock_alert          │ días inventario | alerta        │
+│ Fuente: v_stock_alerts      │ Fuente: v_stock_alerts          │
+│ etiqueta: product_name      │ orden: days_of_inventory asc    │
+└─────────────────────────────┴──────────────────────────────────┘
+```
 
-Visuales:
-- Donut chart: distribución de clientes por segmento. Fuente: `v_rfm_segments`, dimensión = segment, métrica = COUNT(client_id).
-- Gráfico de barras horizontal: % de revenue por segmento. Misma fuente, dimensión = segment, métrica = SUM(monetary).
-- Tabla pivote (heatmap de cohortes): filas = cohort_month, columnas = months_since_first, valor = retention_pct con escala de color. Fuente: `v_cohort_retention`.
-- Tabla "Clientes At Risk": fuente `v_rfm_segments` filtrada a segment IN ("At Risk", "Hibernating"), columnas client_name, country, monetary, recency_days. Ordenada por monetary desc.
-- Scorecard: Churn rate 180d (calculado en una vista adicional o como campo calculado).
+**Configuración:**
+- Treemap: fuente `v_order_lines` con filtro `order_status_id IN (3, 4)`. Dimensión de nivel 1 = `category`, nivel 2 = `product_name`. Métrica = `SUM(line_total)`. Activar etiquetas con porcentaje.
+- Tabla ABC: fuente `v_abc_classification`. Color condicional: `abc_class = "A"` → fondo verde, `"B"` → amarillo, `"C"` → gris. Resaltar las dos primeras filas (Laptop + Smartphone) con un cuadro de texto de nota.
+- Scatter de stock: fuente `v_stock_alerts`. Punto rojo si `stock_alert = "Riesgo de quiebre"`, verde si `"Stock OK"`. Añade una línea de referencia horizontal en `units_sold_last_90d = 150` para visualizar el umbral de alta rotación.
+- Tabla de alertas: fuente `v_stock_alerts` con filtro `stock_alert = "Riesgo de quiebre"`. Ordenada por `days_of_inventory` ascendente. La Laptop Ultraliviana (30.8 días) debe aparecer primera.
+
+---
+
+### Página 4 — Retención & RFM
+
+**Audiencia:** PM de retención, CRM. **Pregunta:** ¿A quién retener, a quién reactivar y cuándo actuar?
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│ Retención & RFM                [Tipo cliente] [País]           │
+├──────────────┬──────────────┬─────────────────────────────────┤
+│ Churn 180d   │ Champions    │ Mediana días 2da compra         │
+│ 23%          │ 56.4% rev    │ 74 días                         │
+│              │              │ → intervención día 50           │
+├──────────────┴──────────────┴─────────────────────────────────┤
+│ Revenue por segmento RFM — barras horizontales                │
+│ Fuente: v_rfm_segments                                        │
+│ dimensión: segment · métrica: SUM(monetary)                   │
+│ Color: Champions = acento principal, At Risk = alerta         │
+├─────────────────────────────┬──────────────────────────────── │
+│ Heatmap de cohortes         │ Tabla At Risk — accionable      │
+│ Fuente: v_cohort_retention  │ Fuente: v_rfm_segments          │
+│ filas: cohort_month         │ filtro: segment IN              │
+│ columnas: months_since_first│ ('At Risk', 'Hibernating')      │
+│ valor: retention_pct        │ columnas: client_name |         │
+│ escala de color: 0%=rojo    │ country | monetary |            │
+│ 50%=amarillo · 100%=verde   │ recency_days                    │
+│                             │ orden: monetary desc            │
+└─────────────────────────────┴──────────────────────────────────┘
+```
+
+**Configuración:**
+- Scorecards: `churn_rate_180d` y `champions_revenue_pct` desde `v_executive_health`. El scorecard de "74 días" es un cuadro de texto estático — no está en ninguna vista (viene del análisis de `more_insights.sql` Q15).
+- Barras de segmentos: fuente `v_rfm_segments`, dimensión `segment`, métrica `SUM(monetary)`. Activa "Mostrar porcentaje" para ver cada barra como % del total.
+- Heatmap de cohortes: fuente `v_cohort_retention`. En Looker Studio, una "Tabla pivote" funciona mejor que una tabla normal: filas = `cohort_month`, columnas = `months_since_first`, valor = `retention_pct` con color condicional. Limita las columnas a 0–12 para evitar cohortes vacías.
+- Tabla At Risk: fuente `v_rfm_segments` con filtro `segment IN ("At Risk", "Hibernating")`. Esta tabla debe ser accionable — quien vea el dashboard debería poder exportarla para una campaña de reactivación.
+
+---
+
+### Página 5 — Crecimiento
+
+**Audiencia:** VP Growth, CEO. **Pregunta:** ¿El negocio está madurando o depende de adquisición constante?
+
+```
+┌────────────────────────────────────────────────────────────────┐
+│ Crecimiento                    [Año] [País] [Tipo cliente]    │
+├──────────────┬──────────────┬──────────────────────────────── │
+│ Revenue mes  │ MoM growth   │ % Revenue recurrentes           │
+│ actual       │ vs mes ant.  │ último mes                      │
+├──────────────┴──────────────┴──────────────────────────────── │
+│ Revenue mensual nuevo vs recurrente — barras apiladas          │
+│ Fuente: v_monthly_metrics                                      │
+│ dimensión: month · métricas: new_client_revenue (color claro) │
+│             + recurring_client_revenue (color oscuro)         │
+├─────────────────────────────┬──────────────────────────────── │
+│ AOV trimestral por tipo     │ Top 10 mejores meses            │
+│ de cliente — líneas         │ Fuente: v_monthly_metrics       │
+│ Fuente: v_orders_enriched   │ dimensión: month                │
+│ dimensión: quarter (fecha   │ métrica: revenue                │
+│ truncada), series: client_type │ tabla ordenada desc         │
+│ métrica: AVG(total_amount)  │                                 │
+│ filtro: status IN (3,4)     │                                 │
+└─────────────────────────────┴──────────────────────────────────┘
+```
+
+**Configuración:**
+- Scorecard de revenue mensual: fuente `v_monthly_metrics` con filtro a último mes disponible, o usa "comparación con período anterior" automática.
+- Barras apiladas: fuente `v_monthly_metrics`. Crea dos series: `new_client_revenue` (color terracota claro) y `recurring_client_revenue` (color azul profundo). El objetivo visual: ver cómo la barra azul crece en el tiempo.
+- AOV por tipo: fuente `v_orders_enriched` con filtro `is_valid_revenue = 1`. Dimensión de tiempo = `DATE_TRUNC(registration_date, QUARTER)`, series = `client_type`, métrica = `AVG(total_amount)`. El gráfico debería mostrar convergencia entre segmentos — la señal crítica del análisis.
+- Tabla top 10: fuente `v_monthly_metrics`, ordenada por `revenue` descendente, limitada a 10 filas.
+
+---
 
 ## 5. Filtros globales
 
-Crea un control de filtro (slicer) en cada página o, mejor aún, en una "Sección oculta de filtros" que se replica en todas las páginas. Filtros recomendados:
+Crea estos controles en cada página. Para replicarlos: copiar el control → pegar en otras páginas.
 
-- Rango de fechas (Date range control conectado a registration_date)
-- País (Drop-down list)
-- Tipo de cliente (Drop-down list)
+| Control | Tipo | Fuente | Campo | Aplica a |
+|---|---|---|---|---|
+| Rango de fechas | Date range control | `v_orders_enriched` | `registration_date` | Todas las páginas |
+| País | Drop-down list | `v_orders_enriched` | `country` | Todas las páginas |
+| Tipo de cliente | Drop-down list | `v_orders_enriched` | `client_type` | Páginas 1, 4, 5 |
+| Categoría | Drop-down list | `v_order_lines` | `category` | Página 3 |
 
-## 6. Publicar y compartir
+Nota: el filtro de país en la página de Operación filtra tanto `v_orders_enriched` como `v_country_performance`. Asegúrate de que ambas fuentes estén en el mismo control de filtro.
 
-Cuando el dashboard esté listo:
+---
 
-1. Botón **Compartir** arriba a la derecha → **Administrar acceso**.
-2. Cambia "Restringido" a **"Cualquier persona con el enlace puede ver"**.
-3. Copia el link.
+## 6. Títulos con conclusión (no descriptivos)
 
-Para embeber en tu website:
-1. Botón **Compartir → Insertar informe**.
-2. Copia el código iframe HTML.
-3. Pégalo en una sección de tu sitio web (Webflow, Notion embed, Squarespace block, etc.).
-4. Define el ancho a 100% del contenedor para que sea responsive.
+Looker Studio permite editar el título de cada visual. Reemplaza los títulos por defecto por títulos con la conclusión del hallazgo:
 
-## 7. Tips de diseño que diferencian
+| Visual | Título genérico (malo) | Título con conclusión (bueno) |
+|---|---|---|
+| Línea de revenue | Revenue mensual | Crecimiento ininterrumpido — 2026 en camino a duplicar 2025 |
+| Donut de estados | Estados de órdenes | Solo el 63.5% de órdenes llega a Entregado — benchmark: 80–85% |
+| Tabla de países | Performance por país | Colombia underperforma: $2,084/mes vs $3,372 de Ecuador |
+| Heatmap cohortes | Retención por cohorte | Cohortes 2025 retienen 33–54% en Q1 — PMF emergente |
+| Tabla At Risk | At Risk | 64 clientes con $160K en revenue histórico — rescatables |
+| ABC catálogo | Catálogo ABC | 2 SKUs = 46.2% del revenue — riesgo sistémico |
 
-- Usa títulos con conclusión, no descriptivos. Mal: "Revenue por mes". Bien: "Abril 2026 fue el mejor mes con $220,459 — crecimiento sostenido desde 2021".
-- Pon el periodo de análisis visible en el header de cada página.
-- Una historia por página: si un visual no responde la pregunta de la página, sácalo.
-- Crea bookmarks por país para presentaciones rápidas.
-- Activa tooltips personalizados para mostrar contexto al hacer hover.
-- En las tablas, usa "barras dentro de celdas" como visualización compacta de magnitud.
+---
 
-## 8. Trucos de Looker Studio que pocos PMs conocen
+## 7. Publicar y compartir
 
-- **Páginas ocultas**: puedes crear páginas con análisis profundo que solo se ven con link directo. Útil para "appendix" del dashboard.
-- **Parámetros**: permiten que el usuario cambie variables (ej: definir el umbral de "Champion"). Más avanzado.
-- **Mezcla de datos**: si necesitas cruzar dos vistas, Looker Studio permite hacer "blending" (similar a un JOIN ligero). Útil para no crear más vistas en BigQuery.
-- **Plantillas de comunidad**: explora la galería de Looker Studio para inspiración visual antes de empezar a diseñar.
+1. Botón **Compartir** → **Administrar acceso** → cambiar a **"Cualquier persona con el enlace puede ver"**.
+2. Copia el link y pruébalo en una ventana incógnito.
+3. Para embeber: **Compartir → Insertar informe** → copia el iframe. Ancho = 100% del contenedor.
+
+---
+
+## 8. Trucos de Looker Studio
+
+- **Tabla pivote para cohortes**: en lugar de una tabla normal, usa Insertar → Tabla pivote. Filas = `cohort_month`, columnas = `months_since_first`, valor = `retention_pct`. Agrega escala de color al valor.
+- **Páginas ocultas**: crea páginas de appendix con análisis detallado accesibles solo con link directo.
+- **Anotaciones en gráficos de línea**: usa "Agregar referencia" para marcar el punto de inflexión 2024 en la línea de revenue.
+- **Mezcla de datos**: si necesitas cruzar `v_rfm_segments` con `v_orders_enriched` en una misma visual, usa el blending de Looker Studio en lugar de crear otra vista en BigQuery.
+- **Bookmarks por país**: crea páginas filtradas por Colombia, Ecuador y Argentina para presentaciones ejecutivas rápidas.
+
+---
 
 ## 9. Checklist antes de publicar
 
-- [ ] Las 4 páginas tienen títulos con conclusión.
-- [ ] Hay al menos un campo calculado en cada página.
-- [ ] Los filtros globales funcionan en todas las visualizaciones.
-- [ ] No hay valores en blanco/null visibles al usuario.
-- [ ] La paleta de colores es consistente.
-- [ ] El dashboard se ve bien en monitor 1080p Y en pantalla de laptop.
-- [ ] El link público está activado y probado en una ventana incógnito.
-- [ ] El iframe se ve bien embebido en tu website (prueba primero en una página de prueba).
+- [ ] Las 9 vistas están creadas en BigQuery (ejecutar `sql/setup_views.sql`).
+- [ ] Las 5 fuentes de datos están conectadas en Looker Studio.
+- [ ] Los campos calculados (`is_valid_revenue`, `% Entregado`, etc.) están creados en cada fuente.
+- [ ] Los 5 títulos de página tienen la conclusión del hallazgo, no solo un descriptor.
+- [ ] Los filtros globales (fecha, país, tipo cliente) funcionan en todas las visualizaciones de su página.
+- [ ] La tabla At Risk es exportable (verificar que tiene botón de descarga).
+- [ ] El heatmap de cohortes muestra datos desde 2023 (cohortes anteriores son demasiado pequeñas).
+- [ ] El scatter de stock tiene el punto de la Laptop Ultraliviana visible y etiquetado.
+- [ ] La paleta de colores es consistente en las 5 páginas.
+- [ ] El link público funciona en ventana incógnito.
+- [ ] El dashboard se ve bien en monitor 1080p y en pantalla de laptop (13").
